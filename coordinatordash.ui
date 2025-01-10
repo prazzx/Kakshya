@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>CoordinatorDash</class>
- <widget class="QDialog" name="CoordinatorDash">
+ <class>coordinatordash</class>
+ <widget class="QDialog" name="coordinatordash">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>1200</width>
+    <height>900</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,14 +16,27 @@
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>120</x>
-     <y>50</y>
-     <width>141</width>
+     <x>20</x>
+     <y>10</y>
+     <width>221</width>
      <height>16</height>
     </rect>
    </property>
    <property name="text">
     <string>Coordinator</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonUpload">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>10</y>
+     <width>80</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Upload Routine</string>
    </property>
   </widget>
  </widget>

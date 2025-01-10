@@ -1,14 +1,14 @@
 #include "teacherdash.h"
 #include "ui_teacherdash.h"
 
-TeacherDash::TeacherDash(QWidget *parent)
+teacherdash::teacherdash(QWidget *parent)
     : QDialog(parent)
-    , ui(new Ui::TeacherDash)
+    , ui(new Ui::teacherdash)
 {
     ui->setupUi(this);
 }
 
-TeacherDash::~TeacherDash()
+teacherdash::~teacherdash()
 {
     delete ui;
 }

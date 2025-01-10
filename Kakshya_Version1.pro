@@ -10,9 +10,6 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    Dashboards/coordinatordash.cpp \
-    Dashboards/crdash.cpp \
-    Dashboards/teacherdash.cpp \
     coordinatordash.cpp \
     crdash.cpp \
     forgotpassword.cpp \
@@ -23,12 +20,10 @@ SOURCES += \
     passwordchanged.cpp \
     signupdialog.cpp \
     signupsuccessful.cpp \
-    teacherdash.cpp
+    teacherdash.cpp \
+    uploadroutine.cpp
 
 HEADERS += \
-    Dashboards/coordinatordash.h \
-    Dashboards/crdash.h \
-    Dashboards/teacherdash.h \
     coordinatordash.h \
     crdash.h \
     forgotpassword.h \
@@ -38,12 +33,10 @@ HEADERS += \
     passwordchanged.h \
     signupdialog.h \
     signupsuccessful.h \
-    teacherdash.h
+    teacherdash.h \
+    uploadroutine.h
 
 FORMS += \
-    Dashboards/coordinatordash.ui \
-    Dashboards/crdash.ui \
-    Dashboards/teacherdash.ui \
     coordinatordash.ui \
     crdash.ui \
     forgotpassword.ui \
@@ -52,7 +45,8 @@ FORMS += \
     passwordchanged.ui \
     signupdialog.ui \
     signupsuccessful.ui \
-    teacherdash.ui
+    teacherdash.ui \
+    uploadroutine.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

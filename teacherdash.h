@@ -4,19 +4,19 @@
 #include <QDialog>
 
 namespace Ui {
-class TeacherDash;
+class teacherdash;
 }
 
-class TeacherDash : public QDialog
+class teacherdash : public QDialog
 {
     Q_OBJECT
 
 public:
-    explicit TeacherDash(QWidget *parent = nullptr);
-    ~TeacherDash();
+    explicit teacherdash(QWidget *parent = nullptr);
+    ~teacherdash();
 
 private:
-    Ui::TeacherDash *ui;
+    Ui::teacherdash *ui;
 };
 
 #endif // TEACHERDASH_H

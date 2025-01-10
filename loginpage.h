@@ -37,9 +37,9 @@ private:
     SignupDialog *signupDialog;
     Forgotpassword *forgotpassword;
     loginsuccessful *Loginsuccess;
-    CoordinatorDash *codash;
-    CRDash *cdash;
-    TeacherDash *tdash;
+    coordinatordash *codash;
+    crdash *cdash;
+    teacherdash *tdash;
     bool connectToDatabase();
 };
 

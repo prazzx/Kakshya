@@ -82,15 +82,15 @@ void LoginPage::on_pushButtonLogin_clicked()
             ui->lineEditPassword->clear();
             close();
             if(tableName=="coordinator"){
-                codash = new CoordinatorDash(this);
+                codash = new coordinatordash(this);
                 codash->showMaximized();
             }
             else if(tableName=="teacher"){
-                tdash = new TeacherDash(this);
+                tdash = new teacherdash(this);
                 tdash->showMaximized();
             }
             else if(tableName=="cr"){
-                cdash = new CRDash(this);
+                cdash = new crdash(this);
                 cdash->showMaximized();
             }
             Loginsuccess = new loginsuccessful(this);

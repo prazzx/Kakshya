@@ -1,14 +1,22 @@
 #include "coordinatordash.h"
 #include "ui_coordinatordash.h"
+#include "uploadroutine.h"
 
-CoordinatorDash::CoordinatorDash(QWidget *parent)
+coordinatordash::coordinatordash(QWidget *parent)
     : QDialog(parent)
-    , ui(new Ui::CoordinatorDash)
+    , ui(new Ui::coordinatordash)
 {
     ui->setupUi(this);
 }
 
-CoordinatorDash::~CoordinatorDash()
+coordinatordash::~coordinatordash()
 {
     delete ui;
 }
+
+void coordinatordash::on_pushButtonUpload_clicked()
+{
+    up = new UploadRoutine(this);
+    up ->showMaximized();
+}
+

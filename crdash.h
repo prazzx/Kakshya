@@ -4,19 +4,19 @@
 #include <QDialog>
 
 namespace Ui {
-class CRDash;
+class crdash;
 }
 
-class CRDash : public QDialog
+class crdash : public QDialog
 {
     Q_OBJECT
 
 public:
-    explicit CRDash(QWidget *parent = nullptr);
-    ~CRDash();
+    explicit crdash(QWidget *parent = nullptr);
+    ~crdash();
 
 private:
-    Ui::CRDash *ui;
+    Ui::crdash *ui;
 };
 
 #endif // CRDASH_H
