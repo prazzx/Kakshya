@@ -2,6 +2,9 @@
 #include "qsqldatabase.h"
 #include "signupdialog.h"
 #include "ui_loginpage.h"
+#include "coordinatordash.h"
+#include "crdash.h"
+#include "teacherdash.h"
 #include <QSqlDatabase>
 #include <QSqlQuery>
 #include <QSqlError>
@@ -75,10 +78,23 @@ void LoginPage::on_pushButtonLogin_clicked()
         if (storedPassword != password) {
             ui->labelMessage->setText("Invalid password.");
         } else {
-            ui->labelMessage->setText("Logged in successfully.");
-
             ui->lineEditEmail->clear();
             ui->lineEditPassword->clear();
+            close();
+            if(tableName=="coordinator"){
+                codash = new CoordinatorDash(this);
+                codash->showMaximized();
+            }
+            else if(tableName=="teacher"){
+                tdash = new TeacherDash(this);
+                tdash->showMaximized();
+            }
+            else if(tableName=="cr"){
+                cdash = new CRDash(this);
+                cdash->showMaximized();
+            }
+            Loginsuccess = new loginsuccessful(this);
+            Loginsuccess->show();
 
 
 
