@@ -16,10 +16,10 @@
   <widget class="QPushButton" name="pushButtonSignup">
    <property name="geometry">
     <rect>
-     <x>970</x>
-     <y>90</y>
-     <width>80</width>
-     <height>18</height>
+     <x>959</x>
+     <y>77</y>
+     <width>91</width>
+     <height>31</height>
     </rect>
    </property>
    <property name="text">
