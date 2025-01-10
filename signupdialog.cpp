@@ -65,7 +65,10 @@ void SignupDialog::on_pushButtonSignUp_clicked()
         ui->labelMessage->setText("Passwords do not match");
         return;
     }
+    QStringList tables = {"teacher", "coordinator", "cr"};
 
+
+    for (const QString &tableName : tables) {
     QSqlQuery checkUsernameQuery;
     checkUsernameQuery.prepare(QString("SELECT COUNT(*) FROM %1 WHERE username = :username").arg(tableName));
     checkUsernameQuery.bindValue(":username", name);
@@ -75,6 +78,7 @@ void SignupDialog::on_pushButtonSignUp_clicked()
             ui->labelMessage->setText("Username already exists.");
             return;
         }
+    }
 
 
     QSqlQuery checkEmailQuery;
@@ -86,6 +90,7 @@ void SignupDialog::on_pushButtonSignUp_clicked()
             ui->labelMessage->setText("Email already exists.");
             return;
         }
+    }
 
     QSqlQuery checkPhoneQuery;
         checkPhoneQuery.prepare(QString("SELECT COUNT(*) FROM %1 WHERE phone_number = :phone").arg(tableName));
@@ -96,6 +101,8 @@ void SignupDialog::on_pushButtonSignUp_clicked()
                 ui->labelMessage->setText("Phone Number Already Exists.");
                 return;
             }
+        }
+    }
 
     QSqlQuery query;
     query.prepare(QString("INSERT INTO %1 (username, email, password, phone_number) "
@@ -122,6 +129,4 @@ void SignupDialog::on_pushButtonSignUp_clicked()
         ui->labelMessage->setText ("Error signing up");
     }
     }
-    }
-    }}
 
