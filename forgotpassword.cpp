@@ -42,48 +42,56 @@ void Forgotpassword::on_pushButtonChangepassword_clicked()
     QString password = ui->lineEditNewpassword->text();
     QString cpassword = ui->lineEditConfirmpassword->text();
 
-
-    if (email.isEmpty() || password.isEmpty() || phone.isEmpty() ||  cpassword.isEmpty()) {
+    if (email.isEmpty() || password.isEmpty() || phone.isEmpty() || cpassword.isEmpty()) {
         ui->labelMessage->setText("Please fill in all fields.");
         return;
     }
 
-    QSqlQuery query;
-    query.prepare("SELECT phone_number FROM users WHERE email = :email");
-    query.bindValue(":email", email);
+    if (password != cpassword) {
+        ui->labelMessage->setText("Passwords do not match.");
+        return;
+    }
 
-    if (query.exec() && query.next()) {
+    QStringList tables = {"teacher", "coordinator", "cr"};
+    bool recordFound = false;
 
-        QString storedPhone = query.value(0).toString();
+    for (const QString &table : tables) {
+        QSqlQuery query;
+        query.prepare(QString("SELECT phone_number FROM %1 WHERE email = :email").arg(table));
+        query.bindValue(":email", email);
 
-        if (storedPhone != phone) {
-            ui->labelMessage->setText("Invalid phone number.");
-        } else {
+        if (query.exec() && query.next()) {
+            recordFound = true;
 
-
-
-            if (password != cpassword) {
-                ui->labelMessage->setText("Passwords do not match.");
+            QString storedPhone = query.value(0).toString();
+            if (storedPhone != phone) {
+                ui->labelMessage->setText("Invalid phone number.");
                 return;
             }
 
+
             QSqlQuery updateQuery;
-            updateQuery.prepare("UPDATE users SET password = :newPassword WHERE email = :email");
+            updateQuery.prepare(QString("UPDATE %1 SET password = :newPassword WHERE email = :email").arg(table));
             updateQuery.bindValue(":newPassword", password);
             updateQuery.bindValue(":email", email);
 
             if (updateQuery.exec()) {
-                close();
                 pass = new passwordchanged(this);
                 pass->show();
+                close();
+                return;
+            } else {
+                ui->labelMessage->setText("Failed to update password: " + updateQuery.lastError().text());
+                return;
             }
-
         }
-    } else {
+    }
 
+    if (!recordFound) {
         ui->labelMessage->setText("Invalid email.");
     }
 }
+
 
 
 

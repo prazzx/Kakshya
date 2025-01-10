@@ -52,8 +52,20 @@ void LoginPage::on_pushButtonLogin_clicked()
         return;
     }
 
+    QString tableName;
+    if (ui->radioButtonTeacher->isChecked()) {
+        tableName = "teacher";
+    } else if (ui->radioButtonCoordinator->isChecked()) {
+        tableName = "coordinator";
+    } else if (ui->radioButtonCr->isChecked()) {
+        tableName = "cr";
+    } else {
+        ui->labelMessage->setText("Please select a role.");
+        return;
+    }
+
     QSqlQuery query;
-    query.prepare("SELECT password FROM users WHERE email = :email");
+    query.prepare(QString("SELECT password FROM %1 WHERE email = :email").arg(tableName));
     query.bindValue(":email", email);
 
     if (query.exec() && query.next()) {

@@ -48,13 +48,26 @@ void SignupDialog::on_pushButtonSignUp_clicked()
         ui->labelMessage->setText("All fields are required.");
         return;
     }
+
+    QString tableName;
+    if (ui->radioButtonTeacher->isChecked()) {
+        tableName = "teacher";
+    } else if (ui->radioButtonCoordinator->isChecked()) {
+        tableName = "coordinator";
+    } else if (ui->radioButtonCR->isChecked()) {
+        tableName = "cr";
+    } else {
+        ui->labelMessage->setText("Please select a role.");
+        return;
+    }
+
     if(password!=cpassword){
         ui->labelMessage->setText("Passwords do not match");
         return;
     }
 
     QSqlQuery checkUsernameQuery;
-    checkUsernameQuery.prepare("SELECT COUNT(*) FROM users WHERE username = :username");
+    checkUsernameQuery.prepare(QString("SELECT COUNT(*) FROM %1 WHERE username = :username").arg(tableName));
     checkUsernameQuery.bindValue(":username", name);
     if (checkUsernameQuery.exec() && checkUsernameQuery.next()) {
         int count = checkUsernameQuery.value(0).toInt();
@@ -65,7 +78,7 @@ void SignupDialog::on_pushButtonSignUp_clicked()
 
 
     QSqlQuery checkEmailQuery;
-    checkEmailQuery.prepare("SELECT COUNT(*) FROM users WHERE email = :email");
+ checkEmailQuery.prepare(QString("SELECT COUNT(*) FROM %1 WHERE email = :email").arg(tableName));
     checkEmailQuery.bindValue(":email", email);
     if (checkEmailQuery.exec() && checkEmailQuery.next()) {
         int count = checkEmailQuery.value(0).toInt();
@@ -75,7 +88,7 @@ void SignupDialog::on_pushButtonSignUp_clicked()
         }
 
     QSqlQuery checkPhoneQuery;
-        checkPhoneQuery.prepare("SELECT COUNT(*) FROM users WHERE phone_number = :phone");
+        checkPhoneQuery.prepare(QString("SELECT COUNT(*) FROM %1 WHERE phone_number = :phone").arg(tableName));
         checkPhoneQuery.bindValue(":phone", phone);
         if (checkPhoneQuery.exec() && checkPhoneQuery.next()) {
             int count = checkPhoneQuery.value(0).toInt();
@@ -85,9 +98,9 @@ void SignupDialog::on_pushButtonSignUp_clicked()
             }
 
     QSqlQuery query;
-    query.prepare("INSERT INTO users (username, email, password, phone_number) "
-                  "VALUES (:username, :email, :password, :phone_number)");
-
+    query.prepare(QString("INSERT INTO %1 (username, email, password, phone_number) "
+                          "VALUES (:username, :email, :password, :phone_number)")
+                      .arg(tableName));
     query.bindValue(":username", name);
     query.bindValue(":email", email);
     query.bindValue(":password", password);
