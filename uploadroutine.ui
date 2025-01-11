@@ -94,8 +94,8 @@
     <rect>
      <x>140</x>
      <y>110</y>
-     <width>361</width>
-     <height>311</height>
+     <width>151</width>
+     <height>171</height>
     </rect>
    </property>
    <layout class="QFormLayout" name="formLayout">
@@ -125,9 +125,6 @@
        <string>Sunday</string>
       </property>
      </widget>
-    </item>
-    <item row="1" column="1">
-     <widget class="QLineEdit" name="lineEdit"/>
     </item>
     <item row="2" column="0">
      <widget class="QLabel" name="label_4">
@@ -171,23 +168,202 @@
       </property>
      </widget>
     </item>
+    <item row="1" column="1">
+     <widget class="QPushButton" name="pushButton11">
+      <property name="text">
+       <string>Add</string>
+      </property>
+     </widget>
+    </item>
     <item row="2" column="1">
-     <widget class="QLineEdit" name="lineEdit_2"/>
+     <widget class="QPushButton" name="pushButton12">
+      <property name="text">
+       <string>Add</string>
+      </property>
+     </widget>
     </item>
     <item row="3" column="1">
-     <widget class="QLineEdit" name="lineEdit_3"/>
+     <widget class="QPushButton" name="pushButton13">
+      <property name="text">
+       <string>Add</string>
+      </property>
+     </widget>
     </item>
     <item row="4" column="1">
-     <widget class="QLineEdit" name="lineEdit_4"/>
+     <widget class="QPushButton" name="pushButton14">
+      <property name="text">
+       <string>Add</string>
+      </property>
+     </widget>
     </item>
     <item row="5" column="1">
-     <widget class="QLineEdit" name="lineEdit_5"/>
+     <widget class="QPushButton" name="pushButton15">
+      <property name="text">
+       <string>Add</string>
+      </property>
+     </widget>
     </item>
     <item row="6" column="1">
-     <widget class="QLineEdit" name="lineEdit_6"/>
+     <widget class="QPushButton" name="pushButton16">
+      <property name="text">
+       <string>Add</string>
+      </property>
+     </widget>
     </item>
     <item row="7" column="1">
-     <widget class="QLineEdit" name="lineEdit_7"/>
+     <widget class="QPushButton" name="pushButton17">
+      <property name="text">
+       <string>Add</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="formLayoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>110</y>
+     <width>111</width>
+     <height>171</height>
+    </rect>
+   </property>
+   <layout class="QFormLayout" name="formLayout_2">
+    <item row="0" column="1">
+     <widget class="QLabel" name="label_11">
+      <property name="maximumSize">
+       <size>
+        <width>50</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>12-2</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QPushButton" name="pushButton21">
+      <property name="text">
+       <string>Add</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QPushButton" name="pushButton22">
+      <property name="text">
+       <string>Add</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QPushButton" name="pushButton23">
+      <property name="text">
+       <string>Add</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QPushButton" name="pushButton24">
+      <property name="text">
+       <string>Add</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="1">
+     <widget class="QPushButton" name="pushButton25">
+      <property name="text">
+       <string>Add</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="1">
+     <widget class="QPushButton" name="pushButton26">
+      <property name="text">
+       <string>Add</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="1">
+     <widget class="QPushButton" name="pushButton27">
+      <property name="text">
+       <string>Add</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="formLayoutWidget_3">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>110</y>
+     <width>111</width>
+     <height>171</height>
+    </rect>
+   </property>
+   <layout class="QFormLayout" name="formLayout_3">
+    <item row="0" column="1">
+     <widget class="QLabel" name="label_12">
+      <property name="maximumSize">
+       <size>
+        <width>50</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>2-4</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QPushButton" name="pushButton31">
+      <property name="text">
+       <string>Add</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QPushButton" name="pushButton32">
+      <property name="text">
+       <string>Add</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QPushButton" name="pushButton33">
+      <property name="text">
+       <string>Add</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QPushButton" name="pushButton34">
+      <property name="text">
+       <string>Add</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="1">
+     <widget class="QPushButton" name="pushButton35">
+      <property name="text">
+       <string>Add</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="1">
+     <widget class="QPushButton" name="pushButton36">
+      <property name="text">
+       <string>Add</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="1">
+     <widget class="QPushButton" name="pushButton37">
+      <property name="text">
+       <string>Add</string>
+      </property>
+     </widget>
     </item>
    </layout>
   </widget>

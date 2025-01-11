@@ -10,6 +10,7 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    addvaluestoroutine.cpp \
     coordinatordash.cpp \
     crdash.cpp \
     forgotpassword.cpp \
@@ -24,6 +25,7 @@ SOURCES += \
     uploadroutine.cpp
 
 HEADERS += \
+    addvaluestoroutine.h \
     coordinatordash.h \
     crdash.h \
     forgotpassword.h \
@@ -37,6 +39,7 @@ HEADERS += \
     uploadroutine.h
 
 FORMS += \
+    addvaluestoroutine.ui \
     coordinatordash.ui \
     crdash.ui \
     forgotpassword.ui \

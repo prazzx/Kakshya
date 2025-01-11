@@ -4,6 +4,7 @@
 #include <QSqlQuery>
 #include <QSqlError>
 #include <QMessageBox>
+#include "addvaluestoroutine.h"
 
 
 UploadRoutine::UploadRoutine(QWidget *parent)
@@ -38,7 +39,8 @@ void UploadRoutine::on_pushButtonUpload_clicked()
 {
     QString selectedvalue = ui->comboBoxSelect->currentText();
     if(selectedvalue=="BIT"){
-
+        add = new Addvaluestoroutine(this);
+        add->show();
     }
     else if(selectedvalue=="BIT"){}
     else if(selectedvalue=="CE(I/I)"){}
@@ -51,6 +53,8 @@ void UploadRoutine::on_pushButtonUpload_clicked()
 
     else if(selectedvalue=="BIT"){}
     }
+
+
 
 
 

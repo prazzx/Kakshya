@@ -1,3 +1,4 @@
+release/addvaluestoroutine.o
 release/coordinatordash.o
 release/crdash.o
 release/forgotpassword.o
@@ -10,6 +11,7 @@ release/signupdialog.o
 release/signupsuccessful.o
 release/teacherdash.o
 release/uploadroutine.o
+release/moc_addvaluestoroutine.o
 release/moc_coordinatordash.o
 release/moc_crdash.o
 release/moc_forgotpassword.o

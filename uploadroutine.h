@@ -2,6 +2,7 @@
 #define UPLOADROUTINE_H
 
 #include <QDialog>
+#include "addvaluestoroutine.h"
 
 
 namespace Ui {
@@ -19,8 +20,11 @@ public:
 private slots:
     void on_pushButtonUpload_clicked();
 
+    void on_pushButton11_clicked();
+
 private:
     Ui::UploadRoutine *ui;
+    Addvaluestoroutine *add;
     bool connectToDatabase();
 
 };

@@ -1,3 +1,4 @@
+debug/addvaluestoroutine.o
 debug/coordinatordash.o
 debug/crdash.o
 debug/forgotpassword.o
@@ -10,6 +11,7 @@ debug/signupdialog.o
 debug/signupsuccessful.o
 debug/teacherdash.o
 debug/uploadroutine.o
+debug/moc_addvaluestoroutine.o
 debug/moc_coordinatordash.o
 debug/moc_crdash.o
 debug/moc_forgotpassword.o
