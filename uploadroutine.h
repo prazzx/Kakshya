@@ -18,7 +18,7 @@ public:
     ~UploadRoutine();
 
 private slots:
-    void on_pushButtonUpload_clicked();
+
 
     void on_pushButton11_clicked();
     void on_pushButton12_clicked();

@@ -2,6 +2,13 @@
 #define CRDASH_H
 
 #include <QDialog>
+#include <QDialog>
+#include <QDateTime>
+#include <QTimer>
+#include <QWidget>
+#include <QSqlDatabase>
+#include <QSqlQuery>
+#include <QSqlError>
 
 namespace Ui {
 class crdash;
@@ -17,9 +24,11 @@ public:
 
 private slots:
     void on_pushButton_2_clicked();
+    void StatusReveal();
 
 private:
     Ui::crdash *ui;
+    bool connectToDatabase();
 };
 
 #endif // CRDASH_H

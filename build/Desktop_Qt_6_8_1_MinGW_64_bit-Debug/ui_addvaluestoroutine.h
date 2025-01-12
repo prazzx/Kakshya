@@ -25,11 +25,10 @@ class Ui_Addvaluestoroutine
 public:
     QPushButton *pushButtonAdd;
     QPushButton *pushButtonNo;
-    QWidget *widget;
+    QWidget *layoutWidget;
     QHBoxLayout *horizontalLayout;
-    QLineEdit *lineEditscode;
     QLineEdit *lineEditrno;
-    QWidget *widget1;
+    QWidget *layoutWidget1;
     QVBoxLayout *verticalLayout;
     QLineEdit *lineEditsname;
     QLineEdit *lineEdittname;
@@ -45,34 +44,29 @@ public:
         pushButtonNo = new QPushButton(Addvaluestoroutine);
         pushButtonNo->setObjectName("pushButtonNo");
         pushButtonNo->setGeometry(QRect(190, 290, 291, 71));
-        widget = new QWidget(Addvaluestoroutine);
-        widget->setObjectName("widget");
-        widget->setGeometry(QRect(188, 69, 281, 51));
-        horizontalLayout = new QHBoxLayout(widget);
+        layoutWidget = new QWidget(Addvaluestoroutine);
+        layoutWidget->setObjectName("layoutWidget");
+        layoutWidget->setGeometry(QRect(188, 69, 281, 51));
+        horizontalLayout = new QHBoxLayout(layoutWidget);
         horizontalLayout->setObjectName("horizontalLayout");
         horizontalLayout->setContentsMargins(0, 0, 0, 0);
-        lineEditscode = new QLineEdit(widget);
-        lineEditscode->setObjectName("lineEditscode");
-
-        horizontalLayout->addWidget(lineEditscode);
-
-        lineEditrno = new QLineEdit(widget);
+        lineEditrno = new QLineEdit(layoutWidget);
         lineEditrno->setObjectName("lineEditrno");
 
         horizontalLayout->addWidget(lineEditrno);
 
-        widget1 = new QWidget(Addvaluestoroutine);
-        widget1->setObjectName("widget1");
-        widget1->setGeometry(QRect(190, 130, 281, 111));
-        verticalLayout = new QVBoxLayout(widget1);
+        layoutWidget1 = new QWidget(Addvaluestoroutine);
+        layoutWidget1->setObjectName("layoutWidget1");
+        layoutWidget1->setGeometry(QRect(190, 130, 281, 111));
+        verticalLayout = new QVBoxLayout(layoutWidget1);
         verticalLayout->setObjectName("verticalLayout");
         verticalLayout->setContentsMargins(0, 0, 0, 0);
-        lineEditsname = new QLineEdit(widget1);
+        lineEditsname = new QLineEdit(layoutWidget1);
         lineEditsname->setObjectName("lineEditsname");
 
         verticalLayout->addWidget(lineEditsname);
 
-        lineEdittname = new QLineEdit(widget1);
+        lineEdittname = new QLineEdit(layoutWidget1);
         lineEdittname->setObjectName("lineEdittname");
 
         verticalLayout->addWidget(lineEdittname);
@@ -88,7 +82,6 @@ public:
         Addvaluestoroutine->setWindowTitle(QCoreApplication::translate("Addvaluestoroutine", "Dialog", nullptr));
         pushButtonAdd->setText(QCoreApplication::translate("Addvaluestoroutine", "Add", nullptr));
         pushButtonNo->setText(QCoreApplication::translate("Addvaluestoroutine", "Click here if there is no class in this time", nullptr));
-        lineEditscode->setPlaceholderText(QCoreApplication::translate("Addvaluestoroutine", "Enter subject code", nullptr));
         lineEditrno->setPlaceholderText(QCoreApplication::translate("Addvaluestoroutine", "Enter room no.", nullptr));
         lineEditsname->setPlaceholderText(QCoreApplication::translate("Addvaluestoroutine", "Enter subject name", nullptr));
         lineEdittname->setPlaceholderText(QCoreApplication::translate("Addvaluestoroutine", "Enter teacher's name", nullptr));

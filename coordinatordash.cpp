@@ -82,7 +82,7 @@ void coordinatordash::updateColorbox()
         QTime currentTime = QTime::currentTime();
         QString currentDay = QDateTime::currentDateTime().toString("dddd");
 
-        // Iterate through each table
+
         for (const QString &table : tables) {
             QSqlQuery query;
             query.prepare(QString("SELECT time_slot, room FROM %1 WHERE day = :day").arg(table));
