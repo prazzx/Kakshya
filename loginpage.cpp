@@ -15,10 +15,10 @@ LoginPage::LoginPage(QWidget *parent) :
     ui(new Ui::LoginPage)
 {
     ui->setupUi(this);
-    QPixmap pic(":/resources/resources/logo.jpg");
+    QPixmap pic(":/resources/resources/Kakshya_trans.png");
     int h= ui->logo->height();
     int  w = ui->logo ->width();
-    ui->logo->setPixmap(pic.scaled(h,w,Qt::KeepAspectRatio));
+    ui->logo->setPixmap(pic.scaled(h,w,Qt::KeepAspectRatio,Qt::SmoothTransformation));
 }
 
 LoginPage::~LoginPage()

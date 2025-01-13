@@ -16,20 +16,20 @@
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>20</x>
-     <y>10</y>
-     <width>171</width>
+     <x>170</x>
+     <y>20</y>
+     <width>221</width>
      <height>81</height>
     </rect>
    </property>
    <property name="text">
-    <string>Coordinator</string>
+    <string>Logged in as coordinator</string>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButtonUpload">
    <property name="geometry">
     <rect>
-     <x>210</x>
+     <x>800</x>
      <y>20</y>
      <width>141</width>
      <height>51</height>
@@ -37,6 +37,55 @@
    </property>
    <property name="text">
     <string>Upload Routine</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>950</x>
+     <y>20</y>
+     <width>121</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>logout</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="logo">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>141</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QDateTimeEdit" name="dateTimeEdit">
+   <property name="geometry">
+    <rect>
+     <x>863</x>
+     <y>110</y>
+     <width>211</width>
+     <height>51</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>110</y>
+     <width>321</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>                             Dashboard</string>
    </property>
   </widget>
  </widget>
