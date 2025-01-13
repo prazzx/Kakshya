@@ -78,6 +78,19 @@
     <string>Add</string>
    </property>
   </widget>
+  <widget class="QPushButton" name="pushButtonNo">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>230</y>
+     <width>271</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Click here if there is no class in this designated time</string>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>

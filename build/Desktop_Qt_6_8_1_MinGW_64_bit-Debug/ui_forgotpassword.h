@@ -12,45 +12,76 @@
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QDialog>
+#include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QPushButton>
+#include <QtWidgets/QVBoxLayout>
+#include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
 
 class Ui_Forgotpassword
 {
 public:
+    QWidget *widget;
+    QHBoxLayout *horizontalLayout;
+    QLabel *labelMessage;
+    QPushButton *pushButtonChangepassword;
+    QWidget *widget1;
+    QVBoxLayout *verticalLayout;
     QLineEdit *lineEditEmail;
     QLineEdit *lineEditPhone;
     QLineEdit *lineEditNewpassword;
     QLineEdit *lineEditConfirmpassword;
-    QPushButton *pushButtonChangepassword;
-    QLabel *labelMessage;
 
     void setupUi(QDialog *Forgotpassword)
     {
         if (Forgotpassword->objectName().isEmpty())
             Forgotpassword->setObjectName("Forgotpassword");
         Forgotpassword->resize(800, 600);
-        lineEditEmail = new QLineEdit(Forgotpassword);
-        lineEditEmail->setObjectName("lineEditEmail");
-        lineEditEmail->setGeometry(QRect(292, 210, 201, 20));
-        lineEditPhone = new QLineEdit(Forgotpassword);
-        lineEditPhone->setObjectName("lineEditPhone");
-        lineEditPhone->setGeometry(QRect(292, 240, 201, 20));
-        lineEditNewpassword = new QLineEdit(Forgotpassword);
-        lineEditNewpassword->setObjectName("lineEditNewpassword");
-        lineEditNewpassword->setGeometry(QRect(292, 270, 201, 20));
-        lineEditConfirmpassword = new QLineEdit(Forgotpassword);
-        lineEditConfirmpassword->setObjectName("lineEditConfirmpassword");
-        lineEditConfirmpassword->setGeometry(QRect(292, 300, 201, 20));
-        pushButtonChangepassword = new QPushButton(Forgotpassword);
-        pushButtonChangepassword->setObjectName("pushButtonChangepassword");
-        pushButtonChangepassword->setGeometry(QRect(350, 330, 101, 31));
-        labelMessage = new QLabel(Forgotpassword);
+        widget = new QWidget(Forgotpassword);
+        widget->setObjectName("widget");
+        widget->setGeometry(QRect(330, 330, 140, 31));
+        horizontalLayout = new QHBoxLayout(widget);
+        horizontalLayout->setObjectName("horizontalLayout");
+        horizontalLayout->setContentsMargins(0, 0, 0, 0);
+        labelMessage = new QLabel(widget);
         labelMessage->setObjectName("labelMessage");
-        labelMessage->setGeometry(QRect(330, 370, 131, 41));
+
+        horizontalLayout->addWidget(labelMessage);
+
+        pushButtonChangepassword = new QPushButton(widget);
+        pushButtonChangepassword->setObjectName("pushButtonChangepassword");
+
+        horizontalLayout->addWidget(pushButtonChangepassword);
+
+        widget1 = new QWidget(Forgotpassword);
+        widget1->setObjectName("widget1");
+        widget1->setGeometry(QRect(250, 130, 301, 191));
+        verticalLayout = new QVBoxLayout(widget1);
+        verticalLayout->setObjectName("verticalLayout");
+        verticalLayout->setContentsMargins(0, 0, 0, 0);
+        lineEditEmail = new QLineEdit(widget1);
+        lineEditEmail->setObjectName("lineEditEmail");
+
+        verticalLayout->addWidget(lineEditEmail);
+
+        lineEditPhone = new QLineEdit(widget1);
+        lineEditPhone->setObjectName("lineEditPhone");
+
+        verticalLayout->addWidget(lineEditPhone);
+
+        lineEditNewpassword = new QLineEdit(widget1);
+        lineEditNewpassword->setObjectName("lineEditNewpassword");
+
+        verticalLayout->addWidget(lineEditNewpassword);
+
+        lineEditConfirmpassword = new QLineEdit(widget1);
+        lineEditConfirmpassword->setObjectName("lineEditConfirmpassword");
+
+        verticalLayout->addWidget(lineEditConfirmpassword);
+
 
         retranslateUi(Forgotpassword);
 
@@ -60,12 +91,12 @@ public:
     void retranslateUi(QDialog *Forgotpassword)
     {
         Forgotpassword->setWindowTitle(QCoreApplication::translate("Forgotpassword", "Dialog", nullptr));
+        labelMessage->setText(QString());
+        pushButtonChangepassword->setText(QCoreApplication::translate("Forgotpassword", "Change Password", nullptr));
         lineEditEmail->setPlaceholderText(QCoreApplication::translate("Forgotpassword", "Enter your email", nullptr));
         lineEditPhone->setPlaceholderText(QCoreApplication::translate("Forgotpassword", "Enter your phone number", nullptr));
         lineEditNewpassword->setPlaceholderText(QCoreApplication::translate("Forgotpassword", "New Password", nullptr));
         lineEditConfirmpassword->setPlaceholderText(QCoreApplication::translate("Forgotpassword", "Confirm New Password", nullptr));
-        pushButtonChangepassword->setText(QCoreApplication::translate("Forgotpassword", "Change Password", nullptr));
-        labelMessage->setText(QString());
     } // retranslateUi
 
 };

@@ -10,6 +10,7 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    addedsuccessfully.cpp \
     addvaluestoroutine.cpp \
     coordinatordash.cpp \
     crdash.cpp \
@@ -25,6 +26,7 @@ SOURCES += \
     uploadroutine.cpp
 
 HEADERS += \
+    addedsuccessfully.h \
     addvaluestoroutine.h \
     coordinatordash.h \
     crdash.h \
@@ -39,6 +41,7 @@ HEADERS += \
     uploadroutine.h
 
 FORMS += \
+    addedsuccessfully.ui \
     addvaluestoroutine.ui \
     coordinatordash.ui \
     crdash.ui \
@@ -55,3 +58,6 @@ FORMS += \
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+RESOURCES += \
+    Resources.qrc

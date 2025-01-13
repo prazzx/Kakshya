@@ -9,11 +9,16 @@
 #include <QSqlQuery>
 #include <QSqlError>
 #include <QMessageBox>
+#include<QPixmap>
 LoginPage::LoginPage(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::LoginPage)
 {
     ui->setupUi(this);
+    QPixmap pic(":/resources/resources/logo.jpg");
+    int h= ui->logo->height();
+    int  w = ui->logo ->width();
+    ui->logo->setPixmap(pic.scaled(h,w,Qt::KeepAspectRatio));
 }
 
 LoginPage::~LoginPage()

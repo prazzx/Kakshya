@@ -25,6 +25,7 @@ public:
     QLineEdit *lineEdittname;
     QLineEdit *lineEditrno;
     QPushButton *pushButtonAdd;
+    QPushButton *pushButtonNo;
 
     void setupUi(QDialog *Addvaluestoroutine)
     {
@@ -46,6 +47,9 @@ public:
         pushButtonAdd = new QPushButton(Addvaluestoroutine);
         pushButtonAdd->setObjectName("pushButtonAdd");
         pushButtonAdd->setGeometry(QRect(170, 200, 80, 18));
+        pushButtonNo = new QPushButton(Addvaluestoroutine);
+        pushButtonNo->setObjectName("pushButtonNo");
+        pushButtonNo->setGeometry(QRect(70, 230, 271, 21));
 
         retranslateUi(Addvaluestoroutine);
 
@@ -60,6 +64,7 @@ public:
         lineEdittname->setPlaceholderText(QCoreApplication::translate("Addvaluestoroutine", "Enter teacher's name", nullptr));
         lineEditrno->setPlaceholderText(QCoreApplication::translate("Addvaluestoroutine", "Enter room no.", nullptr));
         pushButtonAdd->setText(QCoreApplication::translate("Addvaluestoroutine", "Add", nullptr));
+        pushButtonNo->setText(QCoreApplication::translate("Addvaluestoroutine", "Click here if there is no class in this designated time", nullptr));
     } // retranslateUi
 
 };
