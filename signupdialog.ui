@@ -13,147 +13,131 @@
   <property name="windowTitle">
    <string>Signup Page</string>
   </property>
-  <widget class="QWidget" name="verticalLayoutWidget">
+  <widget class="QWidget" name="">
    <property name="geometry">
     <rect>
-     <x>570</x>
-     <y>280</y>
-     <width>231</width>
-     <height>121</height>
+     <x>500</x>
+     <y>150</y>
+     <width>258</width>
+     <height>28</height>
     </rect>
    </property>
-   <layout class="QVBoxLayout" name="verticalLayout">
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
     <item>
-     <widget class="QLineEdit" name="lineEditEmail">
+     <widget class="QRadioButton" name="radioButtonCR">
       <property name="text">
-       <string/>
+       <string>CR</string>
       </property>
-      <property name="placeholderText">
-       <string>Email</string>
-      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">buttonGroup</string>
+      </attribute>
      </widget>
     </item>
     <item>
-     <widget class="QLineEdit" name="lineEditPassword">
+     <widget class="QRadioButton" name="radioButtonCoordinator">
       <property name="text">
-       <string/>
+       <string>Co-ordinator</string>
       </property>
-      <property name="echoMode">
-       <enum>QLineEdit::EchoMode::Password</enum>
-      </property>
-      <property name="placeholderText">
-       <string>Password</string>
-      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">buttonGroup</string>
+      </attribute>
      </widget>
     </item>
     <item>
-     <widget class="QLineEdit" name="lineEditConfirmpassword">
-      <property name="echoMode">
-       <enum>QLineEdit::EchoMode::Password</enum>
-      </property>
-      <property name="placeholderText">
-       <string>Confirm password</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QPushButton" name="pushButtonSignUp">
+     <widget class="QRadioButton" name="radioButtonTeacher">
       <property name="text">
-       <string>Sign up</string>
+       <string>Teacher</string>
       </property>
+      <attribute name="buttonGroup">
+       <string notr="true">buttonGroup</string>
+      </attribute>
      </widget>
     </item>
    </layout>
   </widget>
-  <widget class="QWidget" name="horizontalLayoutWidget">
+  <widget class="QWidget" name="">
    <property name="geometry">
     <rect>
-     <x>570</x>
-     <y>250</y>
-     <width>231</width>
-     <height>31</height>
+     <x>500</x>
+     <y>180</y>
+     <width>261</width>
+     <height>202</height>
     </rect>
    </property>
-   <layout class="QHBoxLayout" name="horizontalLayout">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
     <item>
-     <widget class="QLineEdit" name="lineEditName">
+     <widget class="QLabel" name="labelMessage">
       <property name="text">
        <string/>
       </property>
-      <property name="placeholderText">
-       <string>Name</string>
-      </property>
      </widget>
     </item>
     <item>
-     <widget class="QLineEdit" name="lineEditPhone">
-      <property name="placeholderText">
-       <string>Phone</string>
-      </property>
-     </widget>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLineEdit" name="lineEditName">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="placeholderText">
+         <string>Name</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEditPhone">
+        <property name="placeholderText">
+         <string>Phone</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLineEdit" name="lineEditEmail">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="placeholderText">
+         <string>Email</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEditPassword">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="echoMode">
+         <enum>QLineEdit::EchoMode::Password</enum>
+        </property>
+        <property name="placeholderText">
+         <string>Password</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEditConfirmpassword">
+        <property name="echoMode">
+         <enum>QLineEdit::EchoMode::Password</enum>
+        </property>
+        <property name="placeholderText">
+         <string>Confirm password</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButtonSignUp">
+        <property name="text">
+         <string>Sign up</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
     </item>
    </layout>
-  </widget>
-  <widget class="QLabel" name="labelMessage">
-   <property name="geometry">
-    <rect>
-     <x>600</x>
-     <y>410</y>
-     <width>171</width>
-     <height>81</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-  </widget>
-  <widget class="QRadioButton" name="radioButtonTeacher">
-   <property name="geometry">
-    <rect>
-     <x>570</x>
-     <y>220</y>
-     <width>69</width>
-     <height>18</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Teacher</string>
-   </property>
-   <attribute name="buttonGroup">
-    <string notr="true">buttonGroup</string>
-   </attribute>
-  </widget>
-  <widget class="QRadioButton" name="radioButtonCoordinator">
-   <property name="geometry">
-    <rect>
-     <x>650</x>
-     <y>220</y>
-     <width>69</width>
-     <height>18</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Co-ordinator</string>
-   </property>
-   <attribute name="buttonGroup">
-    <string notr="true">buttonGroup</string>
-   </attribute>
-  </widget>
-  <widget class="QRadioButton" name="radioButtonCR">
-   <property name="geometry">
-    <rect>
-     <x>730</x>
-     <y>220</y>
-     <width>69</width>
-     <height>18</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>CR</string>
-   </property>
-   <attribute name="buttonGroup">
-    <string notr="true">buttonGroup</string>
-   </attribute>
   </widget>
  </widget>
  <resources/>

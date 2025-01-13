@@ -11,6 +11,7 @@ debug/signupdialog.o
 debug/signupsuccessful.o
 debug/teacherdash.o
 debug/uploadroutine.o
+debug/qrc_Resources.o
 debug/moc_addvaluestoroutine.o
 debug/moc_coordinatordash.o
 debug/moc_crdash.o
