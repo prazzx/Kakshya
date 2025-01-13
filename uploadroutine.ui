@@ -95,7 +95,7 @@
      <x>140</x>
      <y>110</y>
      <width>151</width>
-     <height>171</height>
+     <height>151</height>
     </rect>
    </property>
    <layout class="QFormLayout" name="formLayout">
@@ -126,52 +126,17 @@
       </property>
      </widget>
     </item>
-    <item row="2" column="0">
-     <widget class="QLabel" name="label_4">
-      <property name="text">
-       <string>Monday</string>
-      </property>
-     </widget>
-    </item>
-    <item row="3" column="0">
-     <widget class="QLabel" name="label_5">
-      <property name="text">
-       <string>Tuesday</string>
-      </property>
-     </widget>
-    </item>
-    <item row="4" column="0">
-     <widget class="QLabel" name="label_6">
-      <property name="text">
-       <string>Wednesday</string>
-      </property>
-     </widget>
-    </item>
-    <item row="5" column="0">
-     <widget class="QLabel" name="label_7">
-      <property name="text">
-       <string>Thursday</string>
-      </property>
-     </widget>
-    </item>
-    <item row="6" column="0">
-     <widget class="QLabel" name="label_8">
-      <property name="text">
-       <string>Friday</string>
-      </property>
-     </widget>
-    </item>
-    <item row="7" column="0">
-     <widget class="QLabel" name="label_9">
-      <property name="text">
-       <string>Saturday</string>
-      </property>
-     </widget>
-    </item>
     <item row="1" column="1">
      <widget class="QPushButton" name="pushButton11">
       <property name="text">
        <string>Add</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="label_4">
+      <property name="text">
+       <string>Monday</string>
       </property>
      </widget>
     </item>
@@ -182,10 +147,24 @@
       </property>
      </widget>
     </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="label_5">
+      <property name="text">
+       <string>Tuesday</string>
+      </property>
+     </widget>
+    </item>
     <item row="3" column="1">
      <widget class="QPushButton" name="pushButton13">
       <property name="text">
        <string>Add</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="label_6">
+      <property name="text">
+       <string>Wednesday</string>
       </property>
      </widget>
     </item>
@@ -196,6 +175,13 @@
       </property>
      </widget>
     </item>
+    <item row="5" column="0">
+     <widget class="QLabel" name="label_7">
+      <property name="text">
+       <string>Thursday</string>
+      </property>
+     </widget>
+    </item>
     <item row="5" column="1">
      <widget class="QPushButton" name="pushButton15">
       <property name="text">
@@ -203,15 +189,15 @@
       </property>
      </widget>
     </item>
-    <item row="6" column="1">
-     <widget class="QPushButton" name="pushButton16">
+    <item row="6" column="0">
+     <widget class="QLabel" name="label_8">
       <property name="text">
-       <string>Add</string>
+       <string>Friday</string>
       </property>
      </widget>
     </item>
-    <item row="7" column="1">
-     <widget class="QPushButton" name="pushButton17">
+    <item row="6" column="1">
+     <widget class="QPushButton" name="pushButton16">
       <property name="text">
        <string>Add</string>
       </property>
@@ -225,7 +211,7 @@
      <x>290</x>
      <y>110</y>
      <width>111</width>
-     <height>171</height>
+     <height>151</height>
     </rect>
    </property>
    <layout class="QFormLayout" name="formLayout_2">
@@ -284,13 +270,6 @@
       </property>
      </widget>
     </item>
-    <item row="7" column="1">
-     <widget class="QPushButton" name="pushButton27">
-      <property name="text">
-       <string>Add</string>
-      </property>
-     </widget>
-    </item>
    </layout>
   </widget>
   <widget class="QWidget" name="formLayoutWidget_3">
@@ -299,7 +278,7 @@
      <x>400</x>
      <y>110</y>
      <width>111</width>
-     <height>171</height>
+     <height>151</height>
     </rect>
    </property>
    <layout class="QFormLayout" name="formLayout_3">
@@ -353,13 +332,6 @@
     </item>
     <item row="6" column="1">
      <widget class="QPushButton" name="pushButton36">
-      <property name="text">
-       <string>Add</string>
-      </property>
-     </widget>
-    </item>
-    <item row="7" column="1">
-     <widget class="QPushButton" name="pushButton37">
       <property name="text">
        <string>Add</string>
       </property>

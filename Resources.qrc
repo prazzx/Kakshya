@@ -1,5 +1,6 @@
 <RCC>
     <qresource prefix="/resources">
         <file>resources/logo.jpg</file>
+        <file>resources/Kakshya_trans.png</file>
     </qresource>
 </RCC>
