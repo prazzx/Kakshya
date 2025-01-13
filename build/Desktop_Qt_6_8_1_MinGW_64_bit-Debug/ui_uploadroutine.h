@@ -254,13 +254,13 @@ public:
     {
         UploadRoutine->setWindowTitle(QCoreApplication::translate("UploadRoutine", "Dialog", nullptr));
         comboBoxSelect->setItemText(0, QCoreApplication::translate("UploadRoutine", "BIT", nullptr));
-        comboBoxSelect->setItemText(1, QCoreApplication::translate("UploadRoutine", "CE(I/I)", nullptr));
-        comboBoxSelect->setItemText(2, QCoreApplication::translate("UploadRoutine", "CE(I/II)", nullptr));
-        comboBoxSelect->setItemText(3, QCoreApplication::translate("UploadRoutine", "CE(II/I)", nullptr));
-        comboBoxSelect->setItemText(4, QCoreApplication::translate("UploadRoutine", "CE(II/II)", nullptr));
-        comboBoxSelect->setItemText(5, QCoreApplication::translate("UploadRoutine", "CE(III/I)", nullptr));
-        comboBoxSelect->setItemText(6, QCoreApplication::translate("UploadRoutine", "CE(III/II)", nullptr));
-        comboBoxSelect->setItemText(7, QCoreApplication::translate("UploadRoutine", "CE(IV/I)", nullptr));
+        comboBoxSelect->setItemText(1, QCoreApplication::translate("UploadRoutine", "CEI_I", nullptr));
+        comboBoxSelect->setItemText(2, QCoreApplication::translate("UploadRoutine", "CEI_II", nullptr));
+        comboBoxSelect->setItemText(3, QCoreApplication::translate("UploadRoutine", "CEII_I", nullptr));
+        comboBoxSelect->setItemText(4, QCoreApplication::translate("UploadRoutine", "CEII_II", nullptr));
+        comboBoxSelect->setItemText(5, QCoreApplication::translate("UploadRoutine", "CEIII_I", nullptr));
+        comboBoxSelect->setItemText(6, QCoreApplication::translate("UploadRoutine", "CEIII_II", nullptr));
+        comboBoxSelect->setItemText(7, QCoreApplication::translate("UploadRoutine", "CEIV_I", nullptr));
 
         pushButtonUpload->setText(QCoreApplication::translate("UploadRoutine", "Upload Routine", nullptr));
         labelMessage->setText(QString());

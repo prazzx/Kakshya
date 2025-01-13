@@ -2,6 +2,9 @@
 #define COORDINATORDASH_H
 
 #include <QDialog>
+#include <QDateTime>
+#include <QTimer>
+#include <QWidget>
 #include "uploadroutine.h"
 
 namespace Ui {
@@ -15,9 +18,13 @@ class coordinatordash : public QDialog
 public:
     explicit coordinatordash(QWidget *parent = nullptr);
     ~coordinatordash();
+    QTimer *timer;
+
+
 
 private slots:
     void on_pushButtonUpload_clicked();
+    void updateColorbox();
 
 private:
     Ui::coordinatordash *ui;

@@ -78,12 +78,12 @@ void Addvaluestoroutine::on_pushButtonNo_clicked()
     query.prepare(QString("INSERT INTO %1 (day,time_slot,subject_code,subject_name,instructor,room) "
                           "VALUES (:day, :timeslot, :scode, :sname, :tname, :rno)")
                       .arg(selectedvalue));
-    query.bindValue(":day", QVariant());
-    query.bindValue(":timeslot",  QVariant());
-    query.bindValue(":scode",  QVariant());
-    query.bindValue(":sname",  QVariant());
-    query.bindValue(":tname",  QVariant());
-    query.bindValue(":rno",  QVariant());
+    query.bindValue(":day","");
+    query.bindValue(":timeslot",  "");
+    query.bindValue(":scode",  "");
+    query.bindValue(":sname", "");
+    query.bindValue(":tname",  "");
+    query.bindValue(":rno",  "");
     if(query.exec()){
         close();
         ads = new addedsuccessfully(this);

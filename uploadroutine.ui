@@ -29,37 +29,37 @@
    </item>
    <item>
     <property name="text">
-     <string>CE(I/I)</string>
+     <string>CEI_I</string>
     </property>
    </item>
    <item>
     <property name="text">
-     <string>CE(I/II)</string>
+     <string>CEI_II</string>
     </property>
    </item>
    <item>
     <property name="text">
-     <string>CE(II/I)</string>
+     <string>CEII_I</string>
     </property>
    </item>
    <item>
     <property name="text">
-     <string>CE(II/II)</string>
+     <string>CEII_II</string>
     </property>
    </item>
    <item>
     <property name="text">
-     <string>CE(III/I)</string>
+     <string>CEIII_I</string>
     </property>
    </item>
    <item>
     <property name="text">
-     <string>CE(III/II)</string>
+     <string>CEIII_II</string>
     </property>
    </item>
    <item>
     <property name="text">
-     <string>CE(IV/I)</string>
+     <string>CEIV_I</string>
     </property>
    </item>
   </widget>

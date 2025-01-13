@@ -11,8 +11,8 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
-#include <QtWidgets/QDateTimeEdit>
 #include <QtWidgets/QDialog>
+#include <QtWidgets/QFrame>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QPushButton>
 
@@ -25,8 +25,9 @@ public:
     QPushButton *pushButtonUpload;
     QPushButton *pushButton;
     QLabel *logo;
-    QDateTimeEdit *dateTimeEdit;
     QLabel *label_2;
+    QFrame *frame1;
+    QLabel *labelTime;
 
     void setupUi(QDialog *coordinatordash)
     {
@@ -45,12 +46,17 @@ public:
         logo = new QLabel(coordinatordash);
         logo->setObjectName("logo");
         logo->setGeometry(QRect(20, 20, 141, 91));
-        dateTimeEdit = new QDateTimeEdit(coordinatordash);
-        dateTimeEdit->setObjectName("dateTimeEdit");
-        dateTimeEdit->setGeometry(QRect(863, 110, 211, 51));
         label_2 = new QLabel(coordinatordash);
         label_2->setObjectName("label_2");
         label_2->setGeometry(QRect(380, 110, 321, 61));
+        frame1 = new QFrame(coordinatordash);
+        frame1->setObjectName("frame1");
+        frame1->setGeometry(QRect(160, 200, 120, 80));
+        frame1->setFrameShape(QFrame::Shape::StyledPanel);
+        frame1->setFrameShadow(QFrame::Shadow::Raised);
+        labelTime = new QLabel(coordinatordash);
+        labelTime->setObjectName("labelTime");
+        labelTime->setGeometry(QRect(826, 120, 231, 51));
 
         retranslateUi(coordinatordash);
 
@@ -65,6 +71,7 @@ public:
         pushButton->setText(QCoreApplication::translate("coordinatordash", "logout", nullptr));
         logo->setText(QString());
         label_2->setText(QCoreApplication::translate("coordinatordash", "                             Dashboard", nullptr));
+        labelTime->setText(QString());
     } // retranslateUi
 
 };

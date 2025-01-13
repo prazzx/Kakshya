@@ -49,7 +49,7 @@ public:
         pushButtonAdd->setGeometry(QRect(170, 200, 80, 18));
         pushButtonNo = new QPushButton(Addvaluestoroutine);
         pushButtonNo->setObjectName("pushButtonNo");
-        pushButtonNo->setGeometry(QRect(70, 230, 271, 21));
+        pushButtonNo->setGeometry(QRect(50, 230, 311, 31));
 
         retranslateUi(Addvaluestoroutine);
 
