@@ -26,20 +26,22 @@ QT_BEGIN_NAMESPACE
 class Ui_SignupDialog
 {
 public:
-    QWidget *verticalLayoutWidget;
+    QWidget *widget;
+    QHBoxLayout *horizontalLayout_2;
+    QRadioButton *radioButtonCR;
+    QRadioButton *radioButtonCoordinator;
+    QRadioButton *radioButtonTeacher;
+    QWidget *widget1;
+    QVBoxLayout *verticalLayout_2;
+    QLabel *labelMessage;
+    QHBoxLayout *horizontalLayout;
+    QLineEdit *lineEditName;
+    QLineEdit *lineEditPhone;
     QVBoxLayout *verticalLayout;
     QLineEdit *lineEditEmail;
     QLineEdit *lineEditPassword;
     QLineEdit *lineEditConfirmpassword;
     QPushButton *pushButtonSignUp;
-    QWidget *horizontalLayoutWidget;
-    QHBoxLayout *horizontalLayout;
-    QLineEdit *lineEditName;
-    QLineEdit *lineEditPhone;
-    QLabel *labelMessage;
-    QRadioButton *radioButtonTeacher;
-    QRadioButton *radioButtonCoordinator;
-    QRadioButton *radioButtonCR;
     QButtonGroup *buttonGroup;
 
     void setupUi(QDialog *SignupDialog)
@@ -47,67 +49,85 @@ public:
         if (SignupDialog->objectName().isEmpty())
             SignupDialog->setObjectName("SignupDialog");
         SignupDialog->resize(1200, 900);
-        verticalLayoutWidget = new QWidget(SignupDialog);
-        verticalLayoutWidget->setObjectName("verticalLayoutWidget");
-        verticalLayoutWidget->setGeometry(QRect(570, 280, 231, 121));
-        verticalLayout = new QVBoxLayout(verticalLayoutWidget);
+        widget = new QWidget(SignupDialog);
+        widget->setObjectName("widget");
+        widget->setGeometry(QRect(500, 150, 258, 28));
+        horizontalLayout_2 = new QHBoxLayout(widget);
+        horizontalLayout_2->setObjectName("horizontalLayout_2");
+        horizontalLayout_2->setContentsMargins(0, 0, 0, 0);
+        radioButtonCR = new QRadioButton(widget);
+        buttonGroup = new QButtonGroup(SignupDialog);
+        buttonGroup->setObjectName("buttonGroup");
+        buttonGroup->addButton(radioButtonCR);
+        radioButtonCR->setObjectName("radioButtonCR");
+
+        horizontalLayout_2->addWidget(radioButtonCR);
+
+        radioButtonCoordinator = new QRadioButton(widget);
+        buttonGroup->addButton(radioButtonCoordinator);
+        radioButtonCoordinator->setObjectName("radioButtonCoordinator");
+
+        horizontalLayout_2->addWidget(radioButtonCoordinator);
+
+        radioButtonTeacher = new QRadioButton(widget);
+        buttonGroup->addButton(radioButtonTeacher);
+        radioButtonTeacher->setObjectName("radioButtonTeacher");
+
+        horizontalLayout_2->addWidget(radioButtonTeacher);
+
+        widget1 = new QWidget(SignupDialog);
+        widget1->setObjectName("widget1");
+        widget1->setGeometry(QRect(500, 180, 261, 202));
+        verticalLayout_2 = new QVBoxLayout(widget1);
+        verticalLayout_2->setObjectName("verticalLayout_2");
+        verticalLayout_2->setContentsMargins(0, 0, 0, 0);
+        labelMessage = new QLabel(widget1);
+        labelMessage->setObjectName("labelMessage");
+
+        verticalLayout_2->addWidget(labelMessage);
+
+        horizontalLayout = new QHBoxLayout();
+        horizontalLayout->setObjectName("horizontalLayout");
+        lineEditName = new QLineEdit(widget1);
+        lineEditName->setObjectName("lineEditName");
+
+        horizontalLayout->addWidget(lineEditName);
+
+        lineEditPhone = new QLineEdit(widget1);
+        lineEditPhone->setObjectName("lineEditPhone");
+
+        horizontalLayout->addWidget(lineEditPhone);
+
+
+        verticalLayout_2->addLayout(horizontalLayout);
+
+        verticalLayout = new QVBoxLayout();
         verticalLayout->setObjectName("verticalLayout");
-        verticalLayout->setContentsMargins(0, 0, 0, 0);
-        lineEditEmail = new QLineEdit(verticalLayoutWidget);
+        lineEditEmail = new QLineEdit(widget1);
         lineEditEmail->setObjectName("lineEditEmail");
 
         verticalLayout->addWidget(lineEditEmail);
 
-        lineEditPassword = new QLineEdit(verticalLayoutWidget);
+        lineEditPassword = new QLineEdit(widget1);
         lineEditPassword->setObjectName("lineEditPassword");
         lineEditPassword->setEchoMode(QLineEdit::EchoMode::Password);
 
         verticalLayout->addWidget(lineEditPassword);
 
-        lineEditConfirmpassword = new QLineEdit(verticalLayoutWidget);
+        lineEditConfirmpassword = new QLineEdit(widget1);
         lineEditConfirmpassword->setObjectName("lineEditConfirmpassword");
         lineEditConfirmpassword->setEchoMode(QLineEdit::EchoMode::Password);
 
         verticalLayout->addWidget(lineEditConfirmpassword);
 
-        pushButtonSignUp = new QPushButton(verticalLayoutWidget);
+        pushButtonSignUp = new QPushButton(widget1);
         pushButtonSignUp->setObjectName("pushButtonSignUp");
 
         verticalLayout->addWidget(pushButtonSignUp);
 
-        horizontalLayoutWidget = new QWidget(SignupDialog);
-        horizontalLayoutWidget->setObjectName("horizontalLayoutWidget");
-        horizontalLayoutWidget->setGeometry(QRect(570, 250, 231, 31));
-        horizontalLayout = new QHBoxLayout(horizontalLayoutWidget);
-        horizontalLayout->setObjectName("horizontalLayout");
-        horizontalLayout->setContentsMargins(0, 0, 0, 0);
-        lineEditName = new QLineEdit(horizontalLayoutWidget);
-        lineEditName->setObjectName("lineEditName");
 
-        horizontalLayout->addWidget(lineEditName);
+        verticalLayout_2->addLayout(verticalLayout);
 
-        lineEditPhone = new QLineEdit(horizontalLayoutWidget);
-        lineEditPhone->setObjectName("lineEditPhone");
-
-        horizontalLayout->addWidget(lineEditPhone);
-
-        labelMessage = new QLabel(SignupDialog);
-        labelMessage->setObjectName("labelMessage");
-        labelMessage->setGeometry(QRect(600, 410, 171, 81));
-        radioButtonTeacher = new QRadioButton(SignupDialog);
-        buttonGroup = new QButtonGroup(SignupDialog);
-        buttonGroup->setObjectName("buttonGroup");
-        buttonGroup->addButton(radioButtonTeacher);
-        radioButtonTeacher->setObjectName("radioButtonTeacher");
-        radioButtonTeacher->setGeometry(QRect(570, 220, 69, 18));
-        radioButtonCoordinator = new QRadioButton(SignupDialog);
-        buttonGroup->addButton(radioButtonCoordinator);
-        radioButtonCoordinator->setObjectName("radioButtonCoordinator");
-        radioButtonCoordinator->setGeometry(QRect(650, 220, 69, 18));
-        radioButtonCR = new QRadioButton(SignupDialog);
-        buttonGroup->addButton(radioButtonCR);
-        radioButtonCR->setObjectName("radioButtonCR");
-        radioButtonCR->setGeometry(QRect(730, 220, 69, 18));
 
         retranslateUi(SignupDialog);
 
@@ -117,19 +137,19 @@ public:
     void retranslateUi(QDialog *SignupDialog)
     {
         SignupDialog->setWindowTitle(QCoreApplication::translate("SignupDialog", "Signup Page", nullptr));
+        radioButtonCR->setText(QCoreApplication::translate("SignupDialog", "CR", nullptr));
+        radioButtonCoordinator->setText(QCoreApplication::translate("SignupDialog", "Co-ordinator", nullptr));
+        radioButtonTeacher->setText(QCoreApplication::translate("SignupDialog", "Teacher", nullptr));
+        labelMessage->setText(QString());
+        lineEditName->setText(QString());
+        lineEditName->setPlaceholderText(QCoreApplication::translate("SignupDialog", "Name", nullptr));
+        lineEditPhone->setPlaceholderText(QCoreApplication::translate("SignupDialog", "Phone", nullptr));
         lineEditEmail->setText(QString());
         lineEditEmail->setPlaceholderText(QCoreApplication::translate("SignupDialog", "Email", nullptr));
         lineEditPassword->setText(QString());
         lineEditPassword->setPlaceholderText(QCoreApplication::translate("SignupDialog", "Password", nullptr));
         lineEditConfirmpassword->setPlaceholderText(QCoreApplication::translate("SignupDialog", "Confirm password", nullptr));
         pushButtonSignUp->setText(QCoreApplication::translate("SignupDialog", "Sign up", nullptr));
-        lineEditName->setText(QString());
-        lineEditName->setPlaceholderText(QCoreApplication::translate("SignupDialog", "Name", nullptr));
-        lineEditPhone->setPlaceholderText(QCoreApplication::translate("SignupDialog", "Phone", nullptr));
-        labelMessage->setText(QString());
-        radioButtonTeacher->setText(QCoreApplication::translate("SignupDialog", "Teacher", nullptr));
-        radioButtonCoordinator->setText(QCoreApplication::translate("SignupDialog", "Co-ordinator", nullptr));
-        radioButtonCR->setText(QCoreApplication::translate("SignupDialog", "CR", nullptr));
     } // retranslateUi
 
 };

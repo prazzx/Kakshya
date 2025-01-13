@@ -11,6 +11,7 @@ release/signupdialog.o
 release/signupsuccessful.o
 release/teacherdash.o
 release/uploadroutine.o
+release/qrc_Resources.o
 release/moc_addvaluestoroutine.o
 release/moc_coordinatordash.o
 release/moc_crdash.o

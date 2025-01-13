@@ -27,7 +27,7 @@ public:
     {
         if (loginsuccessful->objectName().isEmpty())
             loginsuccessful->setObjectName("loginsuccessful");
-        loginsuccessful->resize(350, 170);
+        loginsuccessful->resize(604, 309);
         labelLogin = new QLabel(loginsuccessful);
         labelLogin->setObjectName("labelLogin");
         labelLogin->setGeometry(QRect(130, 30, 151, 51));
