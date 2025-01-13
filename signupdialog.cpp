@@ -11,7 +11,12 @@ SignupDialog::SignupDialog(QWidget *parent) :
     ui(new Ui::SignupDialog)
 {
     ui->setupUi(this);
+    QPixmap pic(":/resources/resources/Kakshya_trans.png");
+    int h= ui->label->height();
+    int  w = ui->label ->width();
+    ui->label->setPixmap(pic.scaled(h,w,Qt::KeepAspectRatio,Qt::SmoothTransformation));
 }
+
 
 SignupDialog::~SignupDialog()
 {

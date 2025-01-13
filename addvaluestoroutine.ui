@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Addvaluestoroutine</class>
+ <widget class="QDialog" name="Addvaluestoroutine">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLineEdit" name="lineEditsname">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>130</y>
+     <width>231</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>Enter subject name</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditscode">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>100</y>
+     <width>113</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>Enter subject code</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdittname">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>160</y>
+     <width>231</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>Enter teacher's name</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditrno">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>100</y>
+     <width>113</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>Enter room no.</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonAdd">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>200</y>
+     <width>80</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Add</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonNo">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>230</y>
+     <width>311</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Click here if there is no class in this designated time</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

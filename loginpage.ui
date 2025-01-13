@@ -16,134 +16,133 @@
   <widget class="QPushButton" name="pushButtonSignup">
    <property name="geometry">
     <rect>
-     <x>970</x>
-     <y>90</y>
-     <width>80</width>
-     <height>18</height>
+     <x>959</x>
+     <y>77</y>
+     <width>91</width>
+     <height>31</height>
     </rect>
    </property>
    <property name="text">
     <string>Sign up</string>
    </property>
   </widget>
-  <widget class="QWidget" name="verticalLayoutWidget">
-   <property name="geometry">
-    <rect>
-     <x>560</x>
-     <y>250</y>
-     <width>191</width>
-     <height>71</height>
-    </rect>
-   </property>
-   <layout class="QVBoxLayout" name="verticalLayout">
-    <item>
-     <widget class="QLineEdit" name="lineEditEmail">
-      <property name="placeholderText">
-       <string>Email</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QLineEdit" name="lineEditPassword">
-      <property name="contextMenuPolicy">
-       <enum>Qt::ContextMenuPolicy::DefaultContextMenu</enum>
-      </property>
-      <property name="echoMode">
-       <enum>QLineEdit::EchoMode::Password</enum>
-      </property>
-      <property name="placeholderText">
-       <string>Password</string>
-      </property>
-     </widget>
-    </item>
-   </layout>
-  </widget>
-  <widget class="QPushButton" name="pushButtonLogin">
-   <property name="geometry">
-    <rect>
-     <x>610</x>
-     <y>370</y>
-     <width>81</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Login</string>
-   </property>
-  </widget>
   <widget class="QLabel" name="labelMessage">
    <property name="geometry">
     <rect>
-     <x>560</x>
-     <y>420</y>
-     <width>211</width>
-     <height>71</height>
+     <x>300</x>
+     <y>390</y>
+     <width>281</width>
+     <height>101</height>
     </rect>
    </property>
    <property name="text">
     <string/>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButtonForgotpassword">
+  <widget class="QLabel" name="logo">
    <property name="geometry">
     <rect>
-     <x>560</x>
-     <y>330</y>
-     <width>111</width>
-     <height>31</height>
+     <x>720</x>
+     <y>190</y>
+     <width>211</width>
+     <height>221</height>
     </rect>
    </property>
    <property name="text">
-    <string>Forgot Password?</string>
+    <string/>
    </property>
   </widget>
-  <widget class="QRadioButton" name="radioButtonTeacher">
+  <widget class="QWidget" name="">
    <property name="geometry">
     <rect>
-     <x>550</x>
-     <y>230</y>
-     <width>51</width>
-     <height>18</height>
+     <x>310</x>
+     <y>160</y>
+     <width>258</width>
+     <height>28</height>
     </rect>
    </property>
-   <property name="text">
-    <string>Teacher</string>
-   </property>
-   <attribute name="buttonGroup">
-    <string notr="true">buttonGroup</string>
-   </attribute>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QRadioButton" name="radioButtonCoordinator">
+      <property name="text">
+       <string>Co-ordinator</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">buttonGroup</string>
+      </attribute>
+     </widget>
+    </item>
+    <item>
+     <widget class="QRadioButton" name="radioButtonTeacher">
+      <property name="text">
+       <string>Teacher</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">buttonGroup</string>
+      </attribute>
+     </widget>
+    </item>
+    <item>
+     <widget class="QRadioButton" name="radioButtonCr">
+      <property name="text">
+       <string>CR</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">buttonGroup</string>
+      </attribute>
+     </widget>
+    </item>
+   </layout>
   </widget>
-  <widget class="QRadioButton" name="radioButtonCoordinator">
+  <widget class="QWidget" name="">
    <property name="geometry">
     <rect>
-     <x>610</x>
-     <y>230</y>
-     <width>69</width>
-     <height>18</height>
+     <x>300</x>
+     <y>220</y>
+     <width>281</width>
+     <height>139</height>
     </rect>
    </property>
-   <property name="text">
-    <string>Co-ordinator</string>
-   </property>
-   <attribute name="buttonGroup">
-    <string notr="true">buttonGroup</string>
-   </attribute>
-  </widget>
-  <widget class="QRadioButton" name="radioButtonCr">
-   <property name="geometry">
-    <rect>
-     <x>690</x>
-     <y>230</y>
-     <width>69</width>
-     <height>18</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>CR</string>
-   </property>
-   <attribute name="buttonGroup">
-    <string notr="true">buttonGroup</string>
-   </attribute>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLineEdit" name="lineEditEmail">
+        <property name="placeholderText">
+         <string>Email</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEditPassword">
+        <property name="contextMenuPolicy">
+         <enum>Qt::ContextMenuPolicy::DefaultContextMenu</enum>
+        </property>
+        <property name="echoMode">
+         <enum>QLineEdit::EchoMode::Password</enum>
+        </property>
+        <property name="placeholderText">
+         <string>Password</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButtonForgotpassword">
+      <property name="text">
+       <string>Forgot Password?</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButtonLogin">
+      <property name="text">
+       <string>Login</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
   </widget>
  </widget>
  <resources/>

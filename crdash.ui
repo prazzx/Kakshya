@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>crdash</class>
+ <widget class="QDialog" name="crdash">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1358</width>
+    <height>845</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>1010</x>
+     <y>30</y>
+     <width>121</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>logout</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>30</y>
+     <width>221</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Logged in as CR</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonUpload">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>30</y>
+     <width>191</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>search for classroom</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="logo">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>30</y>
+     <width>141</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QDateTimeEdit" name="dateTimeEdit">
+   <property name="geometry">
+    <rect>
+     <x>870</x>
+     <y>170</y>
+     <width>194</width>
+     <height>29</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>160</y>
+     <width>321</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>                             Dashboard</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

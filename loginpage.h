@@ -4,6 +4,10 @@
 #include <QDialog>
 #include "signupdialog.h"
 #include "forgotpassword.h"
+#include "loginsuccessful.h"
+#include "coordinatordash.h"
+#include "crdash.h"
+#include "teacherdash.h"
 
 
 namespace Ui { class LoginPage; }
@@ -32,6 +36,10 @@ private:
     Ui::LoginPage *ui;
     SignupDialog *signupDialog;
     Forgotpassword *forgotpassword;
+    loginsuccessful *Loginsuccess;
+    coordinatordash *codash;
+    crdash *cdash;
+    teacherdash *tdash;
     bool connectToDatabase();
 };
 

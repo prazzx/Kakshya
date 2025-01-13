@@ -2,15 +2,23 @@
 #include "qsqldatabase.h"
 #include "signupdialog.h"
 #include "ui_loginpage.h"
+#include "coordinatordash.h"
+#include "crdash.h"
+#include "teacherdash.h"
 #include <QSqlDatabase>
 #include <QSqlQuery>
 #include <QSqlError>
 #include <QMessageBox>
+#include<QPixmap>
 LoginPage::LoginPage(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::LoginPage)
 {
     ui->setupUi(this);
+    QPixmap pic(":/resources/resources/Kakshya_trans.png");
+    int h= ui->logo->height();
+    int  w = ui->logo ->width();
+    ui->logo->setPixmap(pic.scaled(h,w,Qt::KeepAspectRatio,Qt::SmoothTransformation));
 }
 
 LoginPage::~LoginPage()
@@ -75,10 +83,23 @@ void LoginPage::on_pushButtonLogin_clicked()
         if (storedPassword != password) {
             ui->labelMessage->setText("Invalid password.");
         } else {
-            ui->labelMessage->setText("Logged in successfully.");
-
             ui->lineEditEmail->clear();
             ui->lineEditPassword->clear();
+            close();
+            if(tableName=="coordinator"){
+                codash = new coordinatordash(this);
+                codash->showMaximized();
+            }
+            else if(tableName=="teacher"){
+                tdash = new teacherdash(this);
+                tdash->showMaximized();
+            }
+            else if(tableName=="cr"){
+                cdash = new crdash(this);
+                cdash->showMaximized();
+            }
+            Loginsuccess = new loginsuccessful(this);
+            Loginsuccess->show();
 
 
 
