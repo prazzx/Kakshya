@@ -177,6 +177,7 @@ compiler_rcc_clean:
 release/qrc_Resources.cpp: ../../Resources.qrc \
 		C:/Qt/6.8.1/mingw_64/bin/rcc.exe \
 		../../resources/Kakshya_trans.png \
+		../../resources/Perstfic.qss \
 		../../resources/logo.jpg
 	C:\Qt\6.8.1\mingw_64\bin\rcc.exe -name Resources --no-zstd ..\..\Resources.qrc -o release\qrc_Resources.cpp
 
@@ -3467,7 +3468,19 @@ release/coordinatordash.o: ../../coordinatordash.cpp ../../coordinatordash.h \
 		C:/Qt/6.8.1/mingw_64/include/QtGui/qtextdocument.h \
 		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QPushButton \
 		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qpushbutton.h \
-		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qabstractbutton.h
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qabstractbutton.h \
+		../../loginpage.h \
+		../../signupdialog.h \
+		../../../../../Kakshya/signupsuccessful.h \
+		../../forgotpassword.h \
+		../../../../../Kakshya/passwordchanged.h \
+		../../loginsuccessful.h \
+		../../crdash.h \
+		../../teacherdash.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QMessageBox \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qmessagebox.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
+		C:/Qt/6.8.1/mingw_64/include/QtCore/QDebug
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\coordinatordash.o ..\..\coordinatordash.cpp
 
 release/crdash.o: ../../crdash.cpp ../../crdash.h \
@@ -3680,7 +3693,27 @@ release/crdash.o: ../../crdash.cpp ../../crdash.h \
 		C:/Qt/6.8.1/mingw_64/include/QtGui/qtextdocument.h \
 		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QPushButton \
 		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qpushbutton.h \
-		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qabstractbutton.h
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qabstractbutton.h \
+		../../loginpage.h \
+		../../signupdialog.h \
+		../../../../../Kakshya/signupsuccessful.h \
+		../../forgotpassword.h \
+		../../../../../Kakshya/passwordchanged.h \
+		../../loginsuccessful.h \
+		../../coordinatordash.h \
+		C:/Qt/6.8.1/mingw_64/include/QtCore/QDateTime \
+		C:/Qt/6.8.1/mingw_64/include/QtCore/QTimer \
+		C:/Qt/6.8.1/mingw_64/include/QtCore/qtimer.h \
+		C:/Qt/6.8.1/mingw_64/include/QtCore/qbasictimer.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QWidget \
+		../../uploadroutine.h \
+		../../addvaluestoroutine.h \
+		../../../../../Kakshya/addedsuccessfully.h \
+		../../teacherdash.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QMessageBox \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qmessagebox.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
+		C:/Qt/6.8.1/mingw_64/include/QtCore/QDebug
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\crdash.o ..\..\crdash.cpp
 
 release/forgotpassword.o: ../../forgotpassword.cpp ../../forgotpassword.h \
@@ -4584,7 +4617,10 @@ release/main.o: ../../main.cpp ../../loginpage.h \
 		../../crdash.h \
 		../../teacherdash.h \
 		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QApplication \
-		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qapplication.h
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qapplication.h \
+		C:/Qt/6.8.1/mingw_64/include/QtCore/QFile \
+		C:/Qt/6.8.1/mingw_64/include/QtCore/qfile.h \
+		C:/Qt/6.8.1/mingw_64/include/QtCore/qfiledevice.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\main.o ..\..\main.cpp
 
 release/mainwindow.o: ../../mainwindow.cpp ../../mainwindow.h \
@@ -5219,6 +5255,22 @@ release/signupdialog.o: ../../signupdialog.cpp ../../signupdialog.h \
 		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QVBoxLayout \
 		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QWidget \
 		../../signupsuccessful.h \
+		../../loginpage.h \
+		../../forgotpassword.h \
+		../../../../../Kakshya/passwordchanged.h \
+		../../loginsuccessful.h \
+		../../coordinatordash.h \
+		C:/Qt/6.8.1/mingw_64/include/QtCore/QDateTime \
+		C:/Qt/6.8.1/mingw_64/include/QtCore/qdatetime.h \
+		C:/Qt/6.8.1/mingw_64/include/QtCore/qcalendar.h \
+		C:/Qt/6.8.1/mingw_64/include/QtCore/QTimer \
+		C:/Qt/6.8.1/mingw_64/include/QtCore/qtimer.h \
+		C:/Qt/6.8.1/mingw_64/include/QtCore/qbasictimer.h \
+		../../uploadroutine.h \
+		../../addvaluestoroutine.h \
+		../../../../../Kakshya/addedsuccessfully.h \
+		../../crdash.h \
+		../../teacherdash.h \
 		C:/Qt/6.8.1/mingw_64/include/QtSql/QSqlDatabase \
 		C:/Qt/6.8.1/mingw_64/include/QtSql/qsqldatabase.h \
 		C:/Qt/6.8.1/mingw_64/include/QtSql/qtsqlglobal.h \
@@ -5649,7 +5701,27 @@ release/teacherdash.o: ../../teacherdash.cpp ../../teacherdash.h \
 		C:/Qt/6.8.1/mingw_64/include/QtGui/qtextdocument.h \
 		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QPushButton \
 		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qpushbutton.h \
-		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qabstractbutton.h
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qabstractbutton.h \
+		../../loginpage.h \
+		../../signupdialog.h \
+		../../../../../Kakshya/signupsuccessful.h \
+		../../forgotpassword.h \
+		../../../../../Kakshya/passwordchanged.h \
+		../../loginsuccessful.h \
+		../../coordinatordash.h \
+		C:/Qt/6.8.1/mingw_64/include/QtCore/QDateTime \
+		C:/Qt/6.8.1/mingw_64/include/QtCore/QTimer \
+		C:/Qt/6.8.1/mingw_64/include/QtCore/qtimer.h \
+		C:/Qt/6.8.1/mingw_64/include/QtCore/qbasictimer.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QWidget \
+		../../uploadroutine.h \
+		../../addvaluestoroutine.h \
+		../../../../../Kakshya/addedsuccessfully.h \
+		../../crdash.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QMessageBox \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qmessagebox.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
+		C:/Qt/6.8.1/mingw_64/include/QtCore/QDebug
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\teacherdash.o ..\..\teacherdash.cpp
 
 release/uploadroutine.o: ../../uploadroutine.cpp ../../uploadroutine.h \
@@ -5871,6 +5943,7 @@ release/uploadroutine.o: ../../uploadroutine.cpp ../../uploadroutine.h \
 		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qlayoutitem.h \
 		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qboxlayout.h \
 		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qgridlayout.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QHBoxLayout \
 		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QLabel \
 		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qlabel.h \
 		C:/Qt/6.8.1/mingw_64/include/QtGui/qpicture.h \
