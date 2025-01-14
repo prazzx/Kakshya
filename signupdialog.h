@@ -20,6 +20,8 @@ public:
 private slots:
     void on_pushButtonSignUp_clicked();
 
+    void on_pushButton_clicked();
+
 private:
     Ui::SignupDialog *ui;
     bool connectToDatabase();

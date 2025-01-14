@@ -64,7 +64,7 @@ public:
         lineEdittname->setPlaceholderText(QCoreApplication::translate("Addvaluestoroutine", "Enter teacher's name", nullptr));
         lineEditrno->setPlaceholderText(QCoreApplication::translate("Addvaluestoroutine", "Enter room no.", nullptr));
         pushButtonAdd->setText(QCoreApplication::translate("Addvaluestoroutine", "Add", nullptr));
-        pushButtonNo->setText(QCoreApplication::translate("Addvaluestoroutine", "Click here if there is no class in this designated time", nullptr));
+        pushButtonNo->setText(QCoreApplication::translate("Addvaluestoroutine", "Click here if there is no class in this time", nullptr));
     } // retranslateUi
 
 };

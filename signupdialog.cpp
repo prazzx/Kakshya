@@ -1,6 +1,7 @@
 #include "signupdialog.h"
 #include "ui_signupdialog.h"
 #include "signupsuccessful.h"
+#include"loginpage.h"
 #include <QSqlDatabase>
 #include <QSqlQuery>
 #include <QSqlError>
@@ -133,5 +134,14 @@ void SignupDialog::on_pushButtonSignUp_clicked()
     } else {
         ui->labelMessage->setText ("Error signing up");
     }
+    }
+
+
+    void SignupDialog::on_pushButton_clicked()
+    {
+        this->close();
+        LoginPage *loginPage = new LoginPage(); // Create an instance of LoginPage
+        loginPage->show();                     // Show the login page
+
     }
 
