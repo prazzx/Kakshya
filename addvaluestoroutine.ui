@@ -88,7 +88,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>Click here if there is no class in this designated time</string>
+    <string>Click here if there is no class in this time</string>
    </property>
   </widget>
  </widget>
