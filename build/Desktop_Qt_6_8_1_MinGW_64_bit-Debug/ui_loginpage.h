@@ -29,12 +29,12 @@ public:
     QPushButton *pushButtonSignup;
     QLabel *labelMessage;
     QLabel *logo;
-    QWidget *widget;
+    QWidget *layoutWidget;
     QHBoxLayout *horizontalLayout;
     QRadioButton *radioButtonCoordinator;
     QRadioButton *radioButtonTeacher;
     QRadioButton *radioButtonCr;
-    QWidget *widget1;
+    QWidget *layoutWidget1;
     QVBoxLayout *verticalLayout_2;
     QVBoxLayout *verticalLayout;
     QLineEdit *lineEditEmail;
@@ -57,13 +57,13 @@ public:
         logo = new QLabel(LoginPage);
         logo->setObjectName("logo");
         logo->setGeometry(QRect(720, 190, 211, 221));
-        widget = new QWidget(LoginPage);
-        widget->setObjectName("widget");
-        widget->setGeometry(QRect(310, 160, 258, 28));
-        horizontalLayout = new QHBoxLayout(widget);
+        layoutWidget = new QWidget(LoginPage);
+        layoutWidget->setObjectName("layoutWidget");
+        layoutWidget->setGeometry(QRect(310, 160, 258, 28));
+        horizontalLayout = new QHBoxLayout(layoutWidget);
         horizontalLayout->setObjectName("horizontalLayout");
         horizontalLayout->setContentsMargins(0, 0, 0, 0);
-        radioButtonCoordinator = new QRadioButton(widget);
+        radioButtonCoordinator = new QRadioButton(layoutWidget);
         buttonGroup = new QButtonGroup(LoginPage);
         buttonGroup->setObjectName("buttonGroup");
         buttonGroup->addButton(radioButtonCoordinator);
@@ -71,32 +71,32 @@ public:
 
         horizontalLayout->addWidget(radioButtonCoordinator);
 
-        radioButtonTeacher = new QRadioButton(widget);
+        radioButtonTeacher = new QRadioButton(layoutWidget);
         buttonGroup->addButton(radioButtonTeacher);
         radioButtonTeacher->setObjectName("radioButtonTeacher");
 
         horizontalLayout->addWidget(radioButtonTeacher);
 
-        radioButtonCr = new QRadioButton(widget);
+        radioButtonCr = new QRadioButton(layoutWidget);
         buttonGroup->addButton(radioButtonCr);
         radioButtonCr->setObjectName("radioButtonCr");
 
         horizontalLayout->addWidget(radioButtonCr);
 
-        widget1 = new QWidget(LoginPage);
-        widget1->setObjectName("widget1");
-        widget1->setGeometry(QRect(300, 220, 281, 139));
-        verticalLayout_2 = new QVBoxLayout(widget1);
+        layoutWidget1 = new QWidget(LoginPage);
+        layoutWidget1->setObjectName("layoutWidget1");
+        layoutWidget1->setGeometry(QRect(300, 220, 281, 139));
+        verticalLayout_2 = new QVBoxLayout(layoutWidget1);
         verticalLayout_2->setObjectName("verticalLayout_2");
         verticalLayout_2->setContentsMargins(0, 0, 0, 0);
         verticalLayout = new QVBoxLayout();
         verticalLayout->setObjectName("verticalLayout");
-        lineEditEmail = new QLineEdit(widget1);
+        lineEditEmail = new QLineEdit(layoutWidget1);
         lineEditEmail->setObjectName("lineEditEmail");
 
         verticalLayout->addWidget(lineEditEmail);
 
-        lineEditPassword = new QLineEdit(widget1);
+        lineEditPassword = new QLineEdit(layoutWidget1);
         lineEditPassword->setObjectName("lineEditPassword");
         lineEditPassword->setContextMenuPolicy(Qt::ContextMenuPolicy::DefaultContextMenu);
         lineEditPassword->setEchoMode(QLineEdit::EchoMode::Password);
@@ -106,12 +106,12 @@ public:
 
         verticalLayout_2->addLayout(verticalLayout);
 
-        pushButtonForgotpassword = new QPushButton(widget1);
+        pushButtonForgotpassword = new QPushButton(layoutWidget1);
         pushButtonForgotpassword->setObjectName("pushButtonForgotpassword");
 
         verticalLayout_2->addWidget(pushButtonForgotpassword);
 
-        pushButtonLogin = new QPushButton(widget1);
+        pushButtonLogin = new QPushButton(layoutWidget1);
         pushButtonLogin->setObjectName("pushButtonLogin");
 
         verticalLayout_2->addWidget(pushButtonLogin);

@@ -22,25 +22,22 @@ class Ui_Addvaluestoroutine
 public:
     QLineEdit *lineEditsname;
     QLineEdit *lineEditscode;
-    QLineEdit *lineEdittname;
     QLineEdit *lineEditrno;
     QPushButton *pushButtonAdd;
     QPushButton *pushButtonNo;
+    QLineEdit *lineEdittname;
 
     void setupUi(QDialog *Addvaluestoroutine)
     {
         if (Addvaluestoroutine->objectName().isEmpty())
             Addvaluestoroutine->setObjectName("Addvaluestoroutine");
-        Addvaluestoroutine->resize(400, 300);
+        Addvaluestoroutine->resize(590, 418);
         lineEditsname = new QLineEdit(Addvaluestoroutine);
         lineEditsname->setObjectName("lineEditsname");
         lineEditsname->setGeometry(QRect(90, 130, 231, 20));
         lineEditscode = new QLineEdit(Addvaluestoroutine);
         lineEditscode->setObjectName("lineEditscode");
         lineEditscode->setGeometry(QRect(90, 100, 113, 20));
-        lineEdittname = new QLineEdit(Addvaluestoroutine);
-        lineEdittname->setObjectName("lineEdittname");
-        lineEdittname->setGeometry(QRect(90, 160, 231, 20));
         lineEditrno = new QLineEdit(Addvaluestoroutine);
         lineEditrno->setObjectName("lineEditrno");
         lineEditrno->setGeometry(QRect(210, 100, 113, 20));
@@ -49,7 +46,10 @@ public:
         pushButtonAdd->setGeometry(QRect(170, 200, 80, 18));
         pushButtonNo = new QPushButton(Addvaluestoroutine);
         pushButtonNo->setObjectName("pushButtonNo");
-        pushButtonNo->setGeometry(QRect(50, 230, 311, 31));
+        pushButtonNo->setGeometry(QRect(50, 230, 361, 51));
+        lineEdittname = new QLineEdit(Addvaluestoroutine);
+        lineEdittname->setObjectName("lineEdittname");
+        lineEdittname->setGeometry(QRect(90, 160, 231, 20));
 
         retranslateUi(Addvaluestoroutine);
 
@@ -61,10 +61,10 @@ public:
         Addvaluestoroutine->setWindowTitle(QCoreApplication::translate("Addvaluestoroutine", "Dialog", nullptr));
         lineEditsname->setPlaceholderText(QCoreApplication::translate("Addvaluestoroutine", "Enter subject name", nullptr));
         lineEditscode->setPlaceholderText(QCoreApplication::translate("Addvaluestoroutine", "Enter subject code", nullptr));
-        lineEdittname->setPlaceholderText(QCoreApplication::translate("Addvaluestoroutine", "Enter teacher's name", nullptr));
         lineEditrno->setPlaceholderText(QCoreApplication::translate("Addvaluestoroutine", "Enter room no.", nullptr));
         pushButtonAdd->setText(QCoreApplication::translate("Addvaluestoroutine", "Add", nullptr));
         pushButtonNo->setText(QCoreApplication::translate("Addvaluestoroutine", "Click here if there is no class in this designated time", nullptr));
+        lineEdittname->setPlaceholderText(QCoreApplication::translate("Addvaluestoroutine", "Enter teacher's name", nullptr));
     } // retranslateUi
 
 };

@@ -206,3 +206,10 @@ void UploadRoutine::on_pushButtonUpload_clicked()
 
 
 
+
+    void UploadRoutine::on_pushButton_clicked()
+    {
+        this->close();
+
+    }
+
