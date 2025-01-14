@@ -28,6 +28,7 @@ LoginPage::~LoginPage()
 
 void LoginPage::on_pushButtonSignup_clicked()
 {
+    this->close();
     signupDialog = new SignupDialog(this);
     signupDialog->showMaximized();
 }

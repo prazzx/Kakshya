@@ -1,1 +1,46 @@
-build/
+# C++ object and library files
+*.slo
+*.lo
+*.o
+*.a
+*.la
+*.lai
+*.so
+*.so.*
+*.dll
+*.dylib
+
+# General build artifacts
+*.qmake.cache
+*.qmake.stash
+Makefile*
+
+# User-specific and IDE-specific files
+*.pro.user
+*.pro.user.*
+*.qbs.user
+*.qbs.user.*
+CMakeLists.txt.user*
+*.autosave
+compile_commands.json
+*creator.user*
+
+# Qt-specific cache and temporary files
+object_script.*.Release
+object_script.*.Debug
+*_plugin_import.cpp
+*.qmlc
+*.jsc
+*.pro.user*
+
+# Build directories
+*build-*/
+
+# Keep generated files that are critical for running
+!ui_*.h
+!moc_*.cpp
+!moc_*.h
+!qrc_*.cpp
+
+# Allow prebuilt binaries if necessary
+!*.exe

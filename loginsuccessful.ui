@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>350</width>
-    <height>170</height>
+    <width>398</width>
+    <height>213</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,11 +16,14 @@
   <widget class="QLabel" name="labelLogin">
    <property name="geometry">
     <rect>
-     <x>120</x>
-     <y>40</y>
-     <width>151</width>
-     <height>51</height>
+     <x>90</x>
+     <y>20</y>
+     <width>251</width>
+     <height>71</height>
     </rect>
+   </property>
+   <property name="whatsThis">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Logged in successfully&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
    <property name="text">
     <string>Logged in successfully</string>
@@ -31,8 +34,8 @@
     <rect>
      <x>130</x>
      <y>100</y>
-     <width>80</width>
-     <height>18</height>
+     <width>131</width>
+     <height>41</height>
     </rect>
    </property>
    <property name="text">

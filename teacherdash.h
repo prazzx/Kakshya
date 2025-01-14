@@ -15,6 +15,9 @@ public:
     explicit teacherdash(QWidget *parent = nullptr);
     ~teacherdash();
 
+private slots:
+    void on_pushButton_2_clicked();
+
 private:
     Ui::teacherdash *ui;
 };

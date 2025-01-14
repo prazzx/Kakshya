@@ -26,6 +26,8 @@ private slots:
     void on_pushButtonUpload_clicked();
     void updateColorbox();
 
+    void on_pushButton_clicked();
+
 private:
     Ui::coordinatordash *ui;
     UploadRoutine *up;

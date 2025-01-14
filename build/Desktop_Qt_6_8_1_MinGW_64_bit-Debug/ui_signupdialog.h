@@ -43,6 +43,9 @@ public:
     QLineEdit *lineEditConfirmpassword;
     QPushButton *pushButtonSignUp;
     QLabel *label;
+    QPushButton *pushButton;
+    QLabel *label_2;
+    QLabel *label_3;
     QButtonGroup *buttonGroup;
 
     void setupUi(QDialog *SignupDialog)
@@ -132,6 +135,20 @@ public:
         label = new QLabel(SignupDialog);
         label->setObjectName("label");
         label->setGeometry(QRect(512, 169, 291, 301));
+        pushButton = new QPushButton(SignupDialog);
+        pushButton->setObjectName("pushButton");
+        pushButton->setGeometry(QRect(990, 10, 151, 61));
+        pushButton->setStyleSheet(QString::fromUtf8(""));
+        label_2 = new QLabel(SignupDialog);
+        label_2->setObjectName("label_2");
+        label_2->setGeometry(QRect(10, 0, 181, 81));
+        label_2->setStyleSheet(QString::fromUtf8("font: 700 9pt \"Arial\";\n"
+"color: rgb(0, 0, 0);"));
+        label_3 = new QLabel(SignupDialog);
+        label_3->setObjectName("label_3");
+        label_3->setGeometry(QRect(660, 0, 321, 81));
+        label_3->setStyleSheet(QString::fromUtf8("font: 700 9pt \"Arial\";\n"
+"color: rgb(0, 0, 0);"));
 
         retranslateUi(SignupDialog);
 
@@ -154,7 +171,16 @@ public:
         lineEditPassword->setPlaceholderText(QCoreApplication::translate("SignupDialog", "Password", nullptr));
         lineEditConfirmpassword->setPlaceholderText(QCoreApplication::translate("SignupDialog", "Confirm password", nullptr));
         pushButtonSignUp->setText(QCoreApplication::translate("SignupDialog", "Sign up", nullptr));
-        label->setText(QCoreApplication::translate("SignupDialog", "TextLabel", nullptr));
+        label->setText(QString());
+        pushButton->setText(QCoreApplication::translate("SignupDialog", "login", nullptr));
+#if QT_CONFIG(whatsthis)
+        label_2->setWhatsThis(QCoreApplication::translate("SignupDialog", "<html><head/><body><p><br/></p></body></html>", nullptr));
+#endif // QT_CONFIG(whatsthis)
+        label_2->setText(QCoreApplication::translate("SignupDialog", "<html><head/><body><p><span style=\" font-size:14pt;\">Hello there ,</span></p></body></html>", nullptr));
+#if QT_CONFIG(whatsthis)
+        label_3->setWhatsThis(QCoreApplication::translate("SignupDialog", "<html><head/><body><p><br/></p></body></html>", nullptr));
+#endif // QT_CONFIG(whatsthis)
+        label_3->setText(QCoreApplication::translate("SignupDialog", "<html><head/><body><p align=\"right\"><span style=\" font-size:14pt;\">Already been to Kakshya?</span></p></body></html>", nullptr));
     } // retranslateUi
 
 };

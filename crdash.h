@@ -15,6 +15,9 @@ public:
     explicit crdash(QWidget *parent = nullptr);
     ~crdash();
 
+private slots:
+    void on_pushButton_2_clicked();
+
 private:
     Ui::crdash *ui;
 };
