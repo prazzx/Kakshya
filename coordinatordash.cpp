@@ -31,7 +31,7 @@ void coordinatordash::updateColorbox(){
     timer = new QTimer(this);
     connect(timer, &QTimer::timeout, this, &coordinatordash::updateColorbox);
     timer->start(60000);
-    QString currentDateTime = QDateTime::currentDateTime().toString("yyyy-MM-dd HH:mm");
+    QString currentDateTime = QDateTime::currentDateTime().toString("dddd HH:mm");
     ui->labelTime->setText(currentDateTime);
     QString test = "";
     if (test.isEmpty()) {
