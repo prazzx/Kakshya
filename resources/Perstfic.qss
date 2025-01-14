@@ -458,4 +458,32 @@ QScrollBar::sub-page:vertical
     height: 0px;
     background-color: #d8dce6;
 
+}QRadioButton {
+font-size: 14px;         /* Set the font size */
+color: #333333;         /* Set text color */
+padding: 5px;           /* Add padding around the button */
+spacing: 10px;          /* Space between the radio button and label */
 }
+
+QRadioButton::indicator {
+width: 16px;            /* Set width of the circle */
+height: 16px;           /* Set height of the circle */
+border-radius: 8px;     /* Make it circular */
+border: 2px solid #666666; /* Border color when unchecked */
+background: #ffffff;    /* Background color when unchecked */
+}
+
+QRadioButton::indicator:hover {
+border-color: #0078d7;  /* Change border color on hover */
+}
+
+QRadioButton::indicator:checked {
+border-color: #0078d7;  /* Border color when checked */
+background: #0078d7;    /* Background color when checked */
+}
+
+QRadioButton::indicator:disabled {
+border-color: #cccccc;  /* Border color when disabled */
+background: #f0f0f0;    /* Background color when disabled */
+}
+
