@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>590</width>
-    <height>418</height>
+    <width>400</width>
+    <height>300</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -37,6 +37,19 @@
    </property>
    <property name="placeholderText">
     <string>Enter subject code</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdittname">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>160</y>
+     <width>231</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>Enter teacher's name</string>
    </property>
   </widget>
   <widget class="QLineEdit" name="lineEditrno">
@@ -70,25 +83,12 @@
     <rect>
      <x>50</x>
      <y>230</y>
-     <width>361</width>
-     <height>51</height>
+     <width>311</width>
+     <height>31</height>
     </rect>
    </property>
    <property name="text">
     <string>Click here if there is no class in this designated time</string>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEdittname">
-   <property name="geometry">
-    <rect>
-     <x>90</x>
-     <y>160</y>
-     <width>231</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="placeholderText">
-    <string>Enter teacher's name</string>
    </property>
   </widget>
  </widget>
