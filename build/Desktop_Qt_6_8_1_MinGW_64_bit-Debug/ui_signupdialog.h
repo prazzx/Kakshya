@@ -138,19 +138,7 @@ public:
         pushButton = new QPushButton(SignupDialog);
         pushButton->setObjectName("pushButton");
         pushButton->setGeometry(QRect(990, 10, 151, 61));
-        pushButton->setStyleSheet(QString::fromUtf8("QPushButton {\n"
-"	background-color: rgb(170, 255, 255);\n"
-"	color: rgb(0, 0, 0);\n"
-"	font: 700 14pt \"Arial\";\n"
-"    border: 2px solid #5A5A5A;\n"
-"	border-color: rgb(255, 255, 255);\n"
-"	background-color: rgb(255, 255, 255);\n"
-"    border-radius: 25px; \n"
-"}\n"
-"\n"
-"QPushButton:pressed {\n"
-"}\n"
-""));
+        pushButton->setStyleSheet(QString::fromUtf8(""));
         label_2 = new QLabel(SignupDialog);
         label_2->setObjectName("label_2");
         label_2->setGeometry(QRect(10, 0, 181, 81));

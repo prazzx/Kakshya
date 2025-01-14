@@ -162,19 +162,7 @@
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">QPushButton {
-	background-color: rgb(170, 255, 255);
-	color: rgb(0, 0, 0);
-	font: 700 14pt &quot;Arial&quot;;
-    border: 2px solid #5A5A5A;
-	border-color: rgb(255, 255, 255);
-	background-color: rgb(255, 255, 255);
-    border-radius: 25px; 
-}
-
-QPushButton:pressed {
-}
-</string>
+    <string notr="true"/>
    </property>
    <property name="text">
     <string>login</string>

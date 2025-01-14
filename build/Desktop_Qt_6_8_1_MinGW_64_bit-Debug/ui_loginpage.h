@@ -41,6 +41,8 @@ public:
     QLineEdit *lineEditPassword;
     QPushButton *pushButtonForgotpassword;
     QPushButton *pushButtonLogin;
+    QLabel *label_2;
+    QLabel *label_3;
     QButtonGroup *buttonGroup;
 
     void setupUi(QDialog *LoginPage)
@@ -50,16 +52,16 @@ public:
         LoginPage->resize(1200, 900);
         pushButtonSignup = new QPushButton(LoginPage);
         pushButtonSignup->setObjectName("pushButtonSignup");
-        pushButtonSignup->setGeometry(QRect(959, 77, 91, 31));
+        pushButtonSignup->setGeometry(QRect(1010, 10, 141, 71));
         labelMessage = new QLabel(LoginPage);
         labelMessage->setObjectName("labelMessage");
-        labelMessage->setGeometry(QRect(300, 390, 281, 101));
+        labelMessage->setGeometry(QRect(300, 410, 351, 91));
         logo = new QLabel(LoginPage);
         logo->setObjectName("logo");
-        logo->setGeometry(QRect(720, 190, 211, 221));
+        logo->setGeometry(QRect(690, 210, 321, 221));
         layoutWidget = new QWidget(LoginPage);
         layoutWidget->setObjectName("layoutWidget");
-        layoutWidget->setGeometry(QRect(310, 160, 258, 28));
+        layoutWidget->setGeometry(QRect(310, 210, 351, 51));
         horizontalLayout = new QHBoxLayout(layoutWidget);
         horizontalLayout->setObjectName("horizontalLayout");
         horizontalLayout->setContentsMargins(0, 0, 0, 0);
@@ -85,7 +87,7 @@ public:
 
         layoutWidget1 = new QWidget(LoginPage);
         layoutWidget1->setObjectName("layoutWidget1");
-        layoutWidget1->setGeometry(QRect(300, 220, 281, 139));
+        layoutWidget1->setGeometry(QRect(310, 270, 351, 161));
         verticalLayout_2 = new QVBoxLayout(layoutWidget1);
         verticalLayout_2->setObjectName("verticalLayout_2");
         verticalLayout_2->setContentsMargins(0, 0, 0, 0);
@@ -116,6 +118,16 @@ public:
 
         verticalLayout_2->addWidget(pushButtonLogin);
 
+        label_2 = new QLabel(LoginPage);
+        label_2->setObjectName("label_2");
+        label_2->setGeometry(QRect(0, 0, 181, 81));
+        label_2->setStyleSheet(QString::fromUtf8("font: 700 9pt \"Arial\";\n"
+"color: rgb(0, 0, 0);"));
+        label_3 = new QLabel(LoginPage);
+        label_3->setObjectName("label_3");
+        label_3->setGeometry(QRect(680, 0, 321, 81));
+        label_3->setStyleSheet(QString::fromUtf8("font: 700 9pt \"Arial\";\n"
+"color: rgb(0, 0, 0);"));
 
         retranslateUi(LoginPage);
 
@@ -135,6 +147,14 @@ public:
         lineEditPassword->setPlaceholderText(QCoreApplication::translate("LoginPage", "Password", nullptr));
         pushButtonForgotpassword->setText(QCoreApplication::translate("LoginPage", "Forgot Password?", nullptr));
         pushButtonLogin->setText(QCoreApplication::translate("LoginPage", "Login", nullptr));
+#if QT_CONFIG(whatsthis)
+        label_2->setWhatsThis(QCoreApplication::translate("LoginPage", "<html><head/><body><p><br/></p></body></html>", nullptr));
+#endif // QT_CONFIG(whatsthis)
+        label_2->setText(QCoreApplication::translate("LoginPage", "<html><head/><body><p><span style=\" font-size:14pt;\">Hello there ,</span></p></body></html>", nullptr));
+#if QT_CONFIG(whatsthis)
+        label_3->setWhatsThis(QCoreApplication::translate("LoginPage", "<html><head/><body><p><br/></p></body></html>", nullptr));
+#endif // QT_CONFIG(whatsthis)
+        label_3->setText(QCoreApplication::translate("LoginPage", "<html><head/><body><p align=\"right\"><span style=\" font-size:14pt;\">New to Kakshya?</span></p></body></html>", nullptr));
     } // retranslateUi
 
 };

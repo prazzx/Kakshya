@@ -27,13 +27,13 @@ public:
     {
         if (Signupsuccessful->objectName().isEmpty())
             Signupsuccessful->setObjectName("Signupsuccessful");
-        Signupsuccessful->resize(350, 170);
+        Signupsuccessful->resize(430, 203);
         label = new QLabel(Signupsuccessful);
         label->setObjectName("label");
-        label->setGeometry(QRect(130, 30, 201, 51));
+        label->setGeometry(QRect(90, 30, 271, 51));
         pushButtonOkay = new QPushButton(Signupsuccessful);
         pushButtonOkay->setObjectName("pushButtonOkay");
-        pushButtonOkay->setGeometry(QRect(130, 80, 80, 18));
+        pushButtonOkay->setGeometry(QRect(130, 80, 131, 41));
 
         retranslateUi(Signupsuccessful);
 
