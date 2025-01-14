@@ -31,6 +31,9 @@ object_script.*.Debug
 *_plugin_import.cpp
 *.qmlc
 *.jsc
+*.pro.user*
+
+
 
 # Ignore build directories
 *build-*
