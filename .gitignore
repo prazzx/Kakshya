@@ -16,7 +16,9 @@
 Makefile*
 
 # User-specific and IDE-specific files
+
 *.pro.user
+
 *.pro.user.*
 *.qbs.user
 *.qbs.user.*
