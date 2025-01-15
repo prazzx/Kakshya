@@ -6,6 +6,9 @@
 #include <QTimer>
 #include <QWidget>
 #include "uploadroutine.h"
+#include <QSqlDatabase>
+#include <QSqlQuery>
+#include <QSqlError>
 
 namespace Ui {
 class coordinatordash;
@@ -31,6 +34,8 @@ private slots:
 private:
     Ui::coordinatordash *ui;
     UploadRoutine *up;
+    bool connectToDatabase();
+    bool isRoomFree;
 };
 
 #endif // COORDINATORDASH_H
