@@ -15,6 +15,7 @@ crdash::crdash(QWidget *parent)
 {
     ui->setupUi(this);
     StatusReveal();
+    connect(ui->comboBoxSelect, SIGNAL(currentTextChanged(const QString &)), this, SLOT(StatusReveal()));
     QPixmap pic(":/resources/resources/Kakshya_trans.png");
     int h= ui->logo->height();
     int  w = ui->logo ->width();
@@ -81,8 +82,8 @@ void crdash::StatusReveal(){
      query.bindValue(":day", currentDay);
      query.bindValue(":timeSlot","9-11");
      if (query.exec()&&query.next()) {
-             QString subject1 = query.value(2).toString();
-             QString room1 = query.value(4).toString();
+             QString subject1 = query.value(3).toString();
+             QString room1 = query.value(5).toString();
              if(subject1==""&&room1==""){
                  ui->widget1->setStyleSheet("background-color: red ;");
                  ui->Status1->setText("No class");
@@ -99,8 +100,8 @@ void crdash::StatusReveal(){
     squery.bindValue(":day", currentDay);
     squery.bindValue(":timeSlot","12-2");
     if (squery.exec()&&squery.next()) {
-        QString subject2 = squery.value(2).toString();
-        QString room2 = squery.value(4).toString();
+        QString subject2 = squery.value(3).toString();
+        QString room2 = squery.value(5).toString();
         if(subject2==""&&room2==""){
             ui->widget2->setStyleSheet("background-color: red ;");
             ui->Status2->setText("No class");
@@ -117,8 +118,8 @@ void crdash::StatusReveal(){
     pquery.bindValue(":day", currentDay);
     pquery.bindValue(":timeSlot","2-4");
     if (pquery.exec()&&pquery.next()) {
-        QString subject3 = pquery.value(2).toString();
-        QString room3 = pquery.value(4).toString();
+        QString subject3 = pquery.value(3).toString();
+        QString room3 = pquery.value(5).toString();
         if(subject3==""&&room3==""){
             ui->widget3->setStyleSheet("background-color: red ;");
             ui->Status3->setText("No class");

@@ -12,7 +12,6 @@
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QDialog>
-#include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QVBoxLayout>
@@ -30,7 +29,6 @@ public:
     QLineEdit *lineEditrno;
     QLineEdit *lineEditsname;
     QLineEdit *lineEdittname;
-    QLabel *label1;
 
     void setupUi(QDialog *Addvaluestoroutine)
     {
@@ -64,9 +62,6 @@ public:
 
         verticalLayout->addWidget(lineEdittname);
 
-        label1 = new QLabel(Addvaluestoroutine);
-        label1->setObjectName("label1");
-        label1->setGeometry(QRect(270, 390, 141, 41));
 
         retranslateUi(Addvaluestoroutine);
 
@@ -81,7 +76,6 @@ public:
         lineEditrno->setPlaceholderText(QCoreApplication::translate("Addvaluestoroutine", "Enter room no.", nullptr));
         lineEditsname->setPlaceholderText(QCoreApplication::translate("Addvaluestoroutine", "Enter subject name", nullptr));
         lineEdittname->setPlaceholderText(QCoreApplication::translate("Addvaluestoroutine", "Enter teacher's name", nullptr));
-        label1->setText(QString());
     } // retranslateUi
 
 };

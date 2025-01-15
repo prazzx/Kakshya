@@ -41,7 +41,7 @@ bool Addvaluestoroutine::connectToDatabase()
 
 void Addvaluestoroutine::on_pushButtonAdd_clicked()
 {
-    ui->label1->setText(timeSlot);
+
     QString sname = ui->lineEditsname->text();
     QString tname = ui->lineEdittname->text();
     QString rno = ui->lineEditrno->text();
