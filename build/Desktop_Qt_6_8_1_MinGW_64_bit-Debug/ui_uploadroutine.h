@@ -17,6 +17,7 @@
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QPushButton>
+#include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -28,7 +29,7 @@ public:
     QPushButton *pushButtonUpload;
     QLabel *labelMessage;
     QPushButton *pushButton;
-    QWidget *widget;
+    QWidget *layoutWidget;
     QHBoxLayout *horizontalLayout;
     QFormLayout *formLayout;
     QLabel *label;
@@ -45,7 +46,7 @@ public:
     QPushButton *pushButton15;
     QLabel *label_8;
     QPushButton *pushButton16;
-    QFormLayout *formLayout_2;
+    QVBoxLayout *verticalLayout;
     QLabel *label_11;
     QPushButton *pushButton21;
     QPushButton *pushButton22;
@@ -77,7 +78,9 @@ public:
         comboBoxSelect->addItem(QString());
         comboBoxSelect->addItem(QString());
         comboBoxSelect->setObjectName("comboBoxSelect");
-        comboBoxSelect->setGeometry(QRect(200, 30, 161, 31));
+        comboBoxSelect->setGeometry(QRect(100, 30, 161, 31));
+        comboBoxSelect->setStyleSheet(QString::fromUtf8("font: 700 14pt \"Arial\";\n"
+"color: rgb(0, 85, 0);"));
         pushButtonUpload = new QPushButton(UploadRoutine);
         pushButtonUpload->setObjectName("pushButtonUpload");
         pushButtonUpload->setGeometry(QRect(890, 520, 121, 51));
@@ -86,82 +89,82 @@ public:
         labelMessage->setGeometry(QRect(830, 270, 131, 81));
         pushButton = new QPushButton(UploadRoutine);
         pushButton->setObjectName("pushButton");
-        pushButton->setGeometry(QRect(860, 40, 111, 41));
-        widget = new QWidget(UploadRoutine);
-        widget->setObjectName("widget");
-        widget->setGeometry(QRect(140, 120, 491, 231));
-        horizontalLayout = new QHBoxLayout(widget);
+        pushButton->setGeometry(QRect(900, 20, 111, 41));
+        layoutWidget = new QWidget(UploadRoutine);
+        layoutWidget->setObjectName("layoutWidget");
+        layoutWidget->setGeometry(QRect(140, 120, 352, 240));
+        horizontalLayout = new QHBoxLayout(layoutWidget);
         horizontalLayout->setObjectName("horizontalLayout");
         horizontalLayout->setContentsMargins(0, 0, 0, 0);
         formLayout = new QFormLayout();
         formLayout->setObjectName("formLayout");
-        label = new QLabel(widget);
+        label = new QLabel(layoutWidget);
         label->setObjectName("label");
 
         formLayout->setWidget(0, QFormLayout::LabelRole, label);
 
-        label_2 = new QLabel(widget);
+        label_2 = new QLabel(layoutWidget);
         label_2->setObjectName("label_2");
         label_2->setMaximumSize(QSize(50, 16777215));
 
         formLayout->setWidget(0, QFormLayout::FieldRole, label_2);
 
-        label_3 = new QLabel(widget);
+        label_3 = new QLabel(layoutWidget);
         label_3->setObjectName("label_3");
 
         formLayout->setWidget(1, QFormLayout::LabelRole, label_3);
 
-        pushButton11 = new QPushButton(widget);
+        pushButton11 = new QPushButton(layoutWidget);
         pushButton11->setObjectName("pushButton11");
 
         formLayout->setWidget(1, QFormLayout::FieldRole, pushButton11);
 
-        label_4 = new QLabel(widget);
+        label_4 = new QLabel(layoutWidget);
         label_4->setObjectName("label_4");
 
         formLayout->setWidget(2, QFormLayout::LabelRole, label_4);
 
-        pushButton12 = new QPushButton(widget);
+        pushButton12 = new QPushButton(layoutWidget);
         pushButton12->setObjectName("pushButton12");
 
         formLayout->setWidget(2, QFormLayout::FieldRole, pushButton12);
 
-        label_5 = new QLabel(widget);
+        label_5 = new QLabel(layoutWidget);
         label_5->setObjectName("label_5");
 
         formLayout->setWidget(3, QFormLayout::LabelRole, label_5);
 
-        pushButton13 = new QPushButton(widget);
+        pushButton13 = new QPushButton(layoutWidget);
         pushButton13->setObjectName("pushButton13");
 
         formLayout->setWidget(3, QFormLayout::FieldRole, pushButton13);
 
-        label_6 = new QLabel(widget);
+        label_6 = new QLabel(layoutWidget);
         label_6->setObjectName("label_6");
 
         formLayout->setWidget(4, QFormLayout::LabelRole, label_6);
 
-        pushButton14 = new QPushButton(widget);
+        pushButton14 = new QPushButton(layoutWidget);
         pushButton14->setObjectName("pushButton14");
 
         formLayout->setWidget(4, QFormLayout::FieldRole, pushButton14);
 
-        label_7 = new QLabel(widget);
+        label_7 = new QLabel(layoutWidget);
         label_7->setObjectName("label_7");
 
         formLayout->setWidget(5, QFormLayout::LabelRole, label_7);
 
-        pushButton15 = new QPushButton(widget);
+        pushButton15 = new QPushButton(layoutWidget);
         pushButton15->setObjectName("pushButton15");
 
         formLayout->setWidget(5, QFormLayout::FieldRole, pushButton15);
 
-        label_8 = new QLabel(widget);
+        label_8 = new QLabel(layoutWidget);
         label_8->setObjectName("label_8");
 
         formLayout->setWidget(6, QFormLayout::LabelRole, label_8);
 
-        pushButton16 = new QPushButton(widget);
+        pushButton16 = new QPushButton(layoutWidget);
         pushButton16->setObjectName("pushButton16");
 
         formLayout->setWidget(6, QFormLayout::FieldRole, pushButton16);
@@ -169,81 +172,81 @@ public:
 
         horizontalLayout->addLayout(formLayout);
 
-        formLayout_2 = new QFormLayout();
-        formLayout_2->setObjectName("formLayout_2");
-        label_11 = new QLabel(widget);
+        verticalLayout = new QVBoxLayout();
+        verticalLayout->setObjectName("verticalLayout");
+        label_11 = new QLabel(layoutWidget);
         label_11->setObjectName("label_11");
         label_11->setMaximumSize(QSize(50, 16777215));
 
-        formLayout_2->setWidget(0, QFormLayout::FieldRole, label_11);
+        verticalLayout->addWidget(label_11);
 
-        pushButton21 = new QPushButton(widget);
+        pushButton21 = new QPushButton(layoutWidget);
         pushButton21->setObjectName("pushButton21");
 
-        formLayout_2->setWidget(1, QFormLayout::FieldRole, pushButton21);
+        verticalLayout->addWidget(pushButton21);
 
-        pushButton22 = new QPushButton(widget);
+        pushButton22 = new QPushButton(layoutWidget);
         pushButton22->setObjectName("pushButton22");
 
-        formLayout_2->setWidget(2, QFormLayout::FieldRole, pushButton22);
+        verticalLayout->addWidget(pushButton22);
 
-        pushButton23 = new QPushButton(widget);
+        pushButton23 = new QPushButton(layoutWidget);
         pushButton23->setObjectName("pushButton23");
 
-        formLayout_2->setWidget(3, QFormLayout::FieldRole, pushButton23);
+        verticalLayout->addWidget(pushButton23);
 
-        pushButton24 = new QPushButton(widget);
+        pushButton24 = new QPushButton(layoutWidget);
         pushButton24->setObjectName("pushButton24");
 
-        formLayout_2->setWidget(4, QFormLayout::FieldRole, pushButton24);
+        verticalLayout->addWidget(pushButton24);
 
-        pushButton25 = new QPushButton(widget);
+        pushButton25 = new QPushButton(layoutWidget);
         pushButton25->setObjectName("pushButton25");
 
-        formLayout_2->setWidget(5, QFormLayout::FieldRole, pushButton25);
+        verticalLayout->addWidget(pushButton25);
 
-        pushButton26 = new QPushButton(widget);
+        pushButton26 = new QPushButton(layoutWidget);
         pushButton26->setObjectName("pushButton26");
 
-        formLayout_2->setWidget(6, QFormLayout::FieldRole, pushButton26);
+        verticalLayout->addWidget(pushButton26);
 
 
-        horizontalLayout->addLayout(formLayout_2);
+        horizontalLayout->addLayout(verticalLayout);
 
         formLayout_3 = new QFormLayout();
         formLayout_3->setObjectName("formLayout_3");
-        label_12 = new QLabel(widget);
+        label_12 = new QLabel(layoutWidget);
         label_12->setObjectName("label_12");
         label_12->setMaximumSize(QSize(50, 16777215));
 
         formLayout_3->setWidget(0, QFormLayout::FieldRole, label_12);
 
-        pushButton31 = new QPushButton(widget);
+        pushButton31 = new QPushButton(layoutWidget);
         pushButton31->setObjectName("pushButton31");
 
         formLayout_3->setWidget(1, QFormLayout::FieldRole, pushButton31);
 
-        pushButton32 = new QPushButton(widget);
+        pushButton32 = new QPushButton(layoutWidget);
         pushButton32->setObjectName("pushButton32");
 
         formLayout_3->setWidget(2, QFormLayout::FieldRole, pushButton32);
 
-        pushButton33 = new QPushButton(widget);
+        pushButton33 = new QPushButton(layoutWidget);
         pushButton33->setObjectName("pushButton33");
 
         formLayout_3->setWidget(3, QFormLayout::FieldRole, pushButton33);
 
-        pushButton34 = new QPushButton(widget);
+        pushButton34 = new QPushButton(layoutWidget);
         pushButton34->setObjectName("pushButton34");
 
         formLayout_3->setWidget(4, QFormLayout::FieldRole, pushButton34);
 
-        pushButton35 = new QPushButton(widget);
+        pushButton35 = new QPushButton(layoutWidget);
         pushButton35->setObjectName("pushButton35");
 
         formLayout_3->setWidget(5, QFormLayout::FieldRole, pushButton35);
 
-        pushButton36 = new QPushButton(widget);
+        pushButton36 = new QPushButton(layoutWidget);
         pushButton36->setObjectName("pushButton36");
 
         formLayout_3->setWidget(6, QFormLayout::FieldRole, pushButton36);

@@ -27,13 +27,13 @@ public:
     {
         if (addedsuccessfully->objectName().isEmpty())
             addedsuccessfully->setObjectName("addedsuccessfully");
-        addedsuccessfully->resize(350, 170);
+        addedsuccessfully->resize(551, 279);
         label = new QLabel(addedsuccessfully);
         label->setObjectName("label");
-        label->setGeometry(QRect(130, 50, 151, 51));
+        label->setGeometry(QRect(160, 60, 211, 61));
         pushButton = new QPushButton(addedsuccessfully);
         pushButton->setObjectName("pushButton");
-        pushButton->setGeometry(QRect(130, 100, 80, 18));
+        pushButton->setGeometry(QRect(190, 140, 91, 31));
 
         retranslateUi(addedsuccessfully);
 
