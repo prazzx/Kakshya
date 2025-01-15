@@ -151,7 +151,7 @@ qmake: FORCE
 qmake_all: FORCE
 
 dist:
-	$(ZIP) Kakshya_Version1.zip $(SOURCES) $(DIST) ..\..\Kakshya_Version1.pro C:\Qt\6.8.1\mingw_64\mkspecs\features\spec_pre.prf C:\Qt\6.8.1\mingw_64\mkspecs\features\device_config.prf C:\Qt\6.8.1\mingw_64\mkspecs\common\sanitize.conf C:\Qt\6.8.1\mingw_64\mkspecs\common\gcc-base.conf C:\Qt\6.8.1\mingw_64\mkspecs\common\g++-base.conf C:\Qt\6.8.1\mingw_64\mkspecs\features\win32\windows_vulkan_sdk.prf C:\Qt\6.8.1\mingw_64\mkspecs\common\windows-vulkan.conf C:\Qt\6.8.1\mingw_64\mkspecs\common\g++-win32.conf C:\Qt\6.8.1\mingw_64\mkspecs\common\windows-desktop.conf C:\Qt\6.8.1\mingw_64\mkspecs\qconfig.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_ext_freetype.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_ext_libjpeg.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_ext_libpng.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_concurrent.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_concurrent_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_core.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_core_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_dbus.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_dbus_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_designer.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_designer_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_designercomponents_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_devicediscovery_support_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_entrypoint_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_example_icons_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_examples_asset_downloader_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_fb_support_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_freetype_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_gui.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_gui_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_harfbuzz_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_help.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_help_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_jpeg_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_labsanimation.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_labsanimation_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_labsfolderlistmodel.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_labsfolderlistmodel_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_labsplatform.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_labsplatform_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_labsqmlmodels.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_labsqmlmodels_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_labssettings.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_labssettings_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_labssharedimage.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_labssharedimage_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_labswavefrontmesh.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_labswavefrontmesh_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_linguist.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_network.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_network_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_opengl.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_opengl_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_openglwidgets.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_openglwidgets_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_packetprotocol_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_png_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_printsupport.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_printsupport_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_qdoccatch_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_qdoccatchconversions_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_qdoccatchgenerators_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_qml.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_qml_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_qmlassetdownloader.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_qmlassetdownloader_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_qmlcompiler.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_qmlcompiler_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_qmlcore.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_qmlcore_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_qmldebug_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_qmldom_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_qmlintegration.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_qmlintegration_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_qmllocalstorage.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_qmllocalstorage_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_qmlls_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_qmlmeta.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_qmlmeta_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_qmlmodels.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_qmlmodels_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_qmlnetwork.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_qmlnetwork_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_qmltest.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_qmltest_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_qmltoolingsettings_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_qmltyperegistrar_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_qmlworkerscript.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_qmlworkerscript_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_qmlxmllistmodel.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_qmlxmllistmodel_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quick.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quick_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2basic.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2basic_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2basicstyleimpl.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2basicstyleimpl_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2fluentwinui3styleimpl.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2fluentwinui3styleimpl_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2fusion.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2fusion_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2fusionstyleimpl.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2fusionstyleimpl_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2imagine.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2imagine_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2imaginestyleimpl.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2imaginestyleimpl_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2impl.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2impl_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2material.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2material_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2materialstyleimpl.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2materialstyleimpl_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2universal.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2universal_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2universalstyleimpl.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2universalstyleimpl_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2windowsstyleimpl.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2windowsstyleimpl_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickcontrolstestutilsprivate_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickdialogs2.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickdialogs2_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickdialogs2quickimpl.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickdialogs2quickimpl_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickdialogs2utils.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickdialogs2utils_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickeffects_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quicklayouts.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quicklayouts_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickparticles_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickshapes_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quicktemplates2.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quicktemplates2_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quicktestutilsprivate_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickvectorimage.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickvectorimage_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickvectorimagegenerator_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickwidgets.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickwidgets_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_sql.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_sql_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_svg.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_svg_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_svgwidgets.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_svgwidgets_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_testlib.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_testlib_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_tools_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_uiplugin.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_uitools.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_uitools_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_widgets.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_widgets_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_xml.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_xml_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_zlib_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\features\qt_functions.prf C:\Qt\6.8.1\mingw_64\mkspecs\features\qt_config.prf C:\Qt\6.8.1\mingw_64\mkspecs\win32-g++\qmake.conf C:\Qt\6.8.1\mingw_64\mkspecs\features\spec_post.prf .qmake.stash C:\Qt\6.8.1\mingw_64\mkspecs\features\exclusive_builds.prf C:\Qt\6.8.1\mingw_64\mkspecs\features\toolchain.prf C:\Qt\6.8.1\mingw_64\mkspecs\features\default_pre.prf C:\Qt\6.8.1\mingw_64\mkspecs\features\win32\default_pre.prf C:\Qt\6.8.1\mingw_64\mkspecs\features\resolve_config.prf C:\Qt\6.8.1\mingw_64\mkspecs\features\exclusive_builds_post.prf C:\Qt\6.8.1\mingw_64\mkspecs\features\default_post.prf C:\Qt\6.8.1\mingw_64\mkspecs\features\build_pass.prf C:\Qt\6.8.1\mingw_64\mkspecs\features\qml_debug.prf C:\Qt\6.8.1\mingw_64\mkspecs\features\precompile_header.prf C:\Qt\6.8.1\mingw_64\mkspecs\features\warn_on.prf C:\Qt\6.8.1\mingw_64\mkspecs\features\permissions.prf C:\Qt\6.8.1\mingw_64\mkspecs\features\qt.prf C:\Qt\6.8.1\mingw_64\mkspecs\features\resources_functions.prf C:\Qt\6.8.1\mingw_64\mkspecs\features\resources.prf C:\Qt\6.8.1\mingw_64\mkspecs\features\moc.prf C:\Qt\6.8.1\mingw_64\mkspecs\features\win32\opengl.prf C:\Qt\6.8.1\mingw_64\mkspecs\features\uic.prf C:\Qt\6.8.1\mingw_64\mkspecs\features\qmake_use.prf C:\Qt\6.8.1\mingw_64\mkspecs\features\file_copies.prf C:\Qt\6.8.1\mingw_64\mkspecs\features\win32\windows.prf C:\Qt\6.8.1\mingw_64\mkspecs\features\testcase_targets.prf C:\Qt\6.8.1\mingw_64\mkspecs\features\exceptions.prf C:\Qt\6.8.1\mingw_64\mkspecs\features\yacc.prf C:\Qt\6.8.1\mingw_64\mkspecs\features\lex.prf ..\..\Kakshya_Version1.pro ..\..\Resources.qrc C:\Qt\6.8.1\mingw_64\lib\Qt6Widgets.prl C:\Qt\6.8.1\mingw_64\lib\Qt6Gui.prl C:\Qt\6.8.1\mingw_64\lib\Qt6Sql.prl C:\Qt\6.8.1\mingw_64\lib\Qt6Core.prl C:\Qt\6.8.1\mingw_64\lib\Qt6EntryPoint.prl   ..\..\Resources.qrc C:\Qt\6.8.1\mingw_64\mkspecs\features\data\dummy.cpp ..\..\addedsuccessfully.h ..\..\addvaluestoroutine.h ..\..\coordinatordash.h ..\..\crdash.h ..\..\forgotpassword.h ..\..\loginpage.h ..\..\loginsuccessful.h ..\..\mainwindow.h ..\..\passwordchanged.h ..\..\signupdialog.h ..\..\signupsuccessful.h ..\..\teacherdash.h ..\..\uploadroutine.h  ..\..\addedsuccessfully.cpp ..\..\addvaluestoroutine.cpp ..\..\coordinatordash.cpp ..\..\crdash.cpp ..\..\forgotpassword.cpp ..\..\loginpage.cpp ..\..\loginsuccessful.cpp ..\..\main.cpp ..\..\mainwindow.cpp ..\..\passwordchanged.cpp ..\..\signupdialog.cpp ..\..\signupsuccessful.cpp ..\..\teacherdash.cpp ..\..\uploadroutine.cpp ..\..\addedsuccessfully.ui ..\..\addvaluestoroutine.ui ..\..\coordinatordash.ui ..\..\crdash.ui ..\..\forgotpassword.ui ..\..\loginpage.ui ..\..\loginsuccessful.ui ..\..\passwordchanged.ui ..\..\signupdialog.ui ..\..\signupsuccessful.ui ..\..\teacherdash.ui ..\..\uploadroutine.ui    
+	$(ZIP) Kakshya_Version1.zip $(SOURCES) $(DIST) ..\..\..\..\Kakshya_Version1.pro C:\Qt\6.8.1\mingw_64\mkspecs\features\spec_pre.prf C:\Qt\6.8.1\mingw_64\mkspecs\features\device_config.prf C:\Qt\6.8.1\mingw_64\mkspecs\common\sanitize.conf C:\Qt\6.8.1\mingw_64\mkspecs\common\gcc-base.conf C:\Qt\6.8.1\mingw_64\mkspecs\common\g++-base.conf C:\Qt\6.8.1\mingw_64\mkspecs\features\win32\windows_vulkan_sdk.prf C:\Qt\6.8.1\mingw_64\mkspecs\common\windows-vulkan.conf C:\Qt\6.8.1\mingw_64\mkspecs\common\g++-win32.conf C:\Qt\6.8.1\mingw_64\mkspecs\common\windows-desktop.conf C:\Qt\6.8.1\mingw_64\mkspecs\qconfig.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_ext_freetype.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_ext_libjpeg.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_ext_libpng.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_concurrent.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_concurrent_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_core.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_core_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_dbus.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_dbus_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_designer.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_designer_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_designercomponents_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_devicediscovery_support_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_entrypoint_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_example_icons_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_examples_asset_downloader_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_fb_support_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_freetype_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_gui.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_gui_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_harfbuzz_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_help.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_help_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_jpeg_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_labsanimation.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_labsanimation_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_labsfolderlistmodel.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_labsfolderlistmodel_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_labsplatform.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_labsplatform_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_labsqmlmodels.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_labsqmlmodels_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_labssettings.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_labssettings_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_labssharedimage.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_labssharedimage_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_labswavefrontmesh.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_labswavefrontmesh_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_linguist.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_network.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_network_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_opengl.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_opengl_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_openglwidgets.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_openglwidgets_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_packetprotocol_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_png_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_printsupport.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_printsupport_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_qdoccatch_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_qdoccatchconversions_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_qdoccatchgenerators_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_qml.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_qml_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_qmlassetdownloader.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_qmlassetdownloader_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_qmlcompiler.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_qmlcompiler_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_qmlcore.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_qmlcore_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_qmldebug_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_qmldom_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_qmlintegration.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_qmlintegration_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_qmllocalstorage.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_qmllocalstorage_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_qmlls_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_qmlmeta.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_qmlmeta_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_qmlmodels.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_qmlmodels_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_qmlnetwork.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_qmlnetwork_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_qmltest.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_qmltest_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_qmltoolingsettings_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_qmltyperegistrar_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_qmlworkerscript.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_qmlworkerscript_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_qmlxmllistmodel.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_qmlxmllistmodel_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quick.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quick_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2basic.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2basic_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2basicstyleimpl.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2basicstyleimpl_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2fluentwinui3styleimpl.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2fluentwinui3styleimpl_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2fusion.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2fusion_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2fusionstyleimpl.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2fusionstyleimpl_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2imagine.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2imagine_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2imaginestyleimpl.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2imaginestyleimpl_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2impl.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2impl_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2material.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2material_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2materialstyleimpl.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2materialstyleimpl_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2universal.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2universal_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2universalstyleimpl.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2universalstyleimpl_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2windowsstyleimpl.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2windowsstyleimpl_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickcontrolstestutilsprivate_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickdialogs2.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickdialogs2_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickdialogs2quickimpl.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickdialogs2quickimpl_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickdialogs2utils.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickdialogs2utils_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickeffects_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quicklayouts.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quicklayouts_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickparticles_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickshapes_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quicktemplates2.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quicktemplates2_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quicktestutilsprivate_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickvectorimage.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickvectorimage_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickvectorimagegenerator_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickwidgets.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_quickwidgets_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_sql.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_sql_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_svg.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_svg_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_svgwidgets.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_svgwidgets_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_testlib.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_testlib_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_tools_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_uiplugin.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_uitools.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_uitools_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_widgets.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_widgets_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_xml.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_xml_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\modules\qt_lib_zlib_private.pri C:\Qt\6.8.1\mingw_64\mkspecs\features\qt_functions.prf C:\Qt\6.8.1\mingw_64\mkspecs\features\qt_config.prf C:\Qt\6.8.1\mingw_64\mkspecs\win32-g++\qmake.conf C:\Qt\6.8.1\mingw_64\mkspecs\features\spec_post.prf .qmake.stash C:\Qt\6.8.1\mingw_64\mkspecs\features\exclusive_builds.prf C:\Qt\6.8.1\mingw_64\mkspecs\features\toolchain.prf C:\Qt\6.8.1\mingw_64\mkspecs\features\default_pre.prf C:\Qt\6.8.1\mingw_64\mkspecs\features\win32\default_pre.prf C:\Qt\6.8.1\mingw_64\mkspecs\features\resolve_config.prf C:\Qt\6.8.1\mingw_64\mkspecs\features\exclusive_builds_post.prf C:\Qt\6.8.1\mingw_64\mkspecs\features\default_post.prf C:\Qt\6.8.1\mingw_64\mkspecs\features\build_pass.prf C:\Qt\6.8.1\mingw_64\mkspecs\features\qml_debug.prf C:\Qt\6.8.1\mingw_64\mkspecs\features\precompile_header.prf C:\Qt\6.8.1\mingw_64\mkspecs\features\warn_on.prf C:\Qt\6.8.1\mingw_64\mkspecs\features\permissions.prf C:\Qt\6.8.1\mingw_64\mkspecs\features\qt.prf C:\Qt\6.8.1\mingw_64\mkspecs\features\resources_functions.prf C:\Qt\6.8.1\mingw_64\mkspecs\features\resources.prf C:\Qt\6.8.1\mingw_64\mkspecs\features\moc.prf C:\Qt\6.8.1\mingw_64\mkspecs\features\win32\opengl.prf C:\Qt\6.8.1\mingw_64\mkspecs\features\uic.prf C:\Qt\6.8.1\mingw_64\mkspecs\features\qmake_use.prf C:\Qt\6.8.1\mingw_64\mkspecs\features\file_copies.prf C:\Qt\6.8.1\mingw_64\mkspecs\features\win32\windows.prf C:\Qt\6.8.1\mingw_64\mkspecs\features\testcase_targets.prf C:\Qt\6.8.1\mingw_64\mkspecs\features\exceptions.prf C:\Qt\6.8.1\mingw_64\mkspecs\features\yacc.prf C:\Qt\6.8.1\mingw_64\mkspecs\features\lex.prf ..\..\Kakshya_Version1.pro ..\..\Resources.qrc C:\Qt\6.8.1\mingw_64\lib\Qt6Widgets.prl C:\Qt\6.8.1\mingw_64\lib\Qt6Gui.prl C:\Qt\6.8.1\mingw_64\lib\Qt6Sql.prl C:\Qt\6.8.1\mingw_64\lib\Qt6Core.prl C:\Qt\6.8.1\mingw_64\lib\Qt6EntryPoint.prl   ..\..\Resources.qrc C:\Qt\6.8.1\mingw_64\mkspecs\features\data\dummy.cpp ..\..\addedsuccessfully.h ..\..\addvaluestoroutine.h ..\..\coordinatordash.h ..\..\crdash.h ..\..\forgotpassword.h ..\..\loginpage.h ..\..\loginsuccessful.h ..\..\mainwindow.h ..\..\passwordchanged.h ..\..\signupdialog.h ..\..\signupsuccessful.h ..\..\teacherdash.h ..\..\uploadroutine.h  ..\..\addedsuccessfully.cpp ..\..\addvaluestoroutine.cpp ..\..\coordinatordash.cpp ..\..\crdash.cpp ..\..\forgotpassword.cpp ..\..\loginpage.cpp ..\..\loginsuccessful.cpp ..\..\main.cpp ..\..\mainwindow.cpp ..\..\passwordchanged.cpp ..\..\signupdialog.cpp ..\..\signupsuccessful.cpp ..\..\teacherdash.cpp ..\..\uploadroutine.cpp ..\..\addedsuccessfully.ui ..\..\addvaluestoroutine.ui ..\..\coordinatordash.ui ..\..\crdash.ui ..\..\forgotpassword.ui ..\..\loginpage.ui ..\..\loginsuccessful.ui ..\..\passwordchanged.ui ..\..\signupdialog.ui ..\..\signupsuccessful.ui ..\..\teacherdash.ui ..\..\uploadroutine.ui    
 
 clean: compiler_clean 
 	-$(DEL_FILE) release\addedsuccessfully.o release\addvaluestoroutine.o release\coordinatordash.o release\crdash.o release\forgotpassword.o release\loginpage.o release\loginsuccessful.o release\main.o release\mainwindow.o release\passwordchanged.o release\signupdialog.o release\signupsuccessful.o release\teacherdash.o release\uploadroutine.o release\qrc_Resources.o release\moc_addedsuccessfully.o release\moc_addvaluestoroutine.o release\moc_coordinatordash.o release\moc_crdash.o release\moc_forgotpassword.o release\moc_loginpage.o release\moc_loginsuccessful.o release\moc_mainwindow.o release\moc_passwordchanged.o release\moc_signupdialog.o release\moc_signupsuccessful.o release\moc_teacherdash.o release\moc_uploadroutine.o
@@ -987,6 +987,23 @@ release/moc_crdash.cpp: ../../crdash.h \
 		C:/Qt/6.8.1/mingw_64/include/QtGui/qinputmethod.h \
 		C:/Qt/6.8.1/mingw_64/include/QtCore/qlocale.h \
 		C:/Qt/6.8.1/mingw_64/include/QtGui/qguiapplication_platform.h \
+		C:/Qt/6.8.1/mingw_64/include/QtCore/QDateTime \
+		C:/Qt/6.8.1/mingw_64/include/QtCore/qdatetime.h \
+		C:/Qt/6.8.1/mingw_64/include/QtCore/qcalendar.h \
+		C:/Qt/6.8.1/mingw_64/include/QtCore/QTimer \
+		C:/Qt/6.8.1/mingw_64/include/QtCore/qtimer.h \
+		C:/Qt/6.8.1/mingw_64/include/QtCore/qbasictimer.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QWidget \
+		C:/Qt/6.8.1/mingw_64/include/QtSql/QSqlDatabase \
+		C:/Qt/6.8.1/mingw_64/include/QtSql/qsqldatabase.h \
+		C:/Qt/6.8.1/mingw_64/include/QtSql/qtsqlglobal.h \
+		C:/Qt/6.8.1/mingw_64/include/QtSql/qtsql-config.h \
+		C:/Qt/6.8.1/mingw_64/include/QtSql/qtsqlexports.h \
+		C:/Qt/6.8.1/mingw_64/include/QtCore/qmetaobject.h \
+		C:/Qt/6.8.1/mingw_64/include/QtSql/QSqlQuery \
+		C:/Qt/6.8.1/mingw_64/include/QtSql/qsqlquery.h \
+		C:/Qt/6.8.1/mingw_64/include/QtSql/QSqlError \
+		C:/Qt/6.8.1/mingw_64/include/QtSql/qsqlerror.h \
 		release/moc_predefs.h \
 		C:/Qt/6.8.1/mingw_64/bin/moc.exe
 	C:\Qt\6.8.1\mingw_64\bin\moc.exe $(DEFINES) --include "D:/2nd Sem project/Kakshya_main/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/release/moc_predefs.h" -IC:/Qt/6.8.1/mingw_64/mkspecs/win32-g++ -I"D:/2nd Sem project/Kakshya_main" -IC:/Qt/6.8.1/mingw_64/include -IC:/Qt/6.8.1/mingw_64/include/QtWidgets -IC:/Qt/6.8.1/mingw_64/include/QtGui -IC:/Qt/6.8.1/mingw_64/include/QtSql -IC:/Qt/6.8.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IC:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include ..\..\crdash.h -o release\moc_crdash.cpp
@@ -3037,7 +3054,18 @@ release/addedsuccessfully.o: ../../addedsuccessfully.cpp ../../addedsuccessfully
 		C:/Qt/6.8.1/mingw_64/include/QtGui/qinputmethod.h \
 		C:/Qt/6.8.1/mingw_64/include/QtCore/qlocale.h \
 		C:/Qt/6.8.1/mingw_64/include/QtGui/qguiapplication_platform.h \
-		ui_addedsuccessfully.h
+		ui_addedsuccessfully.h \
+		C:/Qt/6.8.1/mingw_64/include/QtCore/QVariant \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QApplication \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qapplication.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QLabel \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qlabel.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qframe.h \
+		C:/Qt/6.8.1/mingw_64/include/QtGui/qpicture.h \
+		C:/Qt/6.8.1/mingw_64/include/QtGui/qtextdocument.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QPushButton \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qabstractbutton.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\addedsuccessfully.o ..\..\addedsuccessfully.cpp
 
 release/addvaluestoroutine.o: ../../addvaluestoroutine.cpp ../../addvaluestoroutine.h \
@@ -3233,6 +3261,29 @@ release/addvaluestoroutine.o: ../../addvaluestoroutine.cpp ../../addvaluestorout
 		C:/Qt/6.8.1/mingw_64/include/QtGui/qguiapplication_platform.h \
 		../../addedsuccessfully.h \
 		ui_addvaluestoroutine.h \
+		C:/Qt/6.8.1/mingw_64/include/QtCore/QVariant \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QApplication \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qapplication.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QLabel \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qlabel.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qframe.h \
+		C:/Qt/6.8.1/mingw_64/include/QtGui/qpicture.h \
+		C:/Qt/6.8.1/mingw_64/include/QtGui/qtextdocument.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QLineEdit \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qlineedit.h \
+		C:/Qt/6.8.1/mingw_64/include/QtGui/qtextcursor.h \
+		C:/Qt/6.8.1/mingw_64/include/QtGui/qtextformat.h \
+		C:/Qt/6.8.1/mingw_64/include/QtGui/qpen.h \
+		C:/Qt/6.8.1/mingw_64/include/QtGui/qtextoption.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QPushButton \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qabstractbutton.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QVBoxLayout \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qboxlayout.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qlayout.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qlayoutitem.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qgridlayout.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QWidget \
 		C:/Qt/6.8.1/mingw_64/include/QtSql/QSqlDatabase \
 		C:/Qt/6.8.1/mingw_64/include/QtSql/qsqldatabase.h \
 		C:/Qt/6.8.1/mingw_64/include/QtSql/qtsqlglobal.h \
@@ -3461,6 +3512,18 @@ release/coordinatordash.o: ../../coordinatordash.cpp ../../coordinatordash.h \
 		C:/Qt/6.8.1/mingw_64/include/QtSql/QSqlError \
 		C:/Qt/6.8.1/mingw_64/include/QtSql/qsqlerror.h \
 		ui_coordinatordash.h \
+		C:/Qt/6.8.1/mingw_64/include/QtCore/QVariant \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QApplication \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qapplication.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QFrame \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qframe.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QLabel \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qlabel.h \
+		C:/Qt/6.8.1/mingw_64/include/QtGui/qpicture.h \
+		C:/Qt/6.8.1/mingw_64/include/QtGui/qtextdocument.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QPushButton \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qabstractbutton.h \
 		../../loginpage.h \
 		../../signupdialog.h \
 		../../../../../Kakshya_main/signupsuccessful.h \
@@ -3666,14 +3729,6 @@ release/crdash.o: ../../crdash.cpp ../../crdash.h \
 		C:/Qt/6.8.1/mingw_64/include/QtGui/qinputmethod.h \
 		C:/Qt/6.8.1/mingw_64/include/QtCore/qlocale.h \
 		C:/Qt/6.8.1/mingw_64/include/QtGui/qguiapplication_platform.h \
-		ui_crdash.h \
-		../../loginpage.h \
-		../../signupdialog.h \
-		../../../../../Kakshya_main/signupsuccessful.h \
-		../../forgotpassword.h \
-		../../../../../Kakshya_main/passwordchanged.h \
-		../../loginsuccessful.h \
-		../../coordinatordash.h \
 		C:/Qt/6.8.1/mingw_64/include/QtCore/QDateTime \
 		C:/Qt/6.8.1/mingw_64/include/QtCore/qdatetime.h \
 		C:/Qt/6.8.1/mingw_64/include/QtCore/qcalendar.h \
@@ -3681,9 +3736,6 @@ release/crdash.o: ../../crdash.cpp ../../crdash.h \
 		C:/Qt/6.8.1/mingw_64/include/QtCore/qtimer.h \
 		C:/Qt/6.8.1/mingw_64/include/QtCore/qbasictimer.h \
 		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QWidget \
-		../../uploadroutine.h \
-		../../addvaluestoroutine.h \
-		../../addedsuccessfully.h \
 		C:/Qt/6.8.1/mingw_64/include/QtSql/QSqlDatabase \
 		C:/Qt/6.8.1/mingw_64/include/QtSql/qsqldatabase.h \
 		C:/Qt/6.8.1/mingw_64/include/QtSql/qtsqlglobal.h \
@@ -3694,6 +3746,47 @@ release/crdash.o: ../../crdash.cpp ../../crdash.h \
 		C:/Qt/6.8.1/mingw_64/include/QtSql/qsqlquery.h \
 		C:/Qt/6.8.1/mingw_64/include/QtSql/QSqlError \
 		C:/Qt/6.8.1/mingw_64/include/QtSql/qsqlerror.h \
+		ui_crdash.h \
+		C:/Qt/6.8.1/mingw_64/include/QtCore/QVariant \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QApplication \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qapplication.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QComboBox \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qcombobox.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qstyleoption.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qabstractspinbox.h \
+		C:/Qt/6.8.1/mingw_64/include/QtGui/qvalidator.h \
+		C:/Qt/6.8.1/mingw_64/include/QtCore/qregularexpression.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qslider.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qabstractslider.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qstyle.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qtabbar.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qtabwidget.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qrubberband.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qframe.h \
+		C:/Qt/6.8.1/mingw_64/include/QtCore/qabstractitemmodel.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QGridLayout \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qgridlayout.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qlayout.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qlayoutitem.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qboxlayout.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QLabel \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qlabel.h \
+		C:/Qt/6.8.1/mingw_64/include/QtGui/qpicture.h \
+		C:/Qt/6.8.1/mingw_64/include/QtGui/qtextdocument.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QPushButton \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qabstractbutton.h \
+		../../loginpage.h \
+		../../signupdialog.h \
+		../../../../../Kakshya_main/signupsuccessful.h \
+		../../forgotpassword.h \
+		../../../../../Kakshya_main/passwordchanged.h \
+		../../loginsuccessful.h \
+		../../coordinatordash.h \
+		../../uploadroutine.h \
+		../../addvaluestoroutine.h \
+		../../addedsuccessfully.h \
 		../../teacherdash.h \
 		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QMessageBox \
 		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qmessagebox.h \
@@ -3894,6 +3987,30 @@ release/forgotpassword.o: ../../forgotpassword.cpp ../../forgotpassword.h \
 		C:/Qt/6.8.1/mingw_64/include/QtGui/qguiapplication_platform.h \
 		../../../../../Kakshya_main/passwordchanged.h \
 		ui_forgotpassword.h \
+		C:/Qt/6.8.1/mingw_64/include/QtCore/QVariant \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QApplication \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qapplication.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QHBoxLayout \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qboxlayout.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qlayout.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qlayoutitem.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qgridlayout.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QLabel \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qlabel.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qframe.h \
+		C:/Qt/6.8.1/mingw_64/include/QtGui/qpicture.h \
+		C:/Qt/6.8.1/mingw_64/include/QtGui/qtextdocument.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QLineEdit \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qlineedit.h \
+		C:/Qt/6.8.1/mingw_64/include/QtGui/qtextcursor.h \
+		C:/Qt/6.8.1/mingw_64/include/QtGui/qtextformat.h \
+		C:/Qt/6.8.1/mingw_64/include/QtGui/qpen.h \
+		C:/Qt/6.8.1/mingw_64/include/QtGui/qtextoption.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QPushButton \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qabstractbutton.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QVBoxLayout \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QWidget \
 		../../passwordchanged.h \
 		C:/Qt/6.8.1/mingw_64/include/QtSql/QSqlDatabase \
 		C:/Qt/6.8.1/mingw_64/include/QtSql/qsqldatabase.h \
@@ -4130,6 +4247,33 @@ release/loginpage.o: ../../loginpage.cpp ../../loginpage.h \
 		../../crdash.h \
 		../../teacherdash.h \
 		ui_loginpage.h \
+		C:/Qt/6.8.1/mingw_64/include/QtCore/QVariant \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QApplication \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qapplication.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QButtonGroup \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qbuttongroup.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QHBoxLayout \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qboxlayout.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qlayout.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qlayoutitem.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qgridlayout.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QLabel \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qlabel.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qframe.h \
+		C:/Qt/6.8.1/mingw_64/include/QtGui/qpicture.h \
+		C:/Qt/6.8.1/mingw_64/include/QtGui/qtextdocument.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QLineEdit \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qlineedit.h \
+		C:/Qt/6.8.1/mingw_64/include/QtGui/qtextcursor.h \
+		C:/Qt/6.8.1/mingw_64/include/QtGui/qtextformat.h \
+		C:/Qt/6.8.1/mingw_64/include/QtGui/qpen.h \
+		C:/Qt/6.8.1/mingw_64/include/QtGui/qtextoption.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QPushButton \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qabstractbutton.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QRadioButton \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qradiobutton.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QVBoxLayout \
 		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QMessageBox \
 		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qmessagebox.h \
 		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
@@ -4327,7 +4471,18 @@ release/loginsuccessful.o: ../../loginsuccessful.cpp ../../loginsuccessful.h \
 		C:/Qt/6.8.1/mingw_64/include/QtGui/qinputmethod.h \
 		C:/Qt/6.8.1/mingw_64/include/QtCore/qlocale.h \
 		C:/Qt/6.8.1/mingw_64/include/QtGui/qguiapplication_platform.h \
-		ui_loginsuccessful.h
+		ui_loginsuccessful.h \
+		C:/Qt/6.8.1/mingw_64/include/QtCore/QVariant \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QApplication \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qapplication.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QLabel \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qlabel.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qframe.h \
+		C:/Qt/6.8.1/mingw_64/include/QtGui/qpicture.h \
+		C:/Qt/6.8.1/mingw_64/include/QtGui/qtextdocument.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QPushButton \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qabstractbutton.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\loginsuccessful.o ..\..\loginsuccessful.cpp
 
 release/main.o: ../../main.cpp ../../loginpage.h \
@@ -4952,7 +5107,18 @@ release/passwordchanged.o: ../../passwordchanged.cpp ../../passwordchanged.h \
 		C:/Qt/6.8.1/mingw_64/include/QtGui/qinputmethod.h \
 		C:/Qt/6.8.1/mingw_64/include/QtCore/qlocale.h \
 		C:/Qt/6.8.1/mingw_64/include/QtGui/qguiapplication_platform.h \
-		ui_passwordchanged.h
+		ui_passwordchanged.h \
+		C:/Qt/6.8.1/mingw_64/include/QtCore/QVariant \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QApplication \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qapplication.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QLabel \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qlabel.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qframe.h \
+		C:/Qt/6.8.1/mingw_64/include/QtGui/qpicture.h \
+		C:/Qt/6.8.1/mingw_64/include/QtGui/qtextdocument.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QPushButton \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qabstractbutton.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\passwordchanged.o ..\..\passwordchanged.cpp
 
 release/signupdialog.o: ../../signupdialog.cpp ../../signupdialog.h \
@@ -5148,6 +5314,34 @@ release/signupdialog.o: ../../signupdialog.cpp ../../signupdialog.h \
 		C:/Qt/6.8.1/mingw_64/include/QtGui/qguiapplication_platform.h \
 		../../../../../Kakshya_main/signupsuccessful.h \
 		ui_signupdialog.h \
+		C:/Qt/6.8.1/mingw_64/include/QtCore/QVariant \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QApplication \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qapplication.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QButtonGroup \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qbuttongroup.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QHBoxLayout \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qboxlayout.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qlayout.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qlayoutitem.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qgridlayout.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QLabel \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qlabel.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qframe.h \
+		C:/Qt/6.8.1/mingw_64/include/QtGui/qpicture.h \
+		C:/Qt/6.8.1/mingw_64/include/QtGui/qtextdocument.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QLineEdit \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qlineedit.h \
+		C:/Qt/6.8.1/mingw_64/include/QtGui/qtextcursor.h \
+		C:/Qt/6.8.1/mingw_64/include/QtGui/qtextformat.h \
+		C:/Qt/6.8.1/mingw_64/include/QtGui/qpen.h \
+		C:/Qt/6.8.1/mingw_64/include/QtGui/qtextoption.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QPushButton \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qabstractbutton.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QRadioButton \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qradiobutton.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QVBoxLayout \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QWidget \
 		../../signupsuccessful.h \
 		../../loginpage.h \
 		../../forgotpassword.h \
@@ -5160,7 +5354,6 @@ release/signupdialog.o: ../../signupdialog.cpp ../../signupdialog.h \
 		C:/Qt/6.8.1/mingw_64/include/QtCore/QTimer \
 		C:/Qt/6.8.1/mingw_64/include/QtCore/qtimer.h \
 		C:/Qt/6.8.1/mingw_64/include/QtCore/qbasictimer.h \
-		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QWidget \
 		../../uploadroutine.h \
 		../../addvaluestoroutine.h \
 		../../addedsuccessfully.h \
@@ -5372,7 +5565,18 @@ release/signupsuccessful.o: ../../signupsuccessful.cpp ../../signupsuccessful.h 
 		C:/Qt/6.8.1/mingw_64/include/QtGui/qinputmethod.h \
 		C:/Qt/6.8.1/mingw_64/include/QtCore/qlocale.h \
 		C:/Qt/6.8.1/mingw_64/include/QtGui/qguiapplication_platform.h \
-		ui_signupsuccessful.h
+		ui_signupsuccessful.h \
+		C:/Qt/6.8.1/mingw_64/include/QtCore/QVariant \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QApplication \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qapplication.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QLabel \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qlabel.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qframe.h \
+		C:/Qt/6.8.1/mingw_64/include/QtGui/qpicture.h \
+		C:/Qt/6.8.1/mingw_64/include/QtGui/qtextdocument.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QPushButton \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qabstractbutton.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\signupsuccessful.o ..\..\signupsuccessful.cpp
 
 release/teacherdash.o: ../../teacherdash.cpp ../../teacherdash.h \
@@ -5567,6 +5771,25 @@ release/teacherdash.o: ../../teacherdash.cpp ../../teacherdash.h \
 		C:/Qt/6.8.1/mingw_64/include/QtCore/qlocale.h \
 		C:/Qt/6.8.1/mingw_64/include/QtGui/qguiapplication_platform.h \
 		ui_teacherdash.h \
+		C:/Qt/6.8.1/mingw_64/include/QtCore/QVariant \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QApplication \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qapplication.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QDateTimeEdit \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qdatetimeedit.h \
+		C:/Qt/6.8.1/mingw_64/include/QtCore/qtimezone.h \
+		C:/Qt/6.8.1/mingw_64/include/QtCore/qdatetime.h \
+		C:/Qt/6.8.1/mingw_64/include/QtCore/qcalendar.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qabstractspinbox.h \
+		C:/Qt/6.8.1/mingw_64/include/QtGui/qvalidator.h \
+		C:/Qt/6.8.1/mingw_64/include/QtCore/qregularexpression.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QLabel \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qlabel.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qframe.h \
+		C:/Qt/6.8.1/mingw_64/include/QtGui/qpicture.h \
+		C:/Qt/6.8.1/mingw_64/include/QtGui/qtextdocument.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QPushButton \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qabstractbutton.h \
 		../../loginpage.h \
 		../../signupdialog.h \
 		../../../../../Kakshya_main/signupsuccessful.h \
@@ -5575,8 +5798,6 @@ release/teacherdash.o: ../../teacherdash.cpp ../../teacherdash.h \
 		../../loginsuccessful.h \
 		../../coordinatordash.h \
 		C:/Qt/6.8.1/mingw_64/include/QtCore/QDateTime \
-		C:/Qt/6.8.1/mingw_64/include/QtCore/qdatetime.h \
-		C:/Qt/6.8.1/mingw_64/include/QtCore/qcalendar.h \
 		C:/Qt/6.8.1/mingw_64/include/QtCore/QTimer \
 		C:/Qt/6.8.1/mingw_64/include/QtCore/qtimer.h \
 		C:/Qt/6.8.1/mingw_64/include/QtCore/qbasictimer.h \
@@ -5795,6 +6016,41 @@ release/uploadroutine.o: ../../uploadroutine.cpp ../../uploadroutine.h \
 		../../addvaluestoroutine.h \
 		../../addedsuccessfully.h \
 		ui_uploadroutine.h \
+		C:/Qt/6.8.1/mingw_64/include/QtCore/QVariant \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QApplication \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qapplication.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QComboBox \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qcombobox.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qstyleoption.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qabstractspinbox.h \
+		C:/Qt/6.8.1/mingw_64/include/QtGui/qvalidator.h \
+		C:/Qt/6.8.1/mingw_64/include/QtCore/qregularexpression.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qslider.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qabstractslider.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qstyle.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qtabbar.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qtabwidget.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qrubberband.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qframe.h \
+		C:/Qt/6.8.1/mingw_64/include/QtCore/qabstractitemmodel.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QFormLayout \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qformlayout.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QLayout \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qlayout.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qlayoutitem.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qboxlayout.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qgridlayout.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QHBoxLayout \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QLabel \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qlabel.h \
+		C:/Qt/6.8.1/mingw_64/include/QtGui/qpicture.h \
+		C:/Qt/6.8.1/mingw_64/include/QtGui/qtextdocument.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QPushButton \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qabstractbutton.h \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QVBoxLayout \
+		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QWidget \
 		C:/Qt/6.8.1/mingw_64/include/QtSql/QSqlDatabase \
 		C:/Qt/6.8.1/mingw_64/include/QtSql/qsqldatabase.h \
 		C:/Qt/6.8.1/mingw_64/include/QtSql/qtsqlglobal.h \
