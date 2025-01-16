@@ -140,8 +140,8 @@ void SignupDialog::on_pushButtonSignUp_clicked()
     void SignupDialog::on_pushButton_clicked()
     {
         this->close();
-        LoginPage *loginPage = new LoginPage(); // Create an instance of LoginPage
-        loginPage->show();                     // Show the login page
+        LoginPage *loginPage = new LoginPage();
+        loginPage->showMaximized();
 
     }
 

@@ -1,6 +1,7 @@
 #include "crdash.h"
 #include "ui_crdash.h"
 #include"loginpage.h"
+#include"crsearchclass.h"
 #include<QMessageBox>
 #include<QDebug>
 
@@ -65,6 +66,15 @@ void crdash::StatusReveal(){
     ui->labelTime->setText(currentDateTime);
     int Time = QDateTime::currentDateTime().toString("HH").toInt();
     if(Time>=16 && Time<=24){
+        ui->Subject1->clear();
+        ui->rno1->clear();
+        ui->Status1->clear();
+        ui->Subject2->clear();
+        ui->rno2->clear();
+        ui->Status2->clear();
+        ui->Subject3->clear();
+        ui->rno3->clear();
+        ui->Status3->clear();
         ui->widget1->setStyleSheet("background-color: red ;");
         ui->Status1->setText("Classes Ended");
         ui->widget2->setStyleSheet("background-color: red ;");
@@ -161,5 +171,13 @@ void crdash::StatusReveal(){
 
 
 
+}
+
+
+void crdash::on_pushButtonUpload_clicked()
+{
+    close();
+    crsearch = new CRsearchclass(this);
+    crsearch->showMaximized();
 }
 
