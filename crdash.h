@@ -9,6 +9,7 @@
 #include <QSqlDatabase>
 #include <QSqlQuery>
 #include <QSqlError>
+#include <crsearchclass.h>
 
 namespace Ui {
 class crdash;
@@ -26,8 +27,11 @@ private slots:
     void on_pushButton_2_clicked();
     void StatusReveal();
 
+    void on_pushButtonUpload_clicked();
+
 private:
     Ui::crdash *ui;
+    CRsearchclass *crsearch;
     bool connectToDatabase();
 };
 

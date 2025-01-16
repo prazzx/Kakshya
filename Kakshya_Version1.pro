@@ -14,6 +14,7 @@ SOURCES += \
     addvaluestoroutine.cpp \
     coordinatordash.cpp \
     crdash.cpp \
+    crsearchclass.cpp \
     forgotpassword.cpp \
     loginpage.cpp \
     loginsuccessful.cpp \
@@ -32,6 +33,7 @@ HEADERS += \
     addvaluestoroutine.h \
     coordinatordash.h \
     crdash.h \
+    crsearchclass.h \
     forgotpassword.h \
     loginpage.h \
     loginsuccessful.h \
@@ -49,6 +51,7 @@ FORMS += \
     addvaluestoroutine.ui \
     coordinatordash.ui \
     crdash.ui \
+    crsearchclass.ui \
     forgotpassword.ui \
     loginpage.ui \
     loginsuccessful.ui \

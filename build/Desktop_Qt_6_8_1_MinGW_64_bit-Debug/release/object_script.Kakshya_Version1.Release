@@ -2,6 +2,7 @@ release/addedsuccessfully.o
 release/addvaluestoroutine.o
 release/coordinatordash.o
 release/crdash.o
+release/crsearchclass.o
 release/forgotpassword.o
 release/loginpage.o
 release/loginsuccessful.o
@@ -19,6 +20,7 @@ release/moc_addedsuccessfully.o
 release/moc_addvaluestoroutine.o
 release/moc_coordinatordash.o
 release/moc_crdash.o
+release/moc_crsearchclass.o
 release/moc_forgotpassword.o
 release/moc_loginpage.o
 release/moc_loginsuccessful.o
