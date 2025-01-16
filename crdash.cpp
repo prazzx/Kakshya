@@ -64,7 +64,7 @@ void crdash::StatusReveal(){
     QString currentDateTime = QDateTime::currentDateTime().toString("dddd HH:mm");
     ui->labelTime->setText(currentDateTime);
     int Time = QDateTime::currentDateTime().toString("HH").toInt();
-    if(Time>16 && Time<24){
+    if(Time>=16 && Time<=24){
         ui->widget1->setStyleSheet("background-color: red ;");
         ui->Status1->setText("Classes Ended");
         ui->widget2->setStyleSheet("background-color: red ;");

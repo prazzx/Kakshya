@@ -1,0 +1,13 @@
+For new users:
+Order of execution of database files is:
+1) Createdb
+2) Signuptable
+3) Routinetable 
+
+For existing users(Users who are facing database problems and want to reset it):
+Order of execution of database files is:
+1) Resetdb
+2) Signuptable
+3) Routinetable 
+Note: This second order of execution completely removes all existing data from the database. So you will have to enter(Signup,Upload Routine) data again.
+

@@ -16,14 +16,12 @@ coordinatordash::coordinatordash(QWidget *parent)
 {
     ui->setupUi(this);
 
-    // Initialize and configure the QTimer once
     timer = new QTimer(this);
     connect(timer, &QTimer::timeout, this, &coordinatordash::updateColorbox);
 
-    // Start the timer with a 5000ms (5 seconds) interval
+
     timer->start(5000);
 
-    // Initial call to update the UI
     updateColorbox();
 
     // Load the logo
@@ -67,7 +65,7 @@ void coordinatordash::updateColorbox()
     int Time = QDateTime::currentDateTime().toString("HH").toInt();
     ui->labelTime->setText(currentDateTime);
 
-    if (Time > 16 || Time < 9 || currentDay == "Saturday") {
+    if (Time >= 16 || Time < 9 || currentDay == "Saturday") {
         ui->frame1->setStyleSheet("background-color: red;");
         ui->frame2->setStyleSheet("background-color: red;");
         ui->frame3->setStyleSheet("background-color: red;");
