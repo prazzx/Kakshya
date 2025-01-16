@@ -45,6 +45,7 @@ public:
     QLabel *label_11;
     QFrame *frame7;
     QLabel *label_12;
+    QPushButton *setpw;
 
     void setupUi(QDialog *coordinatordash)
     {
@@ -141,6 +142,9 @@ public:
         label_12 = new QLabel(frame7);
         label_12->setObjectName("label_12");
         label_12->setGeometry(QRect(40, 40, 71, 21));
+        setpw = new QPushButton(coordinatordash);
+        setpw->setObjectName("setpw");
+        setpw->setGeometry(QRect(630, 20, 141, 51));
 
         retranslateUi(coordinatordash);
 
@@ -165,6 +169,7 @@ public:
         label_9->setText(QCoreApplication::translate("coordinatordash", "Room 202", nullptr));
         label_11->setText(QCoreApplication::translate("coordinatordash", "Room 402", nullptr));
         label_12->setText(QCoreApplication::translate("coordinatordash", "Room 201", nullptr));
+        setpw->setText(QCoreApplication::translate("coordinatordash", "Manage CR", nullptr));
     } // retranslateUi
 
 };

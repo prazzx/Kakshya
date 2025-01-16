@@ -55,7 +55,7 @@ public:
         pushButtonSignup->setGeometry(QRect(1010, 10, 141, 71));
         labelMessage = new QLabel(LoginPage);
         labelMessage->setObjectName("labelMessage");
-        labelMessage->setGeometry(QRect(300, 410, 351, 91));
+        labelMessage->setGeometry(QRect(320, 440, 351, 91));
         logo = new QLabel(LoginPage);
         logo->setObjectName("logo");
         logo->setGeometry(QRect(690, 210, 321, 221));
@@ -142,7 +142,7 @@ public:
         logo->setText(QString());
         radioButtonCoordinator->setText(QCoreApplication::translate("LoginPage", "Co-ordinator", nullptr));
         radioButtonTeacher->setText(QCoreApplication::translate("LoginPage", "Teacher", nullptr));
-        radioButtonCr->setText(QCoreApplication::translate("LoginPage", "CR", nullptr));
+        radioButtonCr->setText(QCoreApplication::translate("LoginPage", "Student", nullptr));
         lineEditEmail->setPlaceholderText(QCoreApplication::translate("LoginPage", "Email", nullptr));
         lineEditPassword->setPlaceholderText(QCoreApplication::translate("LoginPage", "Password", nullptr));
         pushButtonForgotpassword->setText(QCoreApplication::translate("LoginPage", "Forgot Password?", nullptr));

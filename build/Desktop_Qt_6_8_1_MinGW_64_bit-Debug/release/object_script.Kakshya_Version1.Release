@@ -8,8 +8,10 @@ release/loginsuccessful.o
 release/main.o
 release/mainwindow.o
 release/passwordchanged.o
+release/selectcr.o
 release/signupdialog.o
 release/signupsuccessful.o
+release/studentdash.o
 release/teacherdash.o
 release/uploadroutine.o
 release/qrc_Resources.o
@@ -22,7 +24,9 @@ release/moc_loginpage.o
 release/moc_loginsuccessful.o
 release/moc_mainwindow.o
 release/moc_passwordchanged.o
+release/moc_selectcr.o
 release/moc_signupdialog.o
 release/moc_signupsuccessful.o
+release/moc_studentdash.o
 release/moc_teacherdash.o
 release/moc_uploadroutine.o

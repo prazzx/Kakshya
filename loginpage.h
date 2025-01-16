@@ -8,6 +8,7 @@
 #include "coordinatordash.h"
 #include "crdash.h"
 #include "teacherdash.h"
+#include"studentdash.h"
 
 
 namespace Ui { class LoginPage; }
@@ -38,6 +39,7 @@ private:
     Forgotpassword *forgotpassword;
     loginsuccessful *Loginsuccess;
     coordinatordash *codash;
+    studentdash *stdash;
     crdash *cdash;
     teacherdash *tdash;
     bool connectToDatabase();

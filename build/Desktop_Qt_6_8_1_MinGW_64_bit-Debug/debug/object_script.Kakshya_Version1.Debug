@@ -8,8 +8,10 @@ debug/loginsuccessful.o
 debug/main.o
 debug/mainwindow.o
 debug/passwordchanged.o
+debug/selectcr.o
 debug/signupdialog.o
 debug/signupsuccessful.o
+debug/studentdash.o
 debug/teacherdash.o
 debug/uploadroutine.o
 debug/qrc_Resources.o
@@ -22,7 +24,9 @@ debug/moc_loginpage.o
 debug/moc_loginsuccessful.o
 debug/moc_mainwindow.o
 debug/moc_passwordchanged.o
+debug/moc_selectcr.o
 debug/moc_signupdialog.o
 debug/moc_signupsuccessful.o
+debug/moc_studentdash.o
 debug/moc_teacherdash.o
 debug/moc_uploadroutine.o

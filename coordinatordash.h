@@ -9,6 +9,8 @@
 #include <QSqlDatabase>
 #include <QSqlQuery>
 #include <QSqlError>
+#include"selectcr.h"
+class selectcr;
 
 namespace Ui {
 class coordinatordash;
@@ -23,7 +25,7 @@ public:
     ~coordinatordash();
     QTimer *timer;
 
-
+ void openSelectCRDialog();
 
 private slots:
     void on_pushButtonUpload_clicked();
@@ -31,9 +33,12 @@ private slots:
 
     void on_pushButton_clicked();
 
+    void on_setpw_clicked();
+
 private:
     Ui::coordinatordash *ui;
     UploadRoutine *up;
+    selectcr *sc;
     bool connectToDatabase();
     bool isRoomFree;
 };

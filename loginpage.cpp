@@ -4,6 +4,7 @@
 #include "ui_loginpage.h"
 #include "coordinatordash.h"
 #include "crdash.h"
+#include"studentdash.h"
 #include "teacherdash.h"
 #include <QSqlDatabase>
 #include <QSqlQuery>
@@ -96,8 +97,8 @@ void LoginPage::on_pushButtonLogin_clicked()
                 tdash->showMaximized();
             }
             else if(tableName=="cr"){
-                cdash = new crdash(this);
-                cdash->showMaximized();
+                stdash = new studentdash(this);
+                stdash->showMaximized();
             }
             Loginsuccess = new loginsuccessful(this);
             Loginsuccess->show();
