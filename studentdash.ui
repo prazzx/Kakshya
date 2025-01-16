@@ -62,27 +62,6 @@
     </rect>
    </property>
    <layout class="QGridLayout" name="gridLayout">
-    <item row="1" column="2">
-     <widget class="QLabel" name="Subject1">
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-    </item>
-    <item row="3" column="1">
-     <widget class="QLabel" name="rno3">
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="1">
-     <widget class="QLabel" name="rno1">
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-    </item>
     <item row="3" column="0">
      <widget class="QLabel" name="label_13">
       <property name="text">
@@ -90,29 +69,32 @@
       </property>
      </widget>
     </item>
-    <item row="3" column="2">
-     <widget class="QLabel" name="Subject3">
+    <item row="1" column="2">
+     <widget class="QLabel" name="Subject1">
       <property name="text">
        <string/>
       </property>
      </widget>
     </item>
-    <item row="1" column="0">
-     <widget class="QLabel" name="label_9">
-      <property name="text">
-       <string>9-11</string>
-      </property>
+    <item row="3" column="3">
+     <widget class="QWidget" name="widget3" native="true">
+      <widget class="QLabel" name="Status3">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>121</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
      </widget>
     </item>
-    <item row="2" column="0">
-     <widget class="QLabel" name="label_10">
-      <property name="text">
-       <string>12-2</string>
-      </property>
-     </widget>
-    </item>
-    <item row="2" column="2">
-     <widget class="QLabel" name="Subject2">
+    <item row="3" column="2">
+     <widget class="QLabel" name="Subject3">
       <property name="text">
        <string/>
       </property>
@@ -125,31 +107,10 @@
       </property>
      </widget>
     </item>
-    <item row="0" column="0">
-     <widget class="QLabel" name="label_16">
-      <property name="text">
-       <string>Time</string>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="1">
-     <widget class="QLabel" name="label_17">
-      <property name="text">
-       <string>Room No</string>
-      </property>
-     </widget>
-    </item>
     <item row="0" column="2">
      <widget class="QLabel" name="label_18">
       <property name="text">
        <string>Subject</string>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="3">
-     <widget class="QLabel" name="label_19">
-      <property name="text">
-       <string>Status</string>
       </property>
      </widget>
     </item>
@@ -170,6 +131,34 @@
       </widget>
      </widget>
     </item>
+    <item row="3" column="1">
+     <widget class="QLabel" name="rno3">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_9">
+      <property name="text">
+       <string>9-11</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="2">
+     <widget class="QLabel" name="Subject2">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="label_10">
+      <property name="text">
+       <string>12-2</string>
+      </property>
+     </widget>
+    </item>
     <item row="2" column="3">
      <widget class="QWidget" name="widget2" native="true">
       <widget class="QLabel" name="Status2">
@@ -187,21 +176,32 @@
       </widget>
      </widget>
     </item>
-    <item row="3" column="3">
-     <widget class="QWidget" name="widget3" native="true">
-      <widget class="QLabel" name="Status3">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>10</y>
-         <width>121</width>
-         <height>31</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string/>
-       </property>
-      </widget>
+    <item row="1" column="1">
+     <widget class="QLabel" name="rno1">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="3">
+     <widget class="QLabel" name="label_19">
+      <property name="text">
+       <string>Status</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLabel" name="label_17">
+      <property name="text">
+       <string>Room No</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="label_16">
+      <property name="text">
+       <string>Time</string>
+      </property>
      </widget>
     </item>
    </layout>
@@ -222,11 +222,14 @@
   <widget class="QComboBox" name="comboBoxSelect">
    <property name="geometry">
     <rect>
-     <x>200</x>
+     <x>94</x>
      <y>230</y>
-     <width>55</width>
-     <height>22</height>
+     <width>161</width>
+     <height>41</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12pt &quot;Arial&quot;;</string>
    </property>
    <item>
     <property name="text">
