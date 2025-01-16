@@ -16,7 +16,7 @@ CXX           = g++
 DEFINES       = -DUNICODE -D_UNICODE -DWIN32 -DMINGW_HAS_SECURE_API=1 -DQT_QML_DEBUG -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_CORE_LIB -DQT_NEEDS_QMAIN
 CFLAGS        = -fno-keep-inline-dllexport -O2 -Wall -Wextra -Wextra $(DEFINES)
 CXXFLAGS      = -fno-keep-inline-dllexport -O2 -std=gnu++1z -Wall -Wextra -Wextra -fexceptions -mthreads $(DEFINES)
-INCPATH       = -I../../../Kakshya_main -I. -IC:/Qt/6.8.1/mingw_64/include -IC:/Qt/6.8.1/mingw_64/include/QtWidgets -IC:/Qt/6.8.1/mingw_64/include/QtGui -IC:/Qt/6.8.1/mingw_64/include/QtSql -IC:/Qt/6.8.1/mingw_64/include/QtCore -Irelease -I. -I/include -IC:/Qt/6.8.1/mingw_64/mkspecs/win32-g++ 
+INCPATH       = -I../../../Kakshya -I. -IC:/Qt/6.8.1/mingw_64/include -IC:/Qt/6.8.1/mingw_64/include/QtWidgets -IC:/Qt/6.8.1/mingw_64/include/QtGui -IC:/Qt/6.8.1/mingw_64/include/QtSql -IC:/Qt/6.8.1/mingw_64/include/QtCore -Irelease -I. -I/include -IC:/Qt/6.8.1/mingw_64/mkspecs/win32-g++ 
 LINKER      =        g++
 LFLAGS        =        -Wl,-s -Wl,-subsystem,windows -mthreads
 LIBS        =        C:\Qt\6.8.1\mingw_64\lib\libQt6Widgets.a C:\Qt\6.8.1\mingw_64\lib\libQt6Gui.a C:\Qt\6.8.1\mingw_64\lib\libQt6Sql.a C:\Qt\6.8.1\mingw_64\lib\libQt6Core.a -lmingw32 C:\Qt\6.8.1\mingw_64\lib\libQt6EntryPoint.a -lshell32  
@@ -389,7 +389,7 @@ release/moc_addedsuccessfully.cpp: ../../addedsuccessfully.h \
 		C:/Qt/6.8.1/mingw_64/include/QtGui/qguiapplication_platform.h \
 		release/moc_predefs.h \
 		C:/Qt/6.8.1/mingw_64/bin/moc.exe
-	C:\Qt\6.8.1\mingw_64\bin\moc.exe $(DEFINES) --include "D:/2nd Sem project/Kakshya_main/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/release/moc_predefs.h" -IC:/Qt/6.8.1/mingw_64/mkspecs/win32-g++ -I"D:/2nd Sem project/Kakshya_main" -IC:/Qt/6.8.1/mingw_64/include -IC:/Qt/6.8.1/mingw_64/include/QtWidgets -IC:/Qt/6.8.1/mingw_64/include/QtGui -IC:/Qt/6.8.1/mingw_64/include/QtSql -IC:/Qt/6.8.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IC:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include ..\..\addedsuccessfully.h -o release\moc_addedsuccessfully.cpp
+	C:\Qt\6.8.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/Acer/Desktop/Kakshya/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/release/moc_predefs.h -IC:/Qt/6.8.1/mingw_64/mkspecs/win32-g++ -IC:/Users/Acer/Desktop/Kakshya -IC:/Qt/6.8.1/mingw_64/include -IC:/Qt/6.8.1/mingw_64/include/QtWidgets -IC:/Qt/6.8.1/mingw_64/include/QtGui -IC:/Qt/6.8.1/mingw_64/include/QtSql -IC:/Qt/6.8.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IC:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include ..\..\addedsuccessfully.h -o release\moc_addedsuccessfully.cpp
 
 release/moc_addvaluestoroutine.cpp: ../../addvaluestoroutine.h \
 		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QDialog \
@@ -585,7 +585,7 @@ release/moc_addvaluestoroutine.cpp: ../../addvaluestoroutine.h \
 		../../addedsuccessfully.h \
 		release/moc_predefs.h \
 		C:/Qt/6.8.1/mingw_64/bin/moc.exe
-	C:\Qt\6.8.1\mingw_64\bin\moc.exe $(DEFINES) --include "D:/2nd Sem project/Kakshya_main/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/release/moc_predefs.h" -IC:/Qt/6.8.1/mingw_64/mkspecs/win32-g++ -I"D:/2nd Sem project/Kakshya_main" -IC:/Qt/6.8.1/mingw_64/include -IC:/Qt/6.8.1/mingw_64/include/QtWidgets -IC:/Qt/6.8.1/mingw_64/include/QtGui -IC:/Qt/6.8.1/mingw_64/include/QtSql -IC:/Qt/6.8.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IC:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include ..\..\addvaluestoroutine.h -o release\moc_addvaluestoroutine.cpp
+	C:\Qt\6.8.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/Acer/Desktop/Kakshya/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/release/moc_predefs.h -IC:/Qt/6.8.1/mingw_64/mkspecs/win32-g++ -IC:/Users/Acer/Desktop/Kakshya -IC:/Qt/6.8.1/mingw_64/include -IC:/Qt/6.8.1/mingw_64/include/QtWidgets -IC:/Qt/6.8.1/mingw_64/include/QtGui -IC:/Qt/6.8.1/mingw_64/include/QtSql -IC:/Qt/6.8.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IC:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include ..\..\addvaluestoroutine.h -o release\moc_addvaluestoroutine.cpp
 
 release/moc_coordinatordash.cpp: ../../coordinatordash.h \
 		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QDialog \
@@ -800,7 +800,7 @@ release/moc_coordinatordash.cpp: ../../coordinatordash.h \
 		C:/Qt/6.8.1/mingw_64/include/QtSql/qsqlerror.h \
 		release/moc_predefs.h \
 		C:/Qt/6.8.1/mingw_64/bin/moc.exe
-	C:\Qt\6.8.1\mingw_64\bin\moc.exe $(DEFINES) --include "D:/2nd Sem project/Kakshya_main/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/release/moc_predefs.h" -IC:/Qt/6.8.1/mingw_64/mkspecs/win32-g++ -I"D:/2nd Sem project/Kakshya_main" -IC:/Qt/6.8.1/mingw_64/include -IC:/Qt/6.8.1/mingw_64/include/QtWidgets -IC:/Qt/6.8.1/mingw_64/include/QtGui -IC:/Qt/6.8.1/mingw_64/include/QtSql -IC:/Qt/6.8.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IC:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include ..\..\coordinatordash.h -o release\moc_coordinatordash.cpp
+	C:\Qt\6.8.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/Acer/Desktop/Kakshya/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/release/moc_predefs.h -IC:/Qt/6.8.1/mingw_64/mkspecs/win32-g++ -IC:/Users/Acer/Desktop/Kakshya -IC:/Qt/6.8.1/mingw_64/include -IC:/Qt/6.8.1/mingw_64/include/QtWidgets -IC:/Qt/6.8.1/mingw_64/include/QtGui -IC:/Qt/6.8.1/mingw_64/include/QtSql -IC:/Qt/6.8.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IC:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include ..\..\coordinatordash.h -o release\moc_coordinatordash.cpp
 
 release/moc_crdash.cpp: ../../crdash.h \
 		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QDialog \
@@ -1013,7 +1013,7 @@ release/moc_crdash.cpp: ../../crdash.h \
 		../../crsearchclass.h \
 		release/moc_predefs.h \
 		C:/Qt/6.8.1/mingw_64/bin/moc.exe
-	C:\Qt\6.8.1\mingw_64\bin\moc.exe $(DEFINES) --include "D:/2nd Sem project/Kakshya_main/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/release/moc_predefs.h" -IC:/Qt/6.8.1/mingw_64/mkspecs/win32-g++ -I"D:/2nd Sem project/Kakshya_main" -IC:/Qt/6.8.1/mingw_64/include -IC:/Qt/6.8.1/mingw_64/include/QtWidgets -IC:/Qt/6.8.1/mingw_64/include/QtGui -IC:/Qt/6.8.1/mingw_64/include/QtSql -IC:/Qt/6.8.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IC:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include ..\..\crdash.h -o release\moc_crdash.cpp
+	C:\Qt\6.8.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/Acer/Desktop/Kakshya/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/release/moc_predefs.h -IC:/Qt/6.8.1/mingw_64/mkspecs/win32-g++ -IC:/Users/Acer/Desktop/Kakshya -IC:/Qt/6.8.1/mingw_64/include -IC:/Qt/6.8.1/mingw_64/include/QtWidgets -IC:/Qt/6.8.1/mingw_64/include/QtGui -IC:/Qt/6.8.1/mingw_64/include/QtSql -IC:/Qt/6.8.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IC:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include ..\..\crdash.h -o release\moc_crdash.cpp
 
 release/moc_crsearchclass.cpp: ../../crsearchclass.h \
 		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QDialog \
@@ -1225,7 +1225,7 @@ release/moc_crsearchclass.cpp: ../../crsearchclass.h \
 		C:/Qt/6.8.1/mingw_64/include/QtSql/qsqlerror.h \
 		release/moc_predefs.h \
 		C:/Qt/6.8.1/mingw_64/bin/moc.exe
-	C:\Qt\6.8.1\mingw_64\bin\moc.exe $(DEFINES) --include "D:/2nd Sem project/Kakshya_main/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/release/moc_predefs.h" -IC:/Qt/6.8.1/mingw_64/mkspecs/win32-g++ -I"D:/2nd Sem project/Kakshya_main" -IC:/Qt/6.8.1/mingw_64/include -IC:/Qt/6.8.1/mingw_64/include/QtWidgets -IC:/Qt/6.8.1/mingw_64/include/QtGui -IC:/Qt/6.8.1/mingw_64/include/QtSql -IC:/Qt/6.8.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IC:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include ..\..\crsearchclass.h -o release\moc_crsearchclass.cpp
+	C:\Qt\6.8.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/Acer/Desktop/Kakshya/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/release/moc_predefs.h -IC:/Qt/6.8.1/mingw_64/mkspecs/win32-g++ -IC:/Users/Acer/Desktop/Kakshya -IC:/Qt/6.8.1/mingw_64/include -IC:/Qt/6.8.1/mingw_64/include/QtWidgets -IC:/Qt/6.8.1/mingw_64/include/QtGui -IC:/Qt/6.8.1/mingw_64/include/QtSql -IC:/Qt/6.8.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IC:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include ..\..\crsearchclass.h -o release\moc_crsearchclass.cpp
 
 release/moc_forgotpassword.cpp: ../../forgotpassword.h \
 		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QDialog \
@@ -1418,10 +1418,10 @@ release/moc_forgotpassword.cpp: ../../forgotpassword.h \
 		C:/Qt/6.8.1/mingw_64/include/QtGui/qinputmethod.h \
 		C:/Qt/6.8.1/mingw_64/include/QtCore/qlocale.h \
 		C:/Qt/6.8.1/mingw_64/include/QtGui/qguiapplication_platform.h \
-		../../../../../Kakshya_main/passwordchanged.h \
+		../../passwordchanged.h \
 		release/moc_predefs.h \
 		C:/Qt/6.8.1/mingw_64/bin/moc.exe
-	C:\Qt\6.8.1\mingw_64\bin\moc.exe $(DEFINES) --include "D:/2nd Sem project/Kakshya_main/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/release/moc_predefs.h" -IC:/Qt/6.8.1/mingw_64/mkspecs/win32-g++ -I"D:/2nd Sem project/Kakshya_main" -IC:/Qt/6.8.1/mingw_64/include -IC:/Qt/6.8.1/mingw_64/include/QtWidgets -IC:/Qt/6.8.1/mingw_64/include/QtGui -IC:/Qt/6.8.1/mingw_64/include/QtSql -IC:/Qt/6.8.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IC:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include ..\..\forgotpassword.h -o release\moc_forgotpassword.cpp
+	C:\Qt\6.8.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/Acer/Desktop/Kakshya/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/release/moc_predefs.h -IC:/Qt/6.8.1/mingw_64/mkspecs/win32-g++ -IC:/Users/Acer/Desktop/Kakshya -IC:/Qt/6.8.1/mingw_64/include -IC:/Qt/6.8.1/mingw_64/include/QtWidgets -IC:/Qt/6.8.1/mingw_64/include/QtGui -IC:/Qt/6.8.1/mingw_64/include/QtSql -IC:/Qt/6.8.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IC:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include ..\..\forgotpassword.h -o release\moc_forgotpassword.cpp
 
 release/moc_loginpage.cpp: ../../loginpage.h \
 		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QDialog \
@@ -1615,9 +1615,9 @@ release/moc_loginpage.cpp: ../../loginpage.h \
 		C:/Qt/6.8.1/mingw_64/include/QtCore/qlocale.h \
 		C:/Qt/6.8.1/mingw_64/include/QtGui/qguiapplication_platform.h \
 		../../signupdialog.h \
-		../../../../../Kakshya_main/signupsuccessful.h \
+		../../signupsuccessful.h \
 		../../forgotpassword.h \
-		../../../../../Kakshya_main/passwordchanged.h \
+		../../passwordchanged.h \
 		../../loginsuccessful.h \
 		../../coordinatordash.h \
 		C:/Qt/6.8.1/mingw_64/include/QtCore/QDateTime \
@@ -1645,7 +1645,7 @@ release/moc_loginpage.cpp: ../../loginpage.h \
 		../../teacherdash.h \
 		release/moc_predefs.h \
 		C:/Qt/6.8.1/mingw_64/bin/moc.exe
-	C:\Qt\6.8.1\mingw_64\bin\moc.exe $(DEFINES) --include "D:/2nd Sem project/Kakshya_main/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/release/moc_predefs.h" -IC:/Qt/6.8.1/mingw_64/mkspecs/win32-g++ -I"D:/2nd Sem project/Kakshya_main" -IC:/Qt/6.8.1/mingw_64/include -IC:/Qt/6.8.1/mingw_64/include/QtWidgets -IC:/Qt/6.8.1/mingw_64/include/QtGui -IC:/Qt/6.8.1/mingw_64/include/QtSql -IC:/Qt/6.8.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IC:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include ..\..\loginpage.h -o release\moc_loginpage.cpp
+	C:\Qt\6.8.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/Acer/Desktop/Kakshya/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/release/moc_predefs.h -IC:/Qt/6.8.1/mingw_64/mkspecs/win32-g++ -IC:/Users/Acer/Desktop/Kakshya -IC:/Qt/6.8.1/mingw_64/include -IC:/Qt/6.8.1/mingw_64/include/QtWidgets -IC:/Qt/6.8.1/mingw_64/include/QtGui -IC:/Qt/6.8.1/mingw_64/include/QtSql -IC:/Qt/6.8.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IC:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include ..\..\loginpage.h -o release\moc_loginpage.cpp
 
 release/moc_loginsuccessful.cpp: ../../loginsuccessful.h \
 		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QDialog \
@@ -1840,7 +1840,7 @@ release/moc_loginsuccessful.cpp: ../../loginsuccessful.h \
 		C:/Qt/6.8.1/mingw_64/include/QtGui/qguiapplication_platform.h \
 		release/moc_predefs.h \
 		C:/Qt/6.8.1/mingw_64/bin/moc.exe
-	C:\Qt\6.8.1\mingw_64\bin\moc.exe $(DEFINES) --include "D:/2nd Sem project/Kakshya_main/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/release/moc_predefs.h" -IC:/Qt/6.8.1/mingw_64/mkspecs/win32-g++ -I"D:/2nd Sem project/Kakshya_main" -IC:/Qt/6.8.1/mingw_64/include -IC:/Qt/6.8.1/mingw_64/include/QtWidgets -IC:/Qt/6.8.1/mingw_64/include/QtGui -IC:/Qt/6.8.1/mingw_64/include/QtSql -IC:/Qt/6.8.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IC:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include ..\..\loginsuccessful.h -o release\moc_loginsuccessful.cpp
+	C:\Qt\6.8.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/Acer/Desktop/Kakshya/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/release/moc_predefs.h -IC:/Qt/6.8.1/mingw_64/mkspecs/win32-g++ -IC:/Users/Acer/Desktop/Kakshya -IC:/Qt/6.8.1/mingw_64/include -IC:/Qt/6.8.1/mingw_64/include/QtWidgets -IC:/Qt/6.8.1/mingw_64/include/QtGui -IC:/Qt/6.8.1/mingw_64/include/QtSql -IC:/Qt/6.8.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IC:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include ..\..\loginsuccessful.h -o release\moc_loginsuccessful.cpp
 
 release/moc_mainwindow.cpp: ../../mainwindow.h \
 		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QMainWindow \
@@ -2036,7 +2036,7 @@ release/moc_mainwindow.cpp: ../../mainwindow.h \
 		C:/Qt/6.8.1/mingw_64/include/QtWidgets/qtabwidget.h \
 		release/moc_predefs.h \
 		C:/Qt/6.8.1/mingw_64/bin/moc.exe
-	C:\Qt\6.8.1\mingw_64\bin\moc.exe $(DEFINES) --include "D:/2nd Sem project/Kakshya_main/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/release/moc_predefs.h" -IC:/Qt/6.8.1/mingw_64/mkspecs/win32-g++ -I"D:/2nd Sem project/Kakshya_main" -IC:/Qt/6.8.1/mingw_64/include -IC:/Qt/6.8.1/mingw_64/include/QtWidgets -IC:/Qt/6.8.1/mingw_64/include/QtGui -IC:/Qt/6.8.1/mingw_64/include/QtSql -IC:/Qt/6.8.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IC:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include ..\..\mainwindow.h -o release\moc_mainwindow.cpp
+	C:\Qt\6.8.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/Acer/Desktop/Kakshya/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/release/moc_predefs.h -IC:/Qt/6.8.1/mingw_64/mkspecs/win32-g++ -IC:/Users/Acer/Desktop/Kakshya -IC:/Qt/6.8.1/mingw_64/include -IC:/Qt/6.8.1/mingw_64/include/QtWidgets -IC:/Qt/6.8.1/mingw_64/include/QtGui -IC:/Qt/6.8.1/mingw_64/include/QtSql -IC:/Qt/6.8.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IC:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include ..\..\mainwindow.h -o release\moc_mainwindow.cpp
 
 release/moc_passwordchanged.cpp: ../../passwordchanged.h \
 		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QDialog \
@@ -2231,7 +2231,7 @@ release/moc_passwordchanged.cpp: ../../passwordchanged.h \
 		C:/Qt/6.8.1/mingw_64/include/QtGui/qguiapplication_platform.h \
 		release/moc_predefs.h \
 		C:/Qt/6.8.1/mingw_64/bin/moc.exe
-	C:\Qt\6.8.1\mingw_64\bin\moc.exe $(DEFINES) --include "D:/2nd Sem project/Kakshya_main/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/release/moc_predefs.h" -IC:/Qt/6.8.1/mingw_64/mkspecs/win32-g++ -I"D:/2nd Sem project/Kakshya_main" -IC:/Qt/6.8.1/mingw_64/include -IC:/Qt/6.8.1/mingw_64/include/QtWidgets -IC:/Qt/6.8.1/mingw_64/include/QtGui -IC:/Qt/6.8.1/mingw_64/include/QtSql -IC:/Qt/6.8.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IC:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include ..\..\passwordchanged.h -o release\moc_passwordchanged.cpp
+	C:\Qt\6.8.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/Acer/Desktop/Kakshya/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/release/moc_predefs.h -IC:/Qt/6.8.1/mingw_64/mkspecs/win32-g++ -IC:/Users/Acer/Desktop/Kakshya -IC:/Qt/6.8.1/mingw_64/include -IC:/Qt/6.8.1/mingw_64/include/QtWidgets -IC:/Qt/6.8.1/mingw_64/include/QtGui -IC:/Qt/6.8.1/mingw_64/include/QtSql -IC:/Qt/6.8.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IC:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include ..\..\passwordchanged.h -o release\moc_passwordchanged.cpp
 
 release/moc_signupdialog.cpp: ../../signupdialog.h \
 		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QDialog \
@@ -2424,10 +2424,10 @@ release/moc_signupdialog.cpp: ../../signupdialog.h \
 		C:/Qt/6.8.1/mingw_64/include/QtGui/qinputmethod.h \
 		C:/Qt/6.8.1/mingw_64/include/QtCore/qlocale.h \
 		C:/Qt/6.8.1/mingw_64/include/QtGui/qguiapplication_platform.h \
-		../../../../../Kakshya_main/signupsuccessful.h \
+		../../signupsuccessful.h \
 		release/moc_predefs.h \
 		C:/Qt/6.8.1/mingw_64/bin/moc.exe
-	C:\Qt\6.8.1\mingw_64\bin\moc.exe $(DEFINES) --include "D:/2nd Sem project/Kakshya_main/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/release/moc_predefs.h" -IC:/Qt/6.8.1/mingw_64/mkspecs/win32-g++ -I"D:/2nd Sem project/Kakshya_main" -IC:/Qt/6.8.1/mingw_64/include -IC:/Qt/6.8.1/mingw_64/include/QtWidgets -IC:/Qt/6.8.1/mingw_64/include/QtGui -IC:/Qt/6.8.1/mingw_64/include/QtSql -IC:/Qt/6.8.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IC:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include ..\..\signupdialog.h -o release\moc_signupdialog.cpp
+	C:\Qt\6.8.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/Acer/Desktop/Kakshya/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/release/moc_predefs.h -IC:/Qt/6.8.1/mingw_64/mkspecs/win32-g++ -IC:/Users/Acer/Desktop/Kakshya -IC:/Qt/6.8.1/mingw_64/include -IC:/Qt/6.8.1/mingw_64/include/QtWidgets -IC:/Qt/6.8.1/mingw_64/include/QtGui -IC:/Qt/6.8.1/mingw_64/include/QtSql -IC:/Qt/6.8.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IC:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include ..\..\signupdialog.h -o release\moc_signupdialog.cpp
 
 release/moc_signupsuccessful.cpp: ../../signupsuccessful.h \
 		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QDialog \
@@ -2622,7 +2622,7 @@ release/moc_signupsuccessful.cpp: ../../signupsuccessful.h \
 		C:/Qt/6.8.1/mingw_64/include/QtGui/qguiapplication_platform.h \
 		release/moc_predefs.h \
 		C:/Qt/6.8.1/mingw_64/bin/moc.exe
-	C:\Qt\6.8.1\mingw_64\bin\moc.exe $(DEFINES) --include "D:/2nd Sem project/Kakshya_main/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/release/moc_predefs.h" -IC:/Qt/6.8.1/mingw_64/mkspecs/win32-g++ -I"D:/2nd Sem project/Kakshya_main" -IC:/Qt/6.8.1/mingw_64/include -IC:/Qt/6.8.1/mingw_64/include/QtWidgets -IC:/Qt/6.8.1/mingw_64/include/QtGui -IC:/Qt/6.8.1/mingw_64/include/QtSql -IC:/Qt/6.8.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IC:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include ..\..\signupsuccessful.h -o release\moc_signupsuccessful.cpp
+	C:\Qt\6.8.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/Acer/Desktop/Kakshya/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/release/moc_predefs.h -IC:/Qt/6.8.1/mingw_64/mkspecs/win32-g++ -IC:/Users/Acer/Desktop/Kakshya -IC:/Qt/6.8.1/mingw_64/include -IC:/Qt/6.8.1/mingw_64/include/QtWidgets -IC:/Qt/6.8.1/mingw_64/include/QtGui -IC:/Qt/6.8.1/mingw_64/include/QtSql -IC:/Qt/6.8.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IC:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include ..\..\signupsuccessful.h -o release\moc_signupsuccessful.cpp
 
 release/moc_teacherdash.cpp: ../../teacherdash.h \
 		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QDialog \
@@ -2817,7 +2817,7 @@ release/moc_teacherdash.cpp: ../../teacherdash.h \
 		C:/Qt/6.8.1/mingw_64/include/QtGui/qguiapplication_platform.h \
 		release/moc_predefs.h \
 		C:/Qt/6.8.1/mingw_64/bin/moc.exe
-	C:\Qt\6.8.1\mingw_64\bin\moc.exe $(DEFINES) --include "D:/2nd Sem project/Kakshya_main/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/release/moc_predefs.h" -IC:/Qt/6.8.1/mingw_64/mkspecs/win32-g++ -I"D:/2nd Sem project/Kakshya_main" -IC:/Qt/6.8.1/mingw_64/include -IC:/Qt/6.8.1/mingw_64/include/QtWidgets -IC:/Qt/6.8.1/mingw_64/include/QtGui -IC:/Qt/6.8.1/mingw_64/include/QtSql -IC:/Qt/6.8.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IC:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include ..\..\teacherdash.h -o release\moc_teacherdash.cpp
+	C:\Qt\6.8.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/Acer/Desktop/Kakshya/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/release/moc_predefs.h -IC:/Qt/6.8.1/mingw_64/mkspecs/win32-g++ -IC:/Users/Acer/Desktop/Kakshya -IC:/Qt/6.8.1/mingw_64/include -IC:/Qt/6.8.1/mingw_64/include/QtWidgets -IC:/Qt/6.8.1/mingw_64/include/QtGui -IC:/Qt/6.8.1/mingw_64/include/QtSql -IC:/Qt/6.8.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IC:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include ..\..\teacherdash.h -o release\moc_teacherdash.cpp
 
 release/moc_uploadroutine.cpp: ../../uploadroutine.h \
 		C:/Qt/6.8.1/mingw_64/include/QtWidgets/QDialog \
@@ -3014,7 +3014,7 @@ release/moc_uploadroutine.cpp: ../../uploadroutine.h \
 		../../addedsuccessfully.h \
 		release/moc_predefs.h \
 		C:/Qt/6.8.1/mingw_64/bin/moc.exe
-	C:\Qt\6.8.1\mingw_64\bin\moc.exe $(DEFINES) --include "D:/2nd Sem project/Kakshya_main/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/release/moc_predefs.h" -IC:/Qt/6.8.1/mingw_64/mkspecs/win32-g++ -I"D:/2nd Sem project/Kakshya_main" -IC:/Qt/6.8.1/mingw_64/include -IC:/Qt/6.8.1/mingw_64/include/QtWidgets -IC:/Qt/6.8.1/mingw_64/include/QtGui -IC:/Qt/6.8.1/mingw_64/include/QtSql -IC:/Qt/6.8.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IC:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include ..\..\uploadroutine.h -o release\moc_uploadroutine.cpp
+	C:\Qt\6.8.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/Acer/Desktop/Kakshya/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/release/moc_predefs.h -IC:/Qt/6.8.1/mingw_64/mkspecs/win32-g++ -IC:/Users/Acer/Desktop/Kakshya -IC:/Qt/6.8.1/mingw_64/include -IC:/Qt/6.8.1/mingw_64/include/QtWidgets -IC:/Qt/6.8.1/mingw_64/include/QtGui -IC:/Qt/6.8.1/mingw_64/include/QtSql -IC:/Qt/6.8.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IC:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include ..\..\uploadroutine.h -o release\moc_uploadroutine.cpp
 
 compiler_moc_objc_header_make_all:
 compiler_moc_objc_header_clean:
@@ -3704,9 +3704,9 @@ release/coordinatordash.o: ../../coordinatordash.cpp ../../coordinatordash.h \
 		ui_coordinatordash.h \
 		../../loginpage.h \
 		../../signupdialog.h \
-		../../../../../Kakshya_main/signupsuccessful.h \
+		../../signupsuccessful.h \
 		../../forgotpassword.h \
-		../../../../../Kakshya_main/passwordchanged.h \
+		../../passwordchanged.h \
 		../../loginsuccessful.h \
 		../../crdash.h \
 		../../crsearchclass.h \
@@ -3929,9 +3929,9 @@ release/crdash.o: ../../crdash.cpp ../../crdash.h \
 		ui_crdash.h \
 		../../loginpage.h \
 		../../signupdialog.h \
-		../../../../../Kakshya_main/signupsuccessful.h \
+		../../signupsuccessful.h \
 		../../forgotpassword.h \
-		../../../../../Kakshya_main/passwordchanged.h \
+		../../passwordchanged.h \
 		../../loginsuccessful.h \
 		../../coordinatordash.h \
 		../../uploadroutine.h \
@@ -4351,9 +4351,8 @@ release/forgotpassword.o: ../../forgotpassword.cpp ../../forgotpassword.h \
 		C:/Qt/6.8.1/mingw_64/include/QtGui/qinputmethod.h \
 		C:/Qt/6.8.1/mingw_64/include/QtCore/qlocale.h \
 		C:/Qt/6.8.1/mingw_64/include/QtGui/qguiapplication_platform.h \
-		../../../../../Kakshya_main/passwordchanged.h \
-		ui_forgotpassword.h \
 		../../passwordchanged.h \
+		ui_forgotpassword.h \
 		C:/Qt/6.8.1/mingw_64/include/QtSql/QSqlDatabase \
 		C:/Qt/6.8.1/mingw_64/include/QtSql/qsqldatabase.h \
 		C:/Qt/6.8.1/mingw_64/include/QtSql/qtsqlglobal.h \
@@ -4561,9 +4560,9 @@ release/loginpage.o: ../../loginpage.cpp ../../loginpage.h \
 		C:/Qt/6.8.1/mingw_64/include/QtCore/qlocale.h \
 		C:/Qt/6.8.1/mingw_64/include/QtGui/qguiapplication_platform.h \
 		../../signupdialog.h \
-		../../../../../Kakshya_main/signupsuccessful.h \
+		../../signupsuccessful.h \
 		../../forgotpassword.h \
-		../../../../../Kakshya_main/passwordchanged.h \
+		../../passwordchanged.h \
 		../../loginsuccessful.h \
 		../../coordinatordash.h \
 		C:/Qt/6.8.1/mingw_64/include/QtCore/QDateTime \
@@ -4982,9 +4981,9 @@ release/main.o: ../../main.cpp ../../loginpage.h \
 		C:/Qt/6.8.1/mingw_64/include/QtCore/qlocale.h \
 		C:/Qt/6.8.1/mingw_64/include/QtGui/qguiapplication_platform.h \
 		../../signupdialog.h \
-		../../../../../Kakshya_main/signupsuccessful.h \
+		../../signupsuccessful.h \
 		../../forgotpassword.h \
-		../../../../../Kakshya_main/passwordchanged.h \
+		../../passwordchanged.h \
 		../../loginsuccessful.h \
 		../../coordinatordash.h \
 		C:/Qt/6.8.1/mingw_64/include/QtCore/QDateTime \
@@ -5607,12 +5606,11 @@ release/signupdialog.o: ../../signupdialog.cpp ../../signupdialog.h \
 		C:/Qt/6.8.1/mingw_64/include/QtGui/qinputmethod.h \
 		C:/Qt/6.8.1/mingw_64/include/QtCore/qlocale.h \
 		C:/Qt/6.8.1/mingw_64/include/QtGui/qguiapplication_platform.h \
-		../../../../../Kakshya_main/signupsuccessful.h \
-		ui_signupdialog.h \
 		../../signupsuccessful.h \
+		ui_signupdialog.h \
 		../../loginpage.h \
 		../../forgotpassword.h \
-		../../../../../Kakshya_main/passwordchanged.h \
+		../../passwordchanged.h \
 		../../loginsuccessful.h \
 		../../coordinatordash.h \
 		C:/Qt/6.8.1/mingw_64/include/QtCore/QDateTime \
@@ -6031,9 +6029,9 @@ release/teacherdash.o: ../../teacherdash.cpp ../../teacherdash.h \
 		ui_teacherdash.h \
 		../../loginpage.h \
 		../../signupdialog.h \
-		../../../../../Kakshya_main/signupsuccessful.h \
+		../../signupsuccessful.h \
 		../../forgotpassword.h \
-		../../../../../Kakshya_main/passwordchanged.h \
+		../../passwordchanged.h \
 		../../loginsuccessful.h \
 		../../coordinatordash.h \
 		C:/Qt/6.8.1/mingw_64/include/QtCore/QDateTime \
