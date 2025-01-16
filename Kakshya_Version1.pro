@@ -1,5 +1,6 @@
 QT +=  widgets
-QT       += core gui sql
+QT       += core gui
+QT += sql
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 

@@ -29,8 +29,8 @@
   <widget class="QLabel" name="labelMessage">
    <property name="geometry">
     <rect>
-     <x>300</x>
-     <y>410</y>
+     <x>320</x>
+     <y>460</y>
      <width>351</width>
      <height>91</height>
     </rect>
@@ -98,9 +98,9 @@
    <property name="geometry">
     <rect>
      <x>310</x>
-     <y>270</y>
+     <y>260</y>
      <width>351</width>
-     <height>161</height>
+     <height>151</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -129,16 +129,16 @@
      </layout>
     </item>
     <item>
-     <widget class="QPushButton" name="pushButtonForgotpassword">
+     <widget class="QPushButton" name="pushButtonLogin">
       <property name="text">
-       <string>Forgot Password?</string>
+       <string>Login</string>
       </property>
      </widget>
     </item>
     <item>
-     <widget class="QPushButton" name="pushButtonLogin">
+     <widget class="QPushButton" name="pushButtonForgotpassword">
       <property name="text">
-       <string>Login</string>
+       <string>Forgot Password?</string>
       </property>
      </widget>
     </item>
@@ -147,8 +147,8 @@
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
-     <x>0</x>
-     <y>0</y>
+     <x>20</x>
+     <y>10</y>
      <width>181</width>
      <height>81</height>
     </rect>

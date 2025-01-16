@@ -30,9 +30,9 @@ void teacherdash::on_pushButton_2_clicked()
         );
 
     if (reply == QMessageBox::Yes) {
-        LoginPage *loginPage = new LoginPage(); // Create an instance of LoginPage
-        loginPage->show();                     // Show the login page
-        this->close();                         // Close the current dashboard window
+        LoginPage *loginPage = new LoginPage();
+        loginPage->show();
+        this->close();
     } else {
         qDebug() << "No is clicked";
     }

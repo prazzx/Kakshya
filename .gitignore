@@ -46,3 +46,9 @@ object_script.*.Debug
 
 # Allow prebuilt binaries if necessary
 !*.exe
+
+/build/
+*.o
+*.exe
+*.pro.user
+Makefile*

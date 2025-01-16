@@ -25,7 +25,7 @@ public:
 
 private slots:
     void updateColorbox();
-
+    void showBook();
     void on_pushButton_clicked();
 
 private:

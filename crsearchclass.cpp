@@ -22,8 +22,9 @@ CRsearchclass::CRsearchclass(QWidget *parent)
     timer->start(5000);
 
     updateColorbox();
+    showBook();
 
-    // Load the logo
+
     QPixmap pic(":/resources/resources/Kakshya_trans.png");
     int h = ui->logo->height();
     int w = ui->logo->width();
@@ -112,7 +113,7 @@ void CRsearchclass::updateColorbox()
             }
         }
 
-        // Reset unused frames to green
+
         if (ui->frame1->styleSheet() != "background-color: red;") ui->frame1->setStyleSheet("background-color: green;");
         if (ui->frame2->styleSheet() != "background-color: red;") ui->frame2->setStyleSheet("background-color: green;");
         if (ui->frame3->styleSheet() != "background-color: red;") ui->frame3->setStyleSheet("background-color: green;");
@@ -143,6 +144,69 @@ void CRsearchclass::on_pushButton_clicked()
         qDebug() << "No is clicked";
     }
 }
+
+    void CRsearchclass::showBook(){
+        /*
+        if (!ui->frame1->styleSheet().contains("background-color: red", Qt::CaseInsensitive)){
+            ui->Book1->show();
+        }
+        else{
+            ui->Book1->hide();
+        }
+        if (!ui->frame2->styleSheet().contains("background-color: red", Qt::CaseInsensitive))
+        {
+            ui->Book2->show();
+        }
+        else{
+            ui->Book2->hide();
+        }
+        if (!ui->frame3->styleSheet().contains("background-color: red", Qt::CaseInsensitive)){
+            ui->Book3->show();
+        }
+        else{
+            ui->Book3->hide();
+        }
+       if (!ui->frame4->styleSheet().contains("background-color: red", Qt::CaseInsensitive)) {
+            ui->Book4->show();
+        }
+        else{
+            ui->Book4->hide();
+        }
+        if (!ui->frame5->styleSheet().contains("background-color: red", Qt::CaseInsensitive)) {
+            ui->Book5->show();
+        }
+        else{
+            ui->Book5->hide();
+        }
+        if (!ui->frame6->styleSheet().contains("background-color: red", Qt::CaseInsensitive)) {
+            ui->Book6->show();
+        }
+        else{
+            ui->Book6->hide();
+        }
+        if (!ui->frame7->styleSheet().contains("background-color: red", Qt::CaseInsensitive)) {
+            ui->Book7->show();
+        }
+        else{
+            ui->Book7->hide();
+        }
+        if (!ui->frame8->styleSheet().contains("background-color: red", Qt::CaseInsensitive)) {
+            ui->Book8->show();
+        }
+        else{
+            ui->Book8->hide();
+        }
+        if (!ui->frame9->styleSheet().contains("background-color: red", Qt::CaseInsensitive)) {
+            ui->Book9->show();
+        }
+        else{
+            ui->Book9->hide();
+        }
+*/
+    }
+
+
+
 
 
 
