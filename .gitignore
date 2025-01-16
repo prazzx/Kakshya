@@ -1,3 +1,10 @@
+
+/build/
+*.o
+*.exe
+*.pro.user
+Makefile*
+
 # C++ object and library files
 *.slo
 *.lo

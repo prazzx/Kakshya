@@ -30,7 +30,11 @@
    <property name="geometry">
     <rect>
      <x>320</x>
+<<<<<<< HEAD
      <y>460</y>
+=======
+     <y>440</y>
+>>>>>>> 683231568d8bdc0543555d93e39f0887287fd8b6
      <width>351</width>
      <height>91</height>
     </rect>
@@ -85,7 +89,7 @@
     <item>
      <widget class="QRadioButton" name="radioButtonCr">
       <property name="text">
-       <string>CR</string>
+       <string>Student</string>
       </property>
       <attribute name="buttonGroup">
        <string notr="true">buttonGroup</string>

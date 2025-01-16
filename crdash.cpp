@@ -1,5 +1,6 @@
 #include "crdash.h"
 #include "ui_crdash.h"
+#include"studentdash.h"
 #include"loginpage.h"
 #include"crsearchclass.h"
 #include<QMessageBox>

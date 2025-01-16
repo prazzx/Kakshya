@@ -22,8 +22,10 @@ SOURCES += \
     main.cpp \
     mainwindow.cpp \
     passwordchanged.cpp \
+    selectcr.cpp \
     signupdialog.cpp \
     signupsuccessful.cpp \
+    studentdash.cpp \
     teacherdash.cpp \
     uploadroutine.cpp
 
@@ -38,8 +40,10 @@ HEADERS += \
     loginsuccessful.h \
     mainwindow.h \
     passwordchanged.h \
+    selectcr.h \
     signupdialog.h \
     signupsuccessful.h \
+    studentdash.h \
     teacherdash.h \
     uploadroutine.h
 
@@ -53,8 +57,10 @@ FORMS += \
     loginpage.ui \
     loginsuccessful.ui \
     passwordchanged.ui \
+    selectcr.ui \
     signupdialog.ui \
     signupsuccessful.ui \
+    studentdash.ui \
     teacherdash.ui \
     uploadroutine.ui
 
