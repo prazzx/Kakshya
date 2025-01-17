@@ -9,9 +9,10 @@
 #include <QTimer>
 #include<addedsuccessfully.h>
 
-bookClassroom::bookClassroom(QWidget *parent)
+bookClassroom::bookClassroom(const QString &rno,QWidget *parent)
     : QDialog(parent)
     , ui(new Ui::bookClassroom)
+    ,rno(rno)
 {
     ui->setupUi(this);
 }
@@ -42,7 +43,6 @@ void bookClassroom::on_pushButtonAdd_clicked()
     QString selectedvalue = ui->comboBoxStream->currentText();
     QString sname = ui->lineEditsname->text();
     QString tname = ui->lineEdittname->text();
-    QString rno = ui->lineEditrno->text();
     QString day = QDateTime::currentDateTime().toString("dddd");
     int Time = QDateTime::currentDateTime().toString("HH").toInt();
     if(Time>=9 && Time<=11){

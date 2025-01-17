@@ -1,6 +1,8 @@
 #include "crsearchclass.h"
 #include "ui_crsearchclass.h"
 #include"crdash.h"
+#include<loginpage.h>
+#include<bookclassroom.h>
 #include <QDateTime>
 #include <QTimer>
 #include<QMessageBox>
@@ -204,7 +206,7 @@ void CRsearchclass::on_pushButton_clicked()
 
     if (reply == QMessageBox::Yes) {
         this->close();
-        crdash *crd = new crdash();
+        LoginPage *crd = new LoginPage();
         crd->showMaximized();
     } else {
         qDebug() << "No is clicked";
@@ -212,6 +214,69 @@ void CRsearchclass::on_pushButton_clicked()
 }
 
 
+void CRsearchclass::on_pushButtonback_clicked()
+{
+    this->close();
+    crdash *crd = new crdash();
+    crd->showMaximized();
+}
 
+
+void CRsearchclass::on_Add1_clicked()
+{
+    bookClassroom *crd = new bookClassroom("302");
+    crd->showMaximized();
+}
+
+
+void CRsearchclass::on_Add2_clicked()
+{
+    bookClassroom *crd = new bookClassroom("304");
+    crd->showMaximized();
+}
+
+
+void CRsearchclass::on_Add3_clicked()
+{
+    bookClassroom *crd = new bookClassroom("310");
+    crd->showMaximized();
+}
+
+
+void CRsearchclass::on_Add4_clicked()
+{
+    bookClassroom *crd = new bookClassroom("402");
+    crd->showMaximized();
+}
+
+void CRsearchclass::on_Add5_clicked()
+{
+    bookClassroom *crd = new bookClassroom("403");
+    crd->showMaximized();
+}
+
+void CRsearchclass::on_Add6_clicked()
+{
+    bookClassroom *crd = new bookClassroom("404");
+    crd->showMaximized();
+}
+
+void CRsearchclass::on_Add7_clicked()
+{
+    bookClassroom *crd = new bookClassroom("201");
+    crd->showMaximized();
+}
+
+void CRsearchclass::on_Add8_clicked()
+{
+    bookClassroom *crd = new bookClassroom("202");
+    crd->showMaximized();
+}
+
+void CRsearchclass::on_Add9_clicked()
+{
+    bookClassroom *crd = new bookClassroom("203");
+    crd->showMaximized();
+}
 
 

@@ -1,6 +1,7 @@
 #include "teacherdash.h"
 #include "ui_teacherdash.h"
 #include"loginpage.h"
+#include<teachersearch.h>
 #include<QMessageBox>
 #include<QDebug>
 #include <QSqlDatabase>
@@ -222,6 +223,8 @@ void teacherdash::reloadpage(){
 
 void teacherdash::on_pushButtonUpload_clicked()
 {
-
+    this->close();
+    Teachersearch *ts = new Teachersearch(email,this);
+    ts->showMaximized();
 }
 

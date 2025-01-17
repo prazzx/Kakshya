@@ -27,6 +27,7 @@ SOURCES += \
     signupsuccessful.cpp \
     studentdash.cpp \
     teacherdash.cpp \
+    teachersearch.cpp \
     uploadroutine.cpp
 
 HEADERS += \
@@ -46,6 +47,7 @@ HEADERS += \
     signupsuccessful.h \
     studentdash.h \
     teacherdash.h \
+    teachersearch.h \
     uploadroutine.h
 
 FORMS += \
@@ -64,6 +66,7 @@ FORMS += \
     signupsuccessful.ui \
     studentdash.ui \
     teacherdash.ui \
+    teachersearch.ui \
     uploadroutine.ui
 
 # Default rules for deployment.

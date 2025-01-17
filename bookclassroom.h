@@ -13,7 +13,7 @@ class bookClassroom : public QDialog
     Q_OBJECT
 
 public:
-    explicit bookClassroom(QWidget *parent = nullptr);
+    explicit bookClassroom(const QString&,QWidget *parent = nullptr);
     ~bookClassroom();
 
 private slots:
@@ -23,6 +23,7 @@ private:
     Ui::bookClassroom *ui;
     bool connectToDatabase();
     addedsuccessfully *ads;
+    QString rno;
 
 };
 

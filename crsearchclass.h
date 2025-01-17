@@ -29,6 +29,22 @@ private slots:
 
     void on_pushButton_clicked();
 
+    void on_pushButtonback_clicked();
+
+    void on_Add1_clicked();
+
+    void on_Add2_clicked();
+
+    void on_Add3_clicked();
+
+    void on_Add4_clicked();
+
+    void on_Add5_clicked();
+    void on_Add6_clicked();
+    void on_Add7_clicked();
+    void on_Add8_clicked();
+    void on_Add9_clicked();
+
 private:
     Ui::CRsearchclass *ui;
     bool connectToDatabase();
