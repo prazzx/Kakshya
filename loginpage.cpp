@@ -93,7 +93,7 @@ void LoginPage::on_pushButtonLogin_clicked()
                 codash->showMaximized();
             }
             else if(tableName=="teacher"){
-                tdash = new teacherdash(this);
+                tdash = new teacherdash(email,this);
                 tdash->showMaximized();
             }
             else if(tableName=="cr"){

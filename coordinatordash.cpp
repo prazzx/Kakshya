@@ -1,7 +1,6 @@
 #include "coordinatordash.h"
 #include "ui_coordinatordash.h"
 #include "uploadroutine.h"
-#include"crdash.h"
 #include"loginpage.h"
 #include <QDateTime>
 #include <QTimer>
@@ -10,7 +9,6 @@
 #include <QSqlDatabase>
 #include <QSqlQuery>
 #include <QSqlError>
-#include"selectcr.h"
 
 coordinatordash::coordinatordash(QWidget *parent)
     : QDialog(parent)
