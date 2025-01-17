@@ -46,13 +46,6 @@
      </widget>
     </item>
     <item>
-     <widget class="QLineEdit" name="lineEditrno">
-      <property name="placeholderText">
-       <string>Enter room no.</string>
-      </property>
-     </widget>
-    </item>
-    <item>
      <widget class="QLineEdit" name="lineEditsname">
       <property name="placeholderText">
        <string>Enter subject name</string>

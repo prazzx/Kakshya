@@ -50,6 +50,10 @@
       <height>31</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(125, 76, 68);
+</string>
+    </property>
     <property name="text">
      <string>Add</string>
     </property>
@@ -215,6 +219,10 @@
       <height>31</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(125, 76, 68);
+</string>
+    </property>
     <property name="text">
      <string>Add</string>
     </property>
@@ -258,8 +266,8 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 255);
-background-color: rgb(85, 85, 127);</string>
+     <string notr="true">background-color: rgb(125, 76, 68);
+</string>
     </property>
     <property name="text">
      <string>Add</string>
@@ -357,6 +365,10 @@ background-color: rgb(85, 85, 127);</string>
       <width>81</width>
       <height>31</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(125, 76, 68);
+</string>
     </property>
     <property name="text">
      <string>Add</string>
