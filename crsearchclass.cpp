@@ -63,6 +63,15 @@ void CRsearchclass::updateColorbox()
     ui->labelTime->setText(currentDateTime);
 
     if (Time >= 16 || Time < 9 || currentDay == "Saturday") {
+         ui->Add1->hide();
+        ui->Add2->hide();
+         ui->Add3->hide();
+        ui->Add4->hide();
+         ui->Add5->hide();
+        ui->Add6->hide();
+         ui->Add7->hide();
+        ui->Add8->hide();
+         ui->Add9->hide();
         ui->frame1->setStyleSheet("background-color: red;");
         ui->frame2->setStyleSheet("background-color: red;");
         ui->frame3->setStyleSheet("background-color: red;");
@@ -98,15 +107,15 @@ void CRsearchclass::updateColorbox()
                         QTime endTime = QTime::fromString(times[1], "h");
 
                         if (currentTime >= startTime && currentTime < endTime) {
-                            if (room == "302") ui->frame1->setStyleSheet("background-color: red;");
-                            else if (room == "304") ui->frame2->setStyleSheet("background-color: red;");
-                            else if (room == "310") ui->frame3->setStyleSheet("background-color: red;");
-                            else if (room == "402") ui->frame4->setStyleSheet("background-color: red;");
-                            else if (room == "403") ui->frame5->setStyleSheet("background-color: red;");
-                            else if (room == "404") ui->frame6->setStyleSheet("background-color: red;");
-                            else if (room == "201") ui->frame7->setStyleSheet("background-color: red;");
-                            else if (room == "202") ui->frame8->setStyleSheet("background-color: red;");
-                            else if (room == "203") ui->frame9->setStyleSheet("background-color: red;");
+                            if (room == "302") {ui->frame1->setStyleSheet("background-color: red;"); ui->Add1->hide();}
+                            else if (room == "304"){ ui->frame2->setStyleSheet("background-color: red;");ui->Add2->hide();}
+                            else if (room == "310") {ui->frame3->setStyleSheet("background-color: red;");ui->Add3->hide();}
+                            else if (room == "402") {ui->frame4->setStyleSheet("background-color: red;");ui->Add4->hide();}
+                            else if (room == "403") {ui->frame5->setStyleSheet("background-color: red;");ui->Add5->hide();}
+                            else if (room == "404") {ui->frame6->setStyleSheet("background-color: red;");ui->Add6->hide();}
+                            else if (room == "201") {ui->frame7->setStyleSheet("background-color: red;");ui->Add7->hide();}
+                            else if (room == "202") {ui->frame8->setStyleSheet("background-color: red;");ui->Add8->hide();}
+                            else if (room == "203") {ui->frame9->setStyleSheet("background-color: red;");ui->Add9->hide();}
                         }
                     }
                 }
@@ -115,7 +124,7 @@ void CRsearchclass::updateColorbox()
             }
         }
 
-        // Reset unused frames to green
+
         if (ui->frame1->styleSheet() != "background-color: red;") ui->frame1->setStyleSheet("background-color: green;");
         if (ui->frame2->styleSheet() != "background-color: red;") ui->frame2->setStyleSheet("background-color: green;");
         if (ui->frame3->styleSheet() != "background-color: red;") ui->frame3->setStyleSheet("background-color: green;");
