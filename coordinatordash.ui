@@ -352,19 +352,6 @@
     </property>
    </widget>
   </widget>
-  <widget class="QPushButton" name="setpw">
-   <property name="geometry">
-    <rect>
-     <x>630</x>
-     <y>20</y>
-     <width>141</width>
-     <height>51</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Manage CR</string>
-   </property>
-  </widget>
  </widget>
  <resources/>
  <connections/>

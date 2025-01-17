@@ -151,6 +151,7 @@ void coordinatordash::on_pushButton_clicked()
         qDebug() << "No is clicked";
     }
 }
+/*
 
 void coordinatordash::on_setpw_clicked()
 {
@@ -162,4 +163,5 @@ void coordinatordash::openSelectCRDialog() {
     selectcr *dialog = new selectcr(this); // Pass 'this' as the parent
     dialog->show(); // Use exec() for modal behavior or dialog->show() for non-modal
 }
+*/
 
