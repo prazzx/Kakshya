@@ -24,6 +24,28 @@
    </property>
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
+     <widget class="QComboBox" name="comboBoxStream">
+      <property name="currentText">
+       <string>BIT</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>BIT</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>CEI_I</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>CEI_II</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item>
      <widget class="QLineEdit" name="lineEditrno">
       <property name="placeholderText">
        <string>Enter room no.</string>
