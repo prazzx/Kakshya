@@ -75,16 +75,7 @@ void SignupDialog::on_pushButtonSignUp_clicked()
 
 
     for (const QString &tableName : tables) {
-    QSqlQuery checkUsernameQuery;
-    checkUsernameQuery.prepare(QString("SELECT COUNT(*) FROM %1 WHERE username = :username").arg(tableName));
-    checkUsernameQuery.bindValue(":username", name);
-    if (checkUsernameQuery.exec() && checkUsernameQuery.next()) {
-        int count = checkUsernameQuery.value(0).toInt();
-        if (count > 0) {
-            ui->labelMessage->setText("Username already exists.");
-            return;
-        }
-    }
+
 
 
     QSqlQuery checkEmailQuery;
@@ -122,7 +113,7 @@ void SignupDialog::on_pushButtonSignUp_clicked()
 
 
     if (query.exec()) {
-        close();
+
         signupSuccessful = new Signupsuccessful(this);
         signupSuccessful ->show();
         ui->lineEditName->clear();
@@ -140,8 +131,8 @@ void SignupDialog::on_pushButtonSignUp_clicked()
     void SignupDialog::on_pushButton_clicked()
     {
         this->close();
-        LoginPage *loginPage = new LoginPage(); // Create an instance of LoginPage
-        loginPage->show();                     // Show the login page
+        LoginPage *loginPage = new LoginPage();
+        loginPage->showMaximized();
 
     }
 

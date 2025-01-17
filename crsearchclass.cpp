@@ -1,7 +1,8 @@
-#include "coordinatordash.h"
-#include "ui_coordinatordash.h"
-#include "uploadroutine.h"
-#include"loginpage.h"
+#include "crsearchclass.h"
+#include "ui_crsearchclass.h"
+#include"crdash.h"
+#include<loginpage.h>
+#include<bookclassroom.h>
 #include <QDateTime>
 #include <QTimer>
 #include<QMessageBox>
@@ -10,19 +11,20 @@
 #include <QSqlQuery>
 #include <QSqlError>
 
-coordinatordash::coordinatordash(QWidget *parent)
+CRsearchclass::CRsearchclass(QWidget *parent)
     : QDialog(parent)
-    , ui(new Ui::coordinatordash)
+    , ui(new Ui::CRsearchclass)
 {
     ui->setupUi(this);
 
     timer = new QTimer(this);
-    connect(timer, &QTimer::timeout, this, &coordinatordash::updateColorbox);
+    connect(timer, &QTimer::timeout, this, &CRsearchclass::updateColorbox);
 
 
     timer->start(5000);
 
     updateColorbox();
+    bookClass();
 
     // Load the logo
     QPixmap pic(":/resources/resources/Kakshya_trans.png");
@@ -32,12 +34,12 @@ coordinatordash::coordinatordash(QWidget *parent)
 }
 
 
-coordinatordash::~coordinatordash()
+CRsearchclass::~CRsearchclass()
 {
     delete ui;
 }
 
-bool coordinatordash::connectToDatabase()
+bool CRsearchclass::connectToDatabase()
 {
     QSqlDatabase db = QSqlDatabase::addDatabase("QMYSQL");
     db.setHostName("localhost");
@@ -52,13 +54,8 @@ bool coordinatordash::connectToDatabase()
 }
 
 
-void coordinatordash::on_pushButtonUpload_clicked()
-{
-    up = new UploadRoutine(this);
-    up ->showMaximized();
-}
 
-void coordinatordash::updateColorbox()
+void CRsearchclass::updateColorbox()
 {
     QString currentDateTime = QDateTime::currentDateTime().toString("dddd HH:mm");
     QString currentDay = QDateTime::currentDateTime().toString("dddd");
@@ -66,6 +63,15 @@ void coordinatordash::updateColorbox()
     ui->labelTime->setText(currentDateTime);
 
     if (Time >= 16 || Time < 9 || currentDay == "Saturday") {
+         ui->Add1->hide();
+        ui->Add2->hide();
+         ui->Add3->hide();
+        ui->Add4->hide();
+         ui->Add5->hide();
+        ui->Add6->hide();
+         ui->Add7->hide();
+        ui->Add8->hide();
+         ui->Add9->hide();
         ui->frame1->setStyleSheet("background-color: red;");
         ui->frame2->setStyleSheet("background-color: red;");
         ui->frame3->setStyleSheet("background-color: red;");
@@ -101,15 +107,15 @@ void coordinatordash::updateColorbox()
                         QTime endTime = QTime::fromString(times[1], "h");
 
                         if (currentTime >= startTime && currentTime < endTime) {
-                            if (room == "302") ui->frame1->setStyleSheet("background-color: red;");
-                            else if (room == "304") ui->frame2->setStyleSheet("background-color: red;");
-                            else if (room == "310") ui->frame3->setStyleSheet("background-color: red;");
-                            else if (room == "402") ui->frame4->setStyleSheet("background-color: red;");
-                            else if (room == "403") ui->frame5->setStyleSheet("background-color: red;");
-                            else if (room == "404") ui->frame6->setStyleSheet("background-color: red;");
-                            else if (room == "201") ui->frame7->setStyleSheet("background-color: red;");
-                            else if (room == "202") ui->frame8->setStyleSheet("background-color: red;");
-                            else if (room == "203") ui->frame9->setStyleSheet("background-color: red;");
+                            if (room == "302") {ui->frame1->setStyleSheet("background-color: red;"); ui->Add1->hide();}
+                            else if (room == "304"){ ui->frame2->setStyleSheet("background-color: red;");ui->Add2->hide();}
+                            else if (room == "310") {ui->frame3->setStyleSheet("background-color: red;");ui->Add3->hide();}
+                            else if (room == "402") {ui->frame4->setStyleSheet("background-color: red;");ui->Add4->hide();}
+                            else if (room == "403") {ui->frame5->setStyleSheet("background-color: red;");ui->Add5->hide();}
+                            else if (room == "404") {ui->frame6->setStyleSheet("background-color: red;");ui->Add6->hide();}
+                            else if (room == "201") {ui->frame7->setStyleSheet("background-color: red;");ui->Add7->hide();}
+                            else if (room == "202") {ui->frame8->setStyleSheet("background-color: red;");ui->Add8->hide();}
+                            else if (room == "203") {ui->frame9->setStyleSheet("background-color: red;");ui->Add9->hide();}
                         }
                     }
                 }
@@ -118,7 +124,7 @@ void coordinatordash::updateColorbox()
             }
         }
 
-        // Reset unused frames to green
+
         if (ui->frame1->styleSheet() != "background-color: red;") ui->frame1->setStyleSheet("background-color: green;");
         if (ui->frame2->styleSheet() != "background-color: red;") ui->frame2->setStyleSheet("background-color: green;");
         if (ui->frame3->styleSheet() != "background-color: red;") ui->frame3->setStyleSheet("background-color: green;");
@@ -131,8 +137,74 @@ void coordinatordash::updateColorbox()
     }
 }
 
+void CRsearchclass::bookClass(){
+    if (ui->frame1->styleSheet() != "background-color: red;"){
+        ui->Add1->show();
+    }
+    else{
+        ui->Add1->hide();
+    }
+    if (ui->frame2->styleSheet() != "background-color: red;"){
+        ui->Add2->show();
+    }
+    else{
+        ui->Add2->hide();
+    }
+    if (ui->frame3->styleSheet() != "background-color: red;"){
+        ui->Add3->show();
+    }
+    else{
+        ui->Add3->hide();
+    }
+    if (ui->frame4->styleSheet() != "background-color: red;"){
+        ui->Add4->show();
+    }
+    else{
+        ui->Add4->hide();
+    }
+    if (ui->frame5->styleSheet() != "background-color: red;"){
+        ui->Add5->show();
+    }
+    else{
+        ui->Add5->hide();
+    }
+    if (ui->frame5->styleSheet() != "background-color: red;"){
+        ui->Add5->show();
+    }
+    else{
+        ui->Add5->hide();
+    }
+    if (ui->frame6->styleSheet() != "background-color: red;"){
+        ui->Add6->show();
+    }
+    else{
+        ui->Add6->hide();
+    }
+    if (ui->frame7->styleSheet() != "background-color: red;"){
+        ui->Add7->show();
+    }
+    else{
+        ui->Add7->hide();
+    }
+    if (ui->frame8->styleSheet() != "background-color: red;"){
+        ui->Add8->show();
+    }
+    else{
+        ui->Add8->hide();
+    }
+    if (ui->frame9->styleSheet() != "background-color: red;"){
+        ui->Add9->show();
+    }
+    else{
+        ui->Add9->hide();
+    }
 
-void coordinatordash::on_pushButton_clicked()
+
+
+
+}
+
+void CRsearchclass::on_pushButton_clicked()
 {
     QMessageBox::StandardButton reply = QMessageBox::question(
         this,
@@ -142,24 +214,78 @@ void coordinatordash::on_pushButton_clicked()
         );
 
     if (reply == QMessageBox::Yes) {
-        LoginPage *loginPage = new LoginPage();
-        loginPage->showMaximized();
         this->close();
+        LoginPage *crd = new LoginPage();
+        crd->showMaximized();
     } else {
         qDebug() << "No is clicked";
     }
 }
-/*
 
-void coordinatordash::on_setpw_clicked()
+
+void CRsearchclass::on_pushButtonback_clicked()
 {
-    selectcr *sc = new selectcr();
-    sc->showMaximized();
     this->close();
+    crdash *crd = new crdash();
+    crd->show();
 }
-void coordinatordash::openSelectCRDialog() {
-    selectcr *dialog = new selectcr(this); // Pass 'this' as the parent
-    dialog->show(); // Use exec() for modal behavior or dialog->show() for non-modal
+
+
+void CRsearchclass::on_Add1_clicked()
+{
+    bookClassroom *crd = new bookClassroom("302");
+    crd->show();
 }
-*/
+
+
+void CRsearchclass::on_Add2_clicked()
+{
+    bookClassroom *crd = new bookClassroom("304");
+    crd->show();
+}
+
+
+void CRsearchclass::on_Add3_clicked()
+{
+    bookClassroom *crd = new bookClassroom("310");
+    crd->show();
+}
+
+
+void CRsearchclass::on_Add4_clicked()
+{
+    bookClassroom *crd = new bookClassroom("402");
+    crd->show();
+}
+
+void CRsearchclass::on_Add5_clicked()
+{
+    bookClassroom *crd = new bookClassroom("403");
+    crd->show();
+}
+
+void CRsearchclass::on_Add6_clicked()
+{
+    bookClassroom *crd = new bookClassroom("404");
+    crd->show();
+}
+
+void CRsearchclass::on_Add7_clicked()
+{
+    bookClassroom *crd = new bookClassroom("201");
+    crd->show();
+}
+
+void CRsearchclass::on_Add8_clicked()
+{
+    bookClassroom *crd = new bookClassroom("202");
+    crd->show();
+}
+
+void CRsearchclass::on_Add9_clicked()
+{
+    bookClassroom *crd = new bookClassroom("203");
+    crd->show();
+}
+
 

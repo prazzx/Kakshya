@@ -38,10 +38,7 @@ bool UploadRoutine::connectToDatabase()
 }
 
 
-void UploadRoutine::on_pushButtonUpload_clicked()
-{
-    QString selectedvalue = ui->comboBoxSelect->currentText();
-}
+
 
 
     void UploadRoutine::on_pushButton11_clicked()
@@ -103,7 +100,7 @@ void UploadRoutine::on_pushButtonUpload_clicked()
     {
         QString selectedvalue = ui->comboBoxSelect->currentText();
         QString day = "Sunday";
-        QString time_slot = "12-2";
+        QString time_slot = "12-14";
         add = new Addvaluestoroutine(selectedvalue,day,time_slot,this);
         add->show();
     }
@@ -112,7 +109,7 @@ void UploadRoutine::on_pushButtonUpload_clicked()
     {
         QString selectedvalue = ui->comboBoxSelect->currentText();
         QString day ="Monday";
-        QString time_slot = "12-2";
+        QString time_slot = "12-14";
         add = new Addvaluestoroutine(selectedvalue,day,time_slot,this);
         add->show();
     }
@@ -121,7 +118,7 @@ void UploadRoutine::on_pushButtonUpload_clicked()
     {
         QString selectedvalue = ui->comboBoxSelect->currentText();
         QString day = "Tuesday";
-        QString time_slot = "12-2";
+        QString time_slot = "12-14";
         add = new Addvaluestoroutine(selectedvalue,day,time_slot,this);
         add->show();
     }
@@ -129,7 +126,7 @@ void UploadRoutine::on_pushButtonUpload_clicked()
     {
         QString selectedvalue = ui->comboBoxSelect->currentText();
         QString day = "Wednesday";
-        QString time_slot = "12-2";
+        QString time_slot = "12-14";
         add = new Addvaluestoroutine(selectedvalue,day,time_slot,this);
         add->show();
     }
@@ -137,7 +134,7 @@ void UploadRoutine::on_pushButtonUpload_clicked()
     {
         QString selectedvalue = ui->comboBoxSelect->currentText();
         QString day = "Thursday";
-        QString time_slot = "12-2";
+        QString time_slot = "12-14";
         add = new Addvaluestoroutine(selectedvalue,day,time_slot,this);
         add->show();
     }
@@ -145,7 +142,7 @@ void UploadRoutine::on_pushButtonUpload_clicked()
     {
         QString selectedvalue = ui->comboBoxSelect->currentText();
         QString day = "Friday";
-        QString time_slot = "12-2";
+        QString time_slot = "12-14";
         add = new Addvaluestoroutine(selectedvalue,day,time_slot,this);
         add->show();
     }
@@ -154,7 +151,7 @@ void UploadRoutine::on_pushButtonUpload_clicked()
     {
         QString selectedvalue = ui->comboBoxSelect->currentText();
         QString day = "Sunday";
-        QString time_slot = "2-4";
+        QString time_slot = "14-16";
         add = new Addvaluestoroutine(selectedvalue,day,time_slot,this);
         add->show();
     }
@@ -163,7 +160,7 @@ void UploadRoutine::on_pushButtonUpload_clicked()
     {
         QString selectedvalue = ui->comboBoxSelect->currentText();
         QString day = "Monday";
-        QString time_slot = "2-4";
+        QString time_slot = "14-16";
         add = new Addvaluestoroutine(selectedvalue,day,time_slot,this);
         add->show();
     }
@@ -172,7 +169,7 @@ void UploadRoutine::on_pushButtonUpload_clicked()
     {
         QString selectedvalue = ui->comboBoxSelect->currentText();
         QString day = "Tuesday";
-        QString time_slot = "2-4";
+        QString time_slot = "14-16";
         add = new Addvaluestoroutine(selectedvalue,day,time_slot,this);
         add->show();
     }
@@ -181,7 +178,7 @@ void UploadRoutine::on_pushButtonUpload_clicked()
     {
         QString selectedvalue = ui->comboBoxSelect->currentText();
         QString day = "Wednesday";
-        QString time_slot = "2-4";
+        QString time_slot = "14-16";
         add = new Addvaluestoroutine(selectedvalue,day,time_slot,this);
         add->show();
     }
@@ -190,7 +187,7 @@ void UploadRoutine::on_pushButtonUpload_clicked()
     {
         QString selectedvalue = ui->comboBoxSelect->currentText();
         QString day = "Thursday";
-        QString time_slot = "2-4";
+        QString time_slot = "14-16";
         add = new Addvaluestoroutine(selectedvalue,day,time_slot,this);
         add->show();
     }
@@ -199,7 +196,7 @@ void UploadRoutine::on_pushButtonUpload_clicked()
     {
         QString selectedvalue = ui->comboBoxSelect->currentText();
         QString day = "Friday";
-        QString time_slot = "2-4";
+        QString time_slot = "14-16";
         add = new Addvaluestoroutine(selectedvalue,day,time_slot,this);
         add->show();
     }

@@ -12,46 +12,61 @@ CONFIG += c++17
 SOURCES += \
     addedsuccessfully.cpp \
     addvaluestoroutine.cpp \
+    bookclassroom.cpp \
     coordinatordash.cpp \
     crdash.cpp \
+    crsearchclass.cpp \
     forgotpassword.cpp \
     loginpage.cpp \
     loginsuccessful.cpp \
     main.cpp \
     mainwindow.cpp \
     passwordchanged.cpp \
+    selectcr.cpp \
     signupdialog.cpp \
     signupsuccessful.cpp \
+    studentdash.cpp \
     teacherdash.cpp \
+    teachersearch.cpp \
     uploadroutine.cpp
 
 HEADERS += \
     addedsuccessfully.h \
     addvaluestoroutine.h \
+    bookclassroom.h \
     coordinatordash.h \
     crdash.h \
+    crsearchclass.h \
     forgotpassword.h \
     loginpage.h \
     loginsuccessful.h \
     mainwindow.h \
     passwordchanged.h \
+    selectcr.h \
     signupdialog.h \
     signupsuccessful.h \
+    studentdash.h \
     teacherdash.h \
+    teachersearch.h \
     uploadroutine.h
 
 FORMS += \
     addedsuccessfully.ui \
     addvaluestoroutine.ui \
+    bookclassroom.ui \
     coordinatordash.ui \
     crdash.ui \
+    crsearchclass.ui \
     forgotpassword.ui \
     loginpage.ui \
     loginsuccessful.ui \
     passwordchanged.ui \
+    selectcr.ui \
     signupdialog.ui \
     signupsuccessful.ui \
+    studentdash.ui \
     teacherdash.ui \
+    teachersearch.ui \
     uploadroutine.ui
 
 # Default rules for deployment.

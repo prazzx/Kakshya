@@ -41,7 +41,7 @@ bool Addvaluestoroutine::connectToDatabase()
 
 void Addvaluestoroutine::on_pushButtonAdd_clicked()
 {
-    QString scode = ui->lineEditscode->text();
+
     QString sname = ui->lineEditsname->text();
     QString tname = ui->lineEdittname->text();
     QString rno = ui->lineEditrno->text();
@@ -54,12 +54,11 @@ void Addvaluestoroutine::on_pushButtonAdd_clicked()
 
     if(dquery.exec()){
     QSqlQuery query;
-    query.prepare(QString("INSERT INTO %1 (day,time_slot,subject_code,subject_name,instructor,room) "
-                          "VALUES (:day, :timeslot, :scode, :sname, :tname, :rno)")
+    query.prepare(QString("INSERT INTO %1 (day,time_slot,subject_name,instructor,room) "
+                          "VALUES (:day, :timeslot, :sname, :tname, :rno)")
                       .arg(selectedvalue));
     query.bindValue(":day", day);
     query.bindValue(":timeslot", timeSlot);
-    query.bindValue(":scode", scode);
     query.bindValue(":sname", sname);
     query.bindValue(":tname", tname);
     query.bindValue(":rno", rno);
@@ -75,12 +74,11 @@ void Addvaluestoroutine::on_pushButtonAdd_clicked()
 void Addvaluestoroutine::on_pushButtonNo_clicked()
 {
     QSqlQuery query;
-    query.prepare(QString("INSERT INTO %1 (day,time_slot,subject_code,subject_name,instructor,room) "
-                          "VALUES (:day, :timeslot, :scode, :sname, :tname, :rno)")
+    query.prepare(QString("INSERT INTO %1 (day,time_slot,subject_name,instructor,room) "
+                          "VALUES (:day, :timeslot, :sname, :tname, :rno)")
                       .arg(selectedvalue));
-    query.bindValue(":day","");
-    query.bindValue(":timeslot",  "");
-    query.bindValue(":scode",  "");
+    query.bindValue(":day",day);
+    query.bindValue(":timeslot",  timeSlot);
     query.bindValue(":sname", "");
     query.bindValue(":tname",  "");
     query.bindValue(":rno",  "");

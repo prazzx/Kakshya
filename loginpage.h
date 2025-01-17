@@ -8,6 +8,7 @@
 #include "coordinatordash.h"
 #include "crdash.h"
 #include "teacherdash.h"
+#include"studentdash.h"
 
 
 namespace Ui { class LoginPage; }
@@ -18,7 +19,7 @@ class LoginPage : public QDialog
     Q_OBJECT
 
 public:
-    explicit LoginPage(QWidget *parent = nullptr);
+    explicit LoginPage( QWidget *parent = nullptr);
     ~LoginPage();
 
 private slots:
@@ -38,6 +39,7 @@ private:
     Forgotpassword *forgotpassword;
     loginsuccessful *Loginsuccess;
     coordinatordash *codash;
+    studentdash *stdash;
     crdash *cdash;
     teacherdash *tdash;
     bool connectToDatabase();

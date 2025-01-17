@@ -16,11 +16,15 @@
   <widget class="QComboBox" name="comboBoxSelect">
    <property name="geometry">
     <rect>
-     <x>200</x>
+     <x>100</x>
      <y>30</y>
      <width>161</width>
      <height>31</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 700 14pt &quot;Arial&quot;;
+color: rgb(0, 85, 0);</string>
    </property>
    <item>
     <property name="text">
@@ -92,8 +96,8 @@
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>860</x>
-     <y>40</y>
+     <x>900</x>
+     <y>20</y>
      <width>111</width>
      <height>41</height>
     </rect>
@@ -102,13 +106,13 @@
     <string>back</string>
    </property>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>140</x>
      <y>120</y>
-     <width>491</width>
-     <height>231</height>
+     <width>352</width>
+     <height>240</height>
     </rect>
    </property>
    <layout class="QHBoxLayout" name="horizontalLayout">
@@ -221,8 +225,8 @@
      </layout>
     </item>
     <item>
-     <layout class="QFormLayout" name="formLayout_2">
-      <item row="0" column="1">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
        <widget class="QLabel" name="label_11">
         <property name="maximumSize">
          <size>
@@ -235,42 +239,42 @@
         </property>
        </widget>
       </item>
-      <item row="1" column="1">
+      <item>
        <widget class="QPushButton" name="pushButton21">
         <property name="text">
          <string>Add</string>
         </property>
        </widget>
       </item>
-      <item row="2" column="1">
+      <item>
        <widget class="QPushButton" name="pushButton22">
         <property name="text">
          <string>Add</string>
         </property>
        </widget>
       </item>
-      <item row="3" column="1">
+      <item>
        <widget class="QPushButton" name="pushButton23">
         <property name="text">
          <string>Add</string>
         </property>
        </widget>
       </item>
-      <item row="4" column="1">
+      <item>
        <widget class="QPushButton" name="pushButton24">
         <property name="text">
          <string>Add</string>
         </property>
        </widget>
       </item>
-      <item row="5" column="1">
+      <item>
        <widget class="QPushButton" name="pushButton25">
         <property name="text">
          <string>Add</string>
         </property>
        </widget>
       </item>
-      <item row="6" column="1">
+      <item>
        <widget class="QPushButton" name="pushButton26">
         <property name="text">
          <string>Add</string>
