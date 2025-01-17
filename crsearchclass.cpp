@@ -218,65 +218,65 @@ void CRsearchclass::on_pushButtonback_clicked()
 {
     this->close();
     crdash *crd = new crdash();
-    crd->showMaximized();
+    crd->show();
 }
 
 
 void CRsearchclass::on_Add1_clicked()
 {
     bookClassroom *crd = new bookClassroom("302");
-    crd->showMaximized();
+    crd->show();
 }
 
 
 void CRsearchclass::on_Add2_clicked()
 {
     bookClassroom *crd = new bookClassroom("304");
-    crd->showMaximized();
+    crd->show();
 }
 
 
 void CRsearchclass::on_Add3_clicked()
 {
     bookClassroom *crd = new bookClassroom("310");
-    crd->showMaximized();
+    crd->show();
 }
 
 
 void CRsearchclass::on_Add4_clicked()
 {
     bookClassroom *crd = new bookClassroom("402");
-    crd->showMaximized();
+    crd->show();
 }
 
 void CRsearchclass::on_Add5_clicked()
 {
     bookClassroom *crd = new bookClassroom("403");
-    crd->showMaximized();
+    crd->show();
 }
 
 void CRsearchclass::on_Add6_clicked()
 {
     bookClassroom *crd = new bookClassroom("404");
-    crd->showMaximized();
+    crd->show();
 }
 
 void CRsearchclass::on_Add7_clicked()
 {
     bookClassroom *crd = new bookClassroom("201");
-    crd->showMaximized();
+    crd->show();
 }
 
 void CRsearchclass::on_Add8_clicked()
 {
     bookClassroom *crd = new bookClassroom("202");
-    crd->showMaximized();
+    crd->show();
 }
 
 void CRsearchclass::on_Add9_clicked()
 {
     bookClassroom *crd = new bookClassroom("203");
-    crd->showMaximized();
+    crd->show();
 }
 
 

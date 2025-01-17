@@ -43,6 +43,9 @@ void bookClassroom::on_pushButtonAdd_clicked()
     QString selectedvalue = ui->comboBoxStream->currentText();
     QString sname = ui->lineEditsname->text();
     QString tname = ui->lineEdittname->text();
+    if(sname.isEmpty()||tname.isEmpty()){
+        ui->labelMessage->setText("Please enter all fields");
+    }
     QString day = QDateTime::currentDateTime().toString("dddd");
     int Time = QDateTime::currentDateTime().toString("HH").toInt();
     if(Time>=9 && Time<=11){
