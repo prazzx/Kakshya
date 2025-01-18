@@ -75,6 +75,15 @@ void crdash::StatusReveal(){
         ui->Subject3->clear();
         ui->rno3->clear();
         ui->Status3->clear();
+        ui->Subject1->setText("-");
+        ui->rno1->setText("-");
+
+        ui->Subject2->setText("-");
+        ui->rno2->setText("-");
+
+        ui->Subject3->setText("-");
+        ui->rno3->setText("-");
+
         ui->widget1->setStyleSheet("background-color: red ;");
         ui->Status1->setText("Classes Ended");
         ui->widget2->setStyleSheet("background-color: red ;");
@@ -98,6 +107,8 @@ void crdash::StatusReveal(){
                  ui->Subject1->clear();
                  ui->rno1->clear();
                  ui->Status1->clear();
+                 ui->Subject1->setText("-");
+                 ui->rno1->setText("-");
                  ui->widget1->setStyleSheet("background-color: red ;");
                  ui->Status1->setText("No class");
              }
@@ -122,6 +133,8 @@ void crdash::StatusReveal(){
             ui->Subject2->clear();
             ui->rno2->clear();
             ui->Status2->clear();
+            ui->Subject2->setText("-");
+            ui->rno2->setText("-");
             ui->widget2->setStyleSheet("background-color: red ;");
             ui->Status2->setText("No class");
         }
@@ -146,6 +159,8 @@ void crdash::StatusReveal(){
             ui->Subject3->clear();
             ui->rno3->clear();
             ui->Status3->clear();
+            ui->Subject3->setText("-");
+            ui->rno3->setText("-");
             ui->widget3->setStyleSheet("background-color: red ;");
             ui->Status3->setText("No class");
         }
