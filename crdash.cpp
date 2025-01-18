@@ -65,7 +65,8 @@ void crdash::StatusReveal(){
     QString currentDateTime = QDateTime::currentDateTime().toString("dddd HH:mm");
     ui->labelTime->setText(currentDateTime);
     int Time = QDateTime::currentDateTime().toString("HH").toInt();
-    if(Time>=16 && Time<=24){
+    QString currentDay = QDateTime::currentDateTime().toString("dddd");
+    if(currentDay == "Saturday"){
         ui->Subject1->clear();
         ui->rno1->clear();
         ui->Status1->clear();
@@ -85,14 +86,42 @@ void crdash::StatusReveal(){
         ui->rno3->setText("-");
 
         ui->widget1->setStyleSheet("background-color: red ;");
-        ui->Status1->setText("Classes Ended");
+        ui->Status1->setText("No class");
         ui->widget2->setStyleSheet("background-color: red ;");
-        ui->Status2->setText("Classes Ended");
+        ui->Status2->setText("No class");
         ui->widget3->setStyleSheet("background-color: red ;");
-        ui->Status3->setText("Classes Ended");
+        ui->Status3->setText("No class");
 
     }
     else{
+        if((Time>=16 && Time<=24)){
+            ui->Subject1->clear();
+            ui->rno1->clear();
+            ui->Status1->clear();
+            ui->Subject2->clear();
+            ui->rno2->clear();
+            ui->Status2->clear();
+            ui->Subject3->clear();
+            ui->rno3->clear();
+            ui->Status3->clear();
+            ui->Subject1->setText("-");
+            ui->rno1->setText("-");
+
+            ui->Subject2->setText("-");
+            ui->rno2->setText("-");
+
+            ui->Subject3->setText("-");
+            ui->rno3->setText("-");
+
+            ui->widget1->setStyleSheet("background-color: red ;");
+            ui->Status1->setText("Classes Ended");
+            ui->widget2->setStyleSheet("background-color: red ;");
+            ui->Status2->setText("Classes Ended");
+            ui->widget3->setStyleSheet("background-color: red ;");
+            ui->Status3->setText("Classes Ended");
+
+        }
+        else{
      QString selectedvalue = ui->comboBoxSelect->currentText();
      QString currentDay = QDateTime::currentDateTime().toString("dddd");
 
@@ -173,6 +202,7 @@ void crdash::StatusReveal(){
             ui->widget3->setStyleSheet("background-color: green ;");
             ui->Status3->setText("Scheduled");
         }} }
+    }
 
 
 }
