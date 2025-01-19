@@ -12,6 +12,7 @@ CONFIG += c++17
 SOURCES += \
     addedsuccessfully.cpp \
     addvaluestoroutine.cpp \
+    bookclassroom.cpp \
     coordinatordash.cpp \
     crdash.cpp \
     crsearchclass.cpp \
@@ -31,6 +32,7 @@ SOURCES += \
 HEADERS += \
     addedsuccessfully.h \
     addvaluestoroutine.h \
+    bookclassroom.h \
     coordinatordash.h \
     crdash.h \
     crsearchclass.h \
@@ -49,6 +51,7 @@ HEADERS += \
 FORMS += \
     addedsuccessfully.ui \
     addvaluestoroutine.ui \
+    bookclassroom.ui \
     coordinatordash.ui \
     crdash.ui \
     crsearchclass.ui \

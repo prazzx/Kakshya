@@ -1,6 +1,5 @@
 #include "crdash.h"
 #include "ui_crdash.h"
-#include"studentdash.h"
 #include"loginpage.h"
 #include"crsearchclass.h"
 #include<QMessageBox>
@@ -159,17 +158,6 @@ void crdash::StatusReveal(){
             ui->widget3->setStyleSheet("background-color: green ;");
             ui->Status3->setText("Scheduled");
         }} }
-
-
-
-
-
-
-
-
-
-
-
 
 
 }

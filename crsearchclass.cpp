@@ -22,6 +22,7 @@ CRsearchclass::CRsearchclass(QWidget *parent)
     timer->start(5000);
 
     updateColorbox();
+    bookClass();
 
     // Load the logo
     QPixmap pic(":/resources/resources/Kakshya_trans.png");
@@ -125,6 +126,72 @@ void CRsearchclass::updateColorbox()
     }
 }
 
+void CRsearchclass::bookClass(){
+    if (ui->frame1->styleSheet() != "background-color: red;"){
+        ui->Add1->show();
+    }
+    else{
+        ui->Add1->hide();
+    }
+    if (ui->frame2->styleSheet() != "background-color: red;"){
+        ui->Add2->show();
+    }
+    else{
+        ui->Add2->hide();
+    }
+    if (ui->frame3->styleSheet() != "background-color: red;"){
+        ui->Add3->show();
+    }
+    else{
+        ui->Add3->hide();
+    }
+    if (ui->frame4->styleSheet() != "background-color: red;"){
+        ui->Add4->show();
+    }
+    else{
+        ui->Add4->hide();
+    }
+    if (ui->frame5->styleSheet() != "background-color: red;"){
+        ui->Add5->show();
+    }
+    else{
+        ui->Add5->hide();
+    }
+    if (ui->frame5->styleSheet() != "background-color: red;"){
+        ui->Add5->show();
+    }
+    else{
+        ui->Add5->hide();
+    }
+    if (ui->frame6->styleSheet() != "background-color: red;"){
+        ui->Add6->show();
+    }
+    else{
+        ui->Add6->hide();
+    }
+    if (ui->frame7->styleSheet() != "background-color: red;"){
+        ui->Add7->show();
+    }
+    else{
+        ui->Add7->hide();
+    }
+    if (ui->frame8->styleSheet() != "background-color: red;"){
+        ui->Add8->show();
+    }
+    else{
+        ui->Add8->hide();
+    }
+    if (ui->frame9->styleSheet() != "background-color: red;"){
+        ui->Add9->show();
+    }
+    else{
+        ui->Add9->hide();
+    }
+
+
+
+
+}
 
 void CRsearchclass::on_pushButton_clicked()
 {
@@ -143,6 +210,7 @@ void CRsearchclass::on_pushButton_clicked()
         qDebug() << "No is clicked";
     }
 }
+
 
 
 
