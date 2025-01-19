@@ -5,7 +5,9 @@
 #include <QSqlError>
 #include <QMessageBox>
 #include<QPixmap>
-
+#include <QDateTime>
+#include <QTimer>
+#include<addedsuccessfully.h>
 
 bookClassroom::bookClassroom(QWidget *parent)
     : QDialog(parent)
@@ -36,9 +38,22 @@ bool bookClassroom::connectToDatabase()
 
 void bookClassroom::on_pushButtonAdd_clicked()
 {
+    QString timeSlot;
+    QString selectedvalue = ui->comboBoxStream->currentText();
     QString sname = ui->lineEditsname->text();
     QString tname = ui->lineEdittname->text();
     QString rno = ui->lineEditrno->text();
+    QString day = QDateTime::currentDateTime().toString("dddd");
+    int Time = QDateTime::currentDateTime().toString("HH").toInt();
+    if(Time>=9 && Time<=11){
+        timeSlot = "9-11";
+    }
+    else if(Time>=12 && Time<=14){
+        timeSlot = "12-14";
+    }
+    else if(Time>=14 && Time<=16){
+        timeSlot = "14-16";
+    }
 
     QSqlQuery dquery;
     dquery.prepare(QString("DELETE FROM %1 where day = :day AND time_slot = :timeslot")
