@@ -3,13 +3,16 @@
 #include"coordinatordash.h"
 #include<QMessageBox>
 
-
 selectcr::selectcr(QWidget *parent)
     : QDialog(parent)
     , ui(new Ui::selectcr)
+    , codash(nullptr) // Initialize the pointer to nullptr
 {
     ui->setupUi(this);
+
+      codash = new coordinatordash(this);// Create the CoordinatorDash window
 }
+
 
 selectcr::~selectcr()
 {
@@ -18,6 +21,7 @@ selectcr::~selectcr()
 
 void selectcr::on_pushButton_clicked()
 {
+    codash->show();
     this ->hide();
 }
 

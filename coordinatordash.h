@@ -35,6 +35,8 @@ private slots:
 
 
 
+    void on_pushButtonUpload_2_clicked();
+
 private:
     Ui::coordinatordash *ui;
     UploadRoutine *up;
