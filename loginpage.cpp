@@ -97,8 +97,8 @@ void LoginPage::on_pushButtonLogin_clicked()
                 tdash->showMaximized();
             }
             else if(tableName=="cr"){
-                cdash = new crdash(this);
-                cdash->showMaximized();
+                stdash = new studentdash(this);
+                stdash->showMaximized();
             }
             Loginsuccess = new loginsuccessful(this);
             Loginsuccess->show();

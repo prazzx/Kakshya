@@ -1,6 +1,7 @@
 #include "coordinatordash.h"
 #include "ui_coordinatordash.h"
 #include "uploadroutine.h"
+#include"selectcr.h"
 #include"loginpage.h"
 #include <QDateTime>
 #include <QTimer>
@@ -149,9 +150,11 @@ void coordinatordash::on_pushButton_clicked()
         qDebug() << "No is clicked";
     }
 }
-/*
 
-void coordinatordash::on_setpw_clicked()
+
+
+
+void coordinatordash::on_pushButtonUpload_2_clicked()
 {
     selectcr *sc = new selectcr();
     sc->showMaximized();
@@ -159,7 +162,6 @@ void coordinatordash::on_setpw_clicked()
 }
 void coordinatordash::openSelectCRDialog() {
     selectcr *dialog = new selectcr(this); // Pass 'this' as the parent
-    dialog->show(); // Use exec() for modal behavior or dialog->show() for non-modal
+    dialog->show(); // Use exec() for modal behavior or dialog->show() for non-moda
 }
-*/
 

@@ -22,6 +22,7 @@ private slots:
 
 private:
     Ui::selectcr *ui;
+    coordinatordash *codash;
 };
 
 #endif // SELECTCR_H
