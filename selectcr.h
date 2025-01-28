@@ -23,6 +23,7 @@ private slots:
 private:
     Ui::selectcr *ui;
     coordinatordash *codash;
+      bool connectToDatabase();
 };
 
 #endif // SELECTCR_H

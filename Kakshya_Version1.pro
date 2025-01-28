@@ -15,6 +15,7 @@ SOURCES += \
     bookclassroom.cpp \
     coordinatordash.cpp \
     crdash.cpp \
+    crloginpage.cpp \
     crsearchclass.cpp \
     forgotpassword.cpp \
     loginpage.cpp \
@@ -36,6 +37,7 @@ HEADERS += \
     bookclassroom.h \
     coordinatordash.h \
     crdash.h \
+    crloginpage.h \
     crsearchclass.h \
     forgotpassword.h \
     loginpage.h \
@@ -56,6 +58,7 @@ FORMS += \
     bookclassroom.ui \
     coordinatordash.ui \
     crdash.ui \
+    crloginpage.ui \
     crsearchclass.ui \
     forgotpassword.ui \
     loginpage.ui \

@@ -2,6 +2,11 @@
 #include "ui_selectcr.h"
 #include"coordinatordash.h"
 #include<QMessageBox>
+#include <QDateTime>
+#include<QDebug>
+#include <QSqlDatabase>
+#include <QSqlQuery>
+#include <QSqlError>
 
 selectcr::selectcr(QWidget *parent)
     : QDialog(parent)
@@ -18,6 +23,19 @@ selectcr::~selectcr()
 {
     delete ui;
 }
+bool selectcr::connectToDatabase()
+{
+    QSqlDatabase db = QSqlDatabase::addDatabase("QMYSQL");
+    db.setHostName("localhost");
+    db.setDatabaseName("kakshya");
+    db.setUserName("root");
+    db.setPassword("root");
+
+    if (!db.open()) {
+        return false;
+    }
+    return true;
+}
 
 void selectcr::on_pushButton_clicked()
 {
@@ -28,19 +46,52 @@ void selectcr::on_pushButton_clicked()
 
 void selectcr::on_pushButtonSignUp_clicked()
 {
-    QMessageBox::StandardButton reply = QMessageBox::question(
-        this,
-        "Password Confirmation",
-        "Are you sure you want to change the password?",
-        QMessageBox::Yes | QMessageBox::No
-        );
+    QString password = ui->lineEditPassword->text();
+    QString confirmPassword = ui->lineEditConfirmpassword->text();
 
-    if (reply == QMessageBox::Yes) {
 
-    } else {
-
+    // Check if passwords match
+    if (password != confirmPassword) {
+        QMessageBox::warning(this, "Password Error", "Passwords do not match!");
+        return;  // Exit the function if passwords don't match
     }
+    // Connect to the database
+    if (!connectToDatabase()) {
+        QMessageBox::critical(this, "Database Error", "Failed to connect to the database!");
+        return;  // Exit if database connection fails
+    }
+    QSqlQuery query;
+    query.prepare("INSERT INTO cr_password (password) VALUES (:password)");
+    query.bindValue(":password", password);
+
+    if (!query.exec()) {
+        QMessageBox::critical(this, "Database Error", "Failed to insert the password into the database: " + query.lastError().text());
+        return;
+    }
+
+    // Success message
+    QMessageBox::information(this, "Success", "Password has been successfully saved!");
+
+    // Clear the input fields
+    ui->lineEditPassword->clear();
+    ui->lineEditConfirmpassword->clear();
+
 }
+
+// {
+//     QMessageBox::StandardButton reply = QMessageBox::question(
+//         this,
+//         "Password Confirmation",
+//         "Are you sure you want to change the password?",
+//         QMessageBox::Yes | QMessageBox::No
+//         );
+
+//     if (reply == QMessageBox::Yes) {
+
+//     } else {
+
+//     }
+// }
 
 
 
