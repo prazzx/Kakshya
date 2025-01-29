@@ -1,4 +1,4 @@
-CREATE DATABASE kakshya;
+-- CREATE DATABASE kakshya;
 
 USE kakshya;
 

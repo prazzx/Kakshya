@@ -1,0 +1,4 @@
+CREATE TABLE cr_password (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    password VARCHAR(255) NOT NULL
+);
