@@ -35,7 +35,12 @@ Then run:
 USE kakshya;
 SHOW TABLES;
 
-
+ tips(only for collaborators and yes aman karna it also for you if you are looking this then run this commands for database so we wont missout if you altered table locally but forgot to update databases)
+if you want to paste your database table info in the folder then run cmd on this folder and run this code 
+mysqldump -u root -p --no-data kakshya cr_password > cr_password.sql
+enter your password and there you go.
+ here : root - your username change if you have others
+ kakhsya  - your database , cr_password is your table and  youre converting it into .MySQL file
 🎯 Final Notes
 Do NOT use PowerShell (it handles < differently).
 If you face errors like "Database already exists", skip Createdb.sql.
