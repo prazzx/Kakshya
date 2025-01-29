@@ -1,6 +1,5 @@
 #include "signupdialog.h"
 #include "ui_signupdialog.h"
-#include "signupsuccessful.h"
 #include"loginpage.h"
 #include <QSqlDatabase>
 #include <QSqlQuery>
@@ -114,8 +113,7 @@ void SignupDialog::on_pushButtonSignUp_clicked()
 
     if (query.exec()) {
 
-        signupSuccessful = new Signupsuccessful(this);
-        signupSuccessful ->show();
+       QMessageBox::information(this, "Signup Successful", "Thanks for signing up!");
         ui->lineEditName->clear();
         ui->lineEditPhone->clear();
         ui->lineEditEmail->clear();

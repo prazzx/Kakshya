@@ -19,13 +19,11 @@ SOURCES += \
     crsearchclass.cpp \
     forgotpassword.cpp \
     loginpage.cpp \
-    loginsuccessful.cpp \
     main.cpp \
     mainwindow.cpp \
     passwordchanged.cpp \
     selectcr.cpp \
     signupdialog.cpp \
-    signupsuccessful.cpp \
     studentdash.cpp \
     teacherdash.cpp \
     teachersearch.cpp \
@@ -41,12 +39,10 @@ HEADERS += \
     crsearchclass.h \
     forgotpassword.h \
     loginpage.h \
-    loginsuccessful.h \
     mainwindow.h \
     passwordchanged.h \
     selectcr.h \
     signupdialog.h \
-    signupsuccessful.h \
     studentdash.h \
     teacherdash.h \
     teachersearch.h \
@@ -62,11 +58,9 @@ FORMS += \
     crsearchclass.ui \
     forgotpassword.ui \
     loginpage.ui \
-    loginsuccessful.ui \
     passwordchanged.ui \
     selectcr.ui \
     signupdialog.ui \
-    signupsuccessful.ui \
     studentdash.ui \
     teacherdash.ui \
     teachersearch.ui \

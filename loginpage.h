@@ -4,7 +4,6 @@
 #include <QDialog>
 #include "signupdialog.h"
 #include "forgotpassword.h"
-#include "loginsuccessful.h"
 #include "coordinatordash.h"
 #include "crdash.h"
 #include "teacherdash.h"
@@ -37,7 +36,7 @@ private:
     Ui::LoginPage *ui;
     SignupDialog *signupDialog;
     Forgotpassword *forgotpassword;
-    loginsuccessful *Loginsuccess;
+
     coordinatordash *codash;
     studentdash *stdash;
     crdash *cdash;
