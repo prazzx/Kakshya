@@ -20,6 +20,8 @@ private slots:
 
     void on_pushButtonNo_clicked();
 
+
+
 private:
     Ui::Addvaluestoroutine *ui;
     bool connectToDatabase();
