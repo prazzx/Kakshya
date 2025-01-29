@@ -10,7 +10,6 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    addedsuccessfully.cpp \
     addvaluestoroutine.cpp \
     bookclassroom.cpp \
     coordinatordash.cpp \
@@ -30,7 +29,6 @@ SOURCES += \
     uploadroutine.cpp
 
 HEADERS += \
-    addedsuccessfully.h \
     addvaluestoroutine.h \
     bookclassroom.h \
     coordinatordash.h \
@@ -49,7 +47,6 @@ HEADERS += \
     uploadroutine.h
 
 FORMS += \
-    addedsuccessfully.ui \
     addvaluestoroutine.ui \
     bookclassroom.ui \
     coordinatordash.ui \

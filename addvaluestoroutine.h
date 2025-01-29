@@ -2,7 +2,7 @@
 #define ADDVALUESTOROUTINE_H
 
 #include <QDialog>
-#include<addedsuccessfully.h>
+
 namespace Ui {
 class Addvaluestoroutine;
 }
@@ -25,7 +25,7 @@ private slots:
 private:
     Ui::Addvaluestoroutine *ui;
     bool connectToDatabase();
-    addedsuccessfully *ads;
+
     QString selectedvalue;
     QString day;
     QString timeSlot;
