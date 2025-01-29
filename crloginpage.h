@@ -21,6 +21,8 @@ private slots:
 
     void on_pushButtonForgotpassword_clicked();
 
+    void on_comboBoxSelect_activated(int index);
+
 private:
     Ui::crloginpage *ui;
       bool connectToDatabase();

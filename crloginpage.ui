@@ -69,6 +69,60 @@
     <string>Enter your password to login as cr</string>
    </property>
   </widget>
+  <widget class="QComboBox" name="comboBoxSelect">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>50</y>
+     <width>161</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 700 14pt &quot;Arial&quot;;
+color: rgb(0, 85, 0);</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>BIT</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>CEI_I</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>CEI_II</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>CEII_I</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>CEII_II</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>CEIII_I</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>CEIII_II</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>CEIV_I</string>
+    </property>
+   </item>
+  </widget>
  </widget>
  <resources/>
  <connections/>

@@ -20,6 +20,8 @@ private slots:
 
     void on_pushButtonSignUp_clicked();
 
+    void on_comboBoxSelect_activated(int index);
+
 private:
     Ui::selectcr *ui;
     coordinatordash *codash;
