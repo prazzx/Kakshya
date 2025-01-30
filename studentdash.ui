@@ -273,6 +273,37 @@
     <string>login as CR?</string>
    </property>
   </widget>
+  <widget class="QWidget" name="s" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1691</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LayoutDirection::LeftToRight</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(85, 170, 255);</string>
+   </property>
+  </widget>
+  <zorder>s</zorder>
+  <zorder>label_2</zorder>
+  <zorder>labelTime</zorder>
+  <zorder>label</zorder>
+  <zorder>gridLayoutWidget</zorder>
+  <zorder>pushButton_2</zorder>
+  <zorder>comboBoxSelect</zorder>
+  <zorder>logo</zorder>
+  <zorder>pushButtonUpload</zorder>
  </widget>
  <resources/>
  <connections/>
