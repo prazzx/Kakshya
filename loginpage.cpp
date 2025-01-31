@@ -4,7 +4,6 @@
 #include "ui_loginpage.h"
 #include "coordinatordash.h"
 #include "crdash.h"
-#include"studentdash.h"
 #include "teacherdash.h"
 #include <QSqlDatabase>
 #include <QSqlQuery>
