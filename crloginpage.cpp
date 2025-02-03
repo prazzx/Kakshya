@@ -1,6 +1,6 @@
 #include "crloginpage.h"
 #include "ui_crloginpage.h"
-#include "crdash.h" // Assuming this is the CR dashboard
+#include "crdash.h"
 #include <QMessageBox>
 #include <QSqlQuery>
 #include <QSqlError>
