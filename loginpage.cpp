@@ -84,6 +84,7 @@ void LoginPage::on_pushButtonLogin_clicked()
         if (storedPassword != password) {
             ui->labelMessage->setText("Invalid password.");
         } else {
+             QMessageBox::information(this, "Login Successful", "You have successfully logged in!");
             ui->lineEditEmail->clear();
             ui->lineEditPassword->clear();
             close();
@@ -96,11 +97,10 @@ void LoginPage::on_pushButtonLogin_clicked()
                 tdash->showMaximized();
             }
             else if(tableName=="cr"){
-                cdash = new crdash(this);
-                cdash->showMaximized();
+                stdash = new studentdash(this);
+                stdash->showMaximized();
             }
-            Loginsuccess = new loginsuccessful(this);
-            Loginsuccess->show();
+
 
 
 

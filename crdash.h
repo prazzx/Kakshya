@@ -10,7 +10,7 @@
 #include <QSqlQuery>
 #include <QSqlError>
 #include <crsearchclass.h>
-
+#include"crloginpage.h"
 namespace Ui {
 class crdash;
 }

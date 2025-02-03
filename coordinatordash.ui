@@ -13,19 +13,6 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QLabel" name="label">
-   <property name="geometry">
-    <rect>
-     <x>170</x>
-     <y>20</y>
-     <width>221</width>
-     <height>81</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Logged in as coordinator</string>
-   </property>
-  </widget>
   <widget class="QPushButton" name="pushButtonUpload">
    <property name="geometry">
     <rect>
@@ -352,6 +339,70 @@
     </property>
    </widget>
   </widget>
+  <widget class="QPushButton" name="pushButtonUpload_2">
+   <property name="geometry">
+    <rect>
+     <x>640</x>
+     <y>20</y>
+     <width>141</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Select Cr?</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1691</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LayoutDirection::LeftToRight</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(85, 170, 255);</string>
+   </property>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>10</y>
+      <width>221</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Logged in as coordinator</string>
+    </property>
+   </widget>
+  </widget>
+  <zorder>widget</zorder>
+  <zorder>pushButtonUpload</zorder>
+  <zorder>pushButton</zorder>
+  <zorder>logo</zorder>
+  <zorder>label_2</zorder>
+  <zorder>frame1</zorder>
+  <zorder>labelTime</zorder>
+  <zorder>frame2</zorder>
+  <zorder>frame3</zorder>
+  <zorder>frame6</zorder>
+  <zorder>frame9</zorder>
+  <zorder>frame5</zorder>
+  <zorder>frame8</zorder>
+  <zorder>frame4</zorder>
+  <zorder>frame7</zorder>
+  <zorder>pushButtonUpload_2</zorder>
  </widget>
  <resources/>
  <connections/>

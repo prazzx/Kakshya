@@ -26,19 +26,6 @@
     <string>Logout</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_2">
-   <property name="geometry">
-    <rect>
-     <x>230</x>
-     <y>30</y>
-     <width>221</width>
-     <height>81</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Logged in as CR</string>
-   </property>
-  </widget>
   <widget class="QPushButton" name="pushButtonUpload">
    <property name="geometry">
     <rect>
@@ -273,6 +260,49 @@
     </item>
    </layout>
   </widget>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1691</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LayoutDirection::LeftToRight</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(85, 170, 255);</string>
+   </property>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>221</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Logged in as CR</string>
+    </property>
+   </widget>
+  </widget>
+  <zorder>widget</zorder>
+  <zorder>pushButton_2</zorder>
+  <zorder>pushButtonUpload</zorder>
+  <zorder>logo</zorder>
+  <zorder>label</zorder>
+  <zorder>labelTime</zorder>
+  <zorder>comboBoxSelect</zorder>
+  <zorder>gridLayoutWidget</zorder>
  </widget>
  <resources/>
  <connections/>

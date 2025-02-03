@@ -1,5 +1,6 @@
 #ifndef STUDENTDASH_H
 #define STUDENTDASH_H
+#include"crloginpage.h"
 
 #include <QDialog>
 
@@ -20,6 +21,7 @@ private slots:
 
 private:
     Ui::studentdash *ui;
+    crloginpage *crl;
 };
 
 #endif // STUDENTDASH_H

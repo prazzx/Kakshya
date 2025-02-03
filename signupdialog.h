@@ -2,7 +2,7 @@
 #define SIGNUPDIALOG_H
 
 #include <QDialog>
-#include <signupsuccessful.h>
+
 
 
 namespace Ui {
@@ -25,7 +25,7 @@ private slots:
 private:
     Ui::SignupDialog *ui;
     bool connectToDatabase();
-    Signupsuccessful *signupSuccessful;
+
 
 };
 

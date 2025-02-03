@@ -2,7 +2,7 @@
 #define BOOKCLASSROOM_H
 
 #include <QDialog>
-#include<addedsuccessfully.h>
+
 
 namespace Ui {
 class bookClassroom;
@@ -22,7 +22,6 @@ private slots:
 private:
     Ui::bookClassroom *ui;
     bool connectToDatabase();
-    addedsuccessfully *ads;
     QString rno;
 
 };
