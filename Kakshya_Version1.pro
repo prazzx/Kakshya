@@ -23,6 +23,7 @@ SOURCES += \
     passwordchanged.cpp \
     selectcr.cpp \
     signupdialog.cpp \
+    studentcheckclass.cpp \
     studentdash.cpp \
     teacherdash.cpp \
     teachersearch.cpp \
@@ -41,6 +42,7 @@ HEADERS += \
     passwordchanged.h \
     selectcr.h \
     signupdialog.h \
+    studentcheckclass.h \
     studentdash.h \
     teacherdash.h \
     teachersearch.h \
@@ -58,6 +60,7 @@ FORMS += \
     passwordchanged.ui \
     selectcr.ui \
     signupdialog.ui \
+    studentcheckclass.ui \
     studentdash.ui \
     teacherdash.ui \
     teachersearch.ui \

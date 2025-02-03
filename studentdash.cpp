@@ -1,5 +1,6 @@
 #include "studentdash.h"
 #include "loginpage.h"
+#include "studentcheckclass.h"
 #include "ui_studentdash.h"
 #include "crloginpage.h"
 #include <QSqlDatabase>
@@ -14,6 +15,7 @@ studentdash::studentdash(QWidget *parent)
     , ui(new Ui::studentdash)
 {
     ui->setupUi(this);
+    StatusReveal();
 }
 
 studentdash::~studentdash()
@@ -206,3 +208,11 @@ void studentdash::StatusReveal(){
 
 
 }
+
+void studentdash::on_pushCheck_clicked()
+{
+    studentcheckclass *scs = new studentcheckclass();
+    scs->showMaximized();
+    this->close();
+}
+

@@ -21,6 +21,8 @@ private slots:
     void on_pushButton_2_clicked();
     void StatusReveal();
 
+    void on_pushCheck_clicked();
+
 private:
     Ui::studentdash *ui;
     crloginpage *crl;
