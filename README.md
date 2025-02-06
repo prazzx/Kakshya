@@ -33,7 +33,7 @@ Ensure the following are installed on your system:
 ### Steps
 1. **Clone the Repository:**
    ```bash
-   git clone <repository-url>
+   git clone <https://github.com/prazzx/Kakshya>
    cd Kakshya
    ```
 2. **Configure the MySQL Database:**
