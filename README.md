@@ -12,6 +12,13 @@ Kakshya is a **Classroom Management Application** designed to streamline classro
 - **Database Integration**: Uses **MySQL** for managing login credentials and schedules.
 - **User-Friendly Interface**: Built using **C++ with Qt** for an interactive and responsive experience.
 
+## contributors
+  - ** https://github.com/AmanKarn-00
+  - ** https://github.com/prazzx
+  - ** https://github.com/coderag10
+  - ** https://github.com/Bibesx
+  - ** https://github.com/Solta420
+
 ## Technologies Used
 - **C++** (Core application logic)
 - **Qt (Qt Designer)** (Frontend UI)
