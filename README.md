@@ -18,6 +18,7 @@ Kakshya is a **Classroom Management Application** designed to streamline classro
   - ** https://github.com/coderag10
   - ** https://github.com/Bibesx
   - ** https://github.com/Solta420
+  - https://github.com/Solta420
 
 ## Technologies Used
 - **C++** (Core application logic)
