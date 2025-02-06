@@ -13,12 +13,11 @@ Kakshya is a **Classroom Management Application** designed to streamline classro
 - **User-Friendly Interface**: Built using **C++ with Qt** for an interactive and responsive experience.
 
 ## contributors
-  - ** https://github.com/AmanKarn-00
-  - ** https://github.com/prazzx
-  - ** https://github.com/coderag10
-  - ** https://github.com/Bibesx
-  - ** https://github.com/Solta420
-  - https://github.com/Solta420
+- [@AmanKarn-00](https://github.com/AmanKarn-00)
+- [@prazzx](https://github.com/prazzx)
+- [@coderag10](https://github.com/coderag10)
+- [@Bibesx](https://github.com/Bibesx)
+- [@Solta420](https://github.com/Solta420)
 
 ## Technologies Used
 - **C++** (Core application logic)
