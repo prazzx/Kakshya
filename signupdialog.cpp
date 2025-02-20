@@ -5,6 +5,8 @@
 #include <QSqlQuery>
 #include <QSqlError>
 #include <QMessageBox>
+#include <QRegularExpression>
+#include <QRegularExpressionMatch>
 
 SignupDialog::SignupDialog(QWidget *parent) :
     QDialog(parent),
@@ -54,6 +56,17 @@ void SignupDialog::on_pushButtonSignUp_clicked()
         return;
     }
 
+    QRegularExpression emailRegex("^[\\w\\.]+@[\\w]+\\.com$");
+    QRegularExpressionMatch emailMatch = emailRegex.match(email);
+    if (!emailMatch.hasMatch()) {
+        ui->labelMessage->setText("Invalid email address. It must be in the format user@domain.com");
+        return;
+    }
+    QRegularExpression phoneRegex("^\\d{10}$");
+    if (!phoneRegex.match(phone).hasMatch()) {
+        ui->labelMessage->setText("Invalid phone number. It should contain exactly 10 digits only.");
+        return;
+    }
     QString tableName;
     if (ui->radioButtonTeacher->isChecked()) {
         tableName = "teacher";
