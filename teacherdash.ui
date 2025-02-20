@@ -71,7 +71,7 @@
      <x>320</x>
      <y>350</y>
      <width>601</width>
-     <height>240</height>
+     <height>251</height>
     </rect>
    </property>
    <layout class="QGridLayout" name="gridLayout" rowstretch="0,0,0,0">
