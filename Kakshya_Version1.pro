@@ -10,63 +10,54 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    addedsuccessfully.cpp \
     addvaluestoroutine.cpp \
     bookclassroom.cpp \
     coordinatordash.cpp \
     crdash.cpp \
+    crloginpage.cpp \
     crsearchclass.cpp \
     forgotpassword.cpp \
     loginpage.cpp \
-    loginsuccessful.cpp \
     main.cpp \
     mainwindow.cpp \
-    passwordchanged.cpp \
     selectcr.cpp \
     signupdialog.cpp \
-    signupsuccessful.cpp \
+    studentcheckclass.cpp \
     studentdash.cpp \
     teacherdash.cpp \
-    teachersearch.cpp \
     uploadroutine.cpp
 
 HEADERS += \
-    addedsuccessfully.h \
     addvaluestoroutine.h \
     bookclassroom.h \
     coordinatordash.h \
     crdash.h \
+    crloginpage.h \
     crsearchclass.h \
     forgotpassword.h \
     loginpage.h \
-    loginsuccessful.h \
     mainwindow.h \
-    passwordchanged.h \
     selectcr.h \
     signupdialog.h \
-    signupsuccessful.h \
+    studentcheckclass.h \
     studentdash.h \
     teacherdash.h \
-    teachersearch.h \
     uploadroutine.h
 
 FORMS += \
-    addedsuccessfully.ui \
     addvaluestoroutine.ui \
     bookclassroom.ui \
     coordinatordash.ui \
     crdash.ui \
+    crloginpage.ui \
     crsearchclass.ui \
     forgotpassword.ui \
     loginpage.ui \
-    loginsuccessful.ui \
-    passwordchanged.ui \
     selectcr.ui \
     signupdialog.ui \
-    signupsuccessful.ui \
+    studentcheckclass.ui \
     studentdash.ui \
     teacherdash.ui \
-    teachersearch.ui \
     uploadroutine.ui
 
 # Default rules for deployment.
@@ -76,3 +67,6 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 RESOURCES += \
     Resources.qrc
+
+RC_ICONS = Kakshya_trans.ico
+

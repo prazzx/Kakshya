@@ -1,24 +1,3 @@
-/*Copyright (c) DevSec Studio. All rights reserved.
-
-MIT License
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED *AS IS*, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-*/
 
 /*-----QWidget-----*/
 QWidget
@@ -38,45 +17,6 @@ QLabel
         font-size: 13px;
 
 }
-
-
-/*-----QPushButton-----*/
-QPushButton
-{
-        background-color: #5c55e9;
-        color: #fff;
-        font-size: 13px;
-        font-weight: bold;
-        border-top-right-radius: 15px;
-        border-top-left-radius: 0px;
-        border-bottom-right-radius: 0px;
-        border-bottom-left-radius: 15px;
-        padding: 10px;
-
-}
-
-
-QPushButton::disabled
-{
-        background-color: #5c5c5c;
-
-}
-
-
-QPushButton::hover
-{
-        background-color: #5564f2;
-
-}
-
-
-QPushButton::pressed
-{
-        background-color: #3d4ef2;
-
-}
-
-
 /*-----QCheckBox-----*/
 QCheckBox
 {
@@ -189,7 +129,7 @@ QListView::item:selected
 
 QListView::item:!selected
 {
-        color:white;
+        color:black;
         background-color: transparent;
         border: none;
         padding-left : 10px;
@@ -458,32 +398,101 @@ QScrollBar::sub-page:vertical
     height: 0px;
     background-color: #d8dce6;
 
-}QRadioButton {
-font-size: 14px;         /* Set the font size */
-color: #333333;         /* Set text color */
-padding: 5px;           /* Add padding around the button */
-spacing: 10px;          /* Space between the radio button and label */
+}
+QRadioButton {
+        spacing: 15px;
+        font-size: 15px;
+        color: #4169e1;
 }
 
+/* Set size for QCheckBox indicator */
 QRadioButton::indicator {
-width: 16px;            /* Set width of the circle */
-height: 16px;           /* Set height of the circle */
-border-radius: 8px;     /* Make it circular */
-border: 2px solid #666666; /* Border color when unchecked */
-background: #ffffff;    /* Background color when unchecked */
+        width: 25px;
+        height: 25px;
 }
 
-QRadioButton::indicator:hover {
-border-color: #0078d7;  /* Change border color on hover */
+/* Change font color when mouse is hover on QCheckBox   */
+QRadioButton:hover {
+        color: #B31031;
 }
 
-QRadioButton::indicator:checked {
-border-color: #0078d7;  /* Border color when checked */
-background: #0078d7;    /* Background color when checked */
+
+/* Set style for function widget */
+#widget {
+        background-color: #fff;
+        border-radius: 5px;
 }
 
-QRadioButton::indicator:disabled {
-border-color: #cccccc;  /* Border color when disabled */
-background: #f0f0f0;    /* Background color when disabled */
+/* Set style for QLabel */
+QLabel {
+        color: #767e89
 }
 
+QLabel#label {
+        color: #000;
+}
+
+/* Set style for QLineEdit */
+QLineEdit {
+        border: none;
+        border-bottom: 2px solid #cccccc;
+}
+
+QLineEdit:focus {
+        border-bottom:  2px solid #28a2a2;
+}
+
+/* Set style for QPushButton */
+QPushButton {
+        background-color: #0d6efd;
+        border: 2px solid #fff;
+        color: #fff;
+        border-radius: 5px;
+        padding: 6px;
+        margin-top: 10px;
+}
+
+QPushButton:hover,
+QPushButton:clicked {
+        background-color: #0b5ed7;
+        border: 2px solid #9ac3fe;
+}
+#comboBox {
+        border: 1px solid #ced4da;
+        border-radius: 4px;
+        padding-left: 10px;
+}
+
+#comboBox::drop-down {
+    border: 0px;
+}
+
+#comboBox::down-arrow {
+    image: url(:/icon/arrow-204-32.ico);
+    width: 12px;
+    height: 12px;
+        margin-right:15px;
+}
+
+#comboBox:on {
+        border: 4px solid #c2dbfe;
+ }
+
+QComboBox QListView {
+        font-size: 12px;
+        border:1px solid rgba(0,0,0,10%);
+        padding:5px;
+        background-color: #fff;
+        outline: 0px;  /*去虚线*/
+}
+
+QComboBox QListView::item{
+        padding-left:10px;
+        background-color:#FFFFFF;
+}
+QComboBox QListView::item:hover{
+   background-color:#1e90ff;
+}
+QComboBox QListView::item:selected{
+   background-color:#1e90ff;
+}

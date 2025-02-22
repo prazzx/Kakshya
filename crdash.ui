@@ -6,73 +6,24 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1358</width>
+    <width>1200</width>
     <height>845</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>CR Dashboard</string>
   </property>
-  <widget class="QPushButton" name="pushButton_2">
-   <property name="geometry">
-    <rect>
-     <x>1010</x>
-     <y>30</y>
-     <width>121</width>
-     <height>51</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Logout</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_2">
-   <property name="geometry">
-    <rect>
-     <x>230</x>
-     <y>30</y>
-     <width>221</width>
-     <height>81</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Logged in as CR</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="pushButtonUpload">
-   <property name="geometry">
-    <rect>
-     <x>810</x>
-     <y>30</y>
-     <width>191</width>
-     <height>51</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Search for classroom</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="logo">
-   <property name="geometry">
-    <rect>
-     <x>80</x>
-     <y>30</y>
-     <width>141</width>
-     <height>91</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-  </widget>
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>380</x>
-     <y>160</y>
+     <x>420</x>
+     <y>150</y>
      <width>321</width>
      <height>61</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 0);</string>
    </property>
    <property name="text">
     <string>                             Dashboard</string>
@@ -82,10 +33,13 @@
    <property name="geometry">
     <rect>
      <x>910</x>
-     <y>130</y>
+     <y>140</y>
      <width>191</width>
      <height>81</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 0);</string>
    </property>
    <property name="text">
     <string/>
@@ -94,14 +48,17 @@
   <widget class="QComboBox" name="comboBoxSelect">
    <property name="geometry">
     <rect>
-     <x>280</x>
-     <y>230</y>
-     <width>55</width>
-     <height>22</height>
+     <x>120</x>
+     <y>250</y>
+     <width>160</width>
+     <height>41</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true"/>
+    <string notr="true">color: black; 
+font: 700 10pt &quot;Arial&quot;;
+
+</string>
    </property>
    <item>
     <property name="text">
@@ -273,6 +230,95 @@
     </item>
    </layout>
   </widget>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1691</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LayoutDirection::LeftToRight</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(85, 170, 255);</string>
+   </property>
+   <widget class="QLabel" name="logo">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>0</y>
+      <width>141</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>10</y>
+      <width>221</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 0, 0);
+font:bold;</string>
+    </property>
+    <property name="text">
+     <string>Logged in as CR</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>1030</x>
+      <y>20</y>
+      <width>121</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(13, 110, 253);</string>
+    </property>
+    <property name="text">
+     <string>Logout</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonUpload">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>20</y>
+      <width>191</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(13, 110, 253);</string>
+    </property>
+    <property name="text">
+     <string>Check classroom</string>
+    </property>
+   </widget>
+  </widget>
+  <zorder>widget</zorder>
+  <zorder>label</zorder>
+  <zorder>labelTime</zorder>
+  <zorder>comboBoxSelect</zorder>
+  <zorder>gridLayoutWidget</zorder>
  </widget>
  <resources/>
  <connections/>

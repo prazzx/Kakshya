@@ -25,7 +25,9 @@ private slots:
 
     void on_Cancel3_clicked();
 
-    void on_pushButtonUpload_clicked();
+
+
+
 
 private:
     Ui::teacherdash *ui;

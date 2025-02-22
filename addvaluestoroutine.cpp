@@ -1,13 +1,10 @@
 #include "addvaluestoroutine.h"
-#include "addedsuccessfully.h"
 #include "ui_addvaluestoroutine.h"
 #include <QSqlDatabase>
 #include <QSqlQuery>
 #include <QSqlError>
 #include <QMessageBox>
 #include<QPixmap>
-
-QVariant nullVariant;
 
 Addvaluestoroutine::Addvaluestoroutine(const QString &selectedvalue,const QString &day, const QString &timeSlot,QWidget *parent)
     : QDialog(parent)
@@ -63,11 +60,10 @@ void Addvaluestoroutine::on_pushButtonAdd_clicked()
     query.bindValue(":tname", tname);
     query.bindValue(":rno", rno);
     if(query.exec()){
-        close();
-        ads = new addedsuccessfully(this);
-        ads->show();
+        this->close();
+       QMessageBox::information(this, "Success", "Routine added successfully!");
     }
-    }
+}
 }
 
 
@@ -83,9 +79,11 @@ void Addvaluestoroutine::on_pushButtonNo_clicked()
     query.bindValue(":tname",  "");
     query.bindValue(":rno",  "");
     if(query.exec()){
-        close();
-        ads = new addedsuccessfully(this);
-        ads->show();
+       QMessageBox::information(this, "Success", "Routine added successfully!");
     }
+
 }
+
+
+
 

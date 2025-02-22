@@ -1,5 +1,6 @@
 #ifndef STUDENTDASH_H
 #define STUDENTDASH_H
+#include"crloginpage.h"
 
 #include <QDialog>
 
@@ -17,9 +18,15 @@ public:
 
 private slots:
     void on_pushButtonUpload_clicked();
+    void on_pushButton_2_clicked();
+    void StatusReveal();
+
+    void on_pushCheck_clicked();
 
 private:
     Ui::studentdash *ui;
+    crloginpage *crl;
+     bool connectToDatabase();
 };
 
 #endif // STUDENTDASH_H

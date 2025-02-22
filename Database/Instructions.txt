@@ -1,13 +1,47 @@
-For new users:
-Order of execution of database files is:
-1) Createdb
-2) Signuptable
-3) Routinetable 
+For New Users (First-Time Setup)
+🚀 Order of execution:
+1️⃣ Createdb.sql → Creates the database
+2️⃣ Signuptable.sql → Creates the signup table
+3️⃣ Routinetable.sql → Creates the routine table
+4️⃣ cr_password.sql  → creates table for authentication of cr
 
-For existing users(Users who are facing database problems and want to reset it):
-Order of execution of database files is:
-1) Resetdb
-2) Signuptable
-3) Routinetable 
+For Existing Users (Resetting the Database)
+⚠️ This process deletes all data, so you must re-enter everything (Signup, Upload Routine, etc.).
+🚀 Order of execution:
+1️⃣ Resetdb.sql → Drops all tables and resets the database
+2️⃣ Signuptable.sql → Recreates the signup table
+3️⃣ Routinetable.sql → Recreates the routine table
+4️⃣ cr_password.sql  → Recreates table for authentication of cr
 Note: This second order of execution completely removes all existing data from the database. So you will have to enter(Signup,Upload Routine) data again.
 
+
+		 since we are doing this on local server this will most likely not be connected in the database so you will manually have to  run the shell command
+
+ Step 1: first open cmd and navigate into kakshya folder and into database folder  (this is for cmd only not for powershell)
+ Step 2: Login to MySQL and  Run the following command:
+mysql -u root -p
+(enter your password most likely it will be root but if u have another pw good luck with that)
+and  run exit ; before step 3
+Step 3: Execute SQL Files
+Run these one by one inside Command Prompt:
+mysql -u root -p < Createdb.sql
+mysql -u root -p kakshya < Signuptable.sql
+mysql -u root -p kakshya < Routinetable.sql
+mysql -u root -p kakshya < cr_password.sql
+Step 4: Verify the Setup
+To check if the tables were created, log into MySQL:
+mysql -u root -p
+Then run:
+USE kakshya;
+SHOW TABLES;
+
+ tips(only for collaborators and yes aman karna it also for you if you are looking this then run this commands for database so we wont missout if you altered table locally but forgot to update databases)
+if you want to paste your database table info in the folder then run cmd on this folder and run this code 
+mysqldump -u root -p --no-data kakshya cr_password > cr_password.sql
+enter your password and there you go.
+ here : root - your username change if you have others
+ kakhsya  - your database , cr_password is your table and  youre converting it into .MySQL file
+🎯 Final Notes
+Do NOT use PowerShell (it handles < differently).
+If you face errors like "Database already exists", skip Createdb.sql.
+If you face errors like "Table already exists", use Resetdb.sql to wipe and restart.

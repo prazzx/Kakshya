@@ -11,13 +11,13 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>Check Classroom</string>
   </property>
   <widget class="QFrame" name="frame4">
    <property name="geometry">
     <rect>
-     <x>290</x>
-     <y>370</y>
+     <x>280</x>
+     <y>390</y>
      <width>160</width>
      <height>100</height>
     </rect>
@@ -44,14 +44,15 @@
    <widget class="QPushButton" name="Add4">
     <property name="geometry">
      <rect>
-      <x>30</x>
+      <x>40</x>
       <y>40</y>
       <width>81</width>
-      <height>31</height>
+      <height>41</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(125, 76, 68);
+     <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 60, 0);
 </string>
     </property>
     <property name="text">
@@ -59,24 +60,11 @@
     </property>
    </widget>
   </widget>
-  <widget class="QLabel" name="label">
-   <property name="geometry">
-    <rect>
-     <x>170</x>
-     <y>20</y>
-     <width>221</width>
-     <height>81</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Logged in as CR</string>
-   </property>
-  </widget>
   <widget class="QFrame" name="frame6">
    <property name="geometry">
     <rect>
-     <x>890</x>
-     <y>370</y>
+     <x>880</x>
+     <y>390</y>
      <width>160</width>
      <height>100</height>
     </rect>
@@ -106,11 +94,12 @@
       <x>40</x>
       <y>40</y>
       <width>81</width>
-      <height>31</height>
+      <height>41</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(125, 76, 68);
+     <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 60, 0);
 </string>
     </property>
     <property name="text">
@@ -118,27 +107,17 @@
     </property>
    </widget>
   </widget>
-  <widget class="QLabel" name="logo">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>10</y>
-     <width>141</width>
-     <height>91</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-  </widget>
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
      <x>470</x>
-     <y>150</y>
+     <y>140</y>
      <width>321</width>
      <height>61</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 0);</string>
    </property>
    <property name="text">
     <string>                             Dashboard</string>
@@ -147,8 +126,8 @@
   <widget class="QFrame" name="frame9">
    <property name="geometry">
     <rect>
-     <x>890</x>
-     <y>520</y>
+     <x>880</x>
+     <y>540</y>
      <width>160</width>
      <height>100</height>
     </rect>
@@ -178,11 +157,12 @@
       <x>40</x>
       <y>40</y>
       <width>81</width>
-      <height>31</height>
+      <height>41</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(125, 76, 68);
+     <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 60, 0);
 </string>
     </property>
     <property name="text">
@@ -193,8 +173,8 @@
   <widget class="QFrame" name="frame3">
    <property name="geometry">
     <rect>
-     <x>890</x>
-     <y>220</y>
+     <x>880</x>
+     <y>240</y>
      <width>160</width>
      <height>100</height>
     </rect>
@@ -224,11 +204,12 @@
       <x>40</x>
       <y>40</y>
       <width>81</width>
-      <height>31</height>
+      <height>41</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(125, 76, 68);
+     <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 60, 0);
 </string>
     </property>
     <property name="text">
@@ -239,8 +220,8 @@
   <widget class="QFrame" name="frame1">
    <property name="geometry">
     <rect>
-     <x>290</x>
-     <y>220</y>
+     <x>280</x>
+     <y>240</y>
      <width>160</width>
      <height>100</height>
     </rect>
@@ -270,11 +251,12 @@
       <x>40</x>
       <y>40</y>
       <width>81</width>
-      <height>31</height>
+      <height>41</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(125, 76, 68);
+     <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 60, 0);
 </string>
     </property>
     <property name="text">
@@ -285,8 +267,8 @@
   <widget class="QFrame" name="frame8">
    <property name="geometry">
     <rect>
-     <x>590</x>
-     <y>520</y>
+     <x>580</x>
+     <y>540</y>
      <width>160</width>
      <height>100</height>
     </rect>
@@ -316,11 +298,12 @@
       <x>40</x>
       <y>40</y>
       <width>81</width>
-      <height>31</height>
+      <height>41</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(125, 76, 68);
+     <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 60, 0);
 </string>
     </property>
     <property name="text">
@@ -332,10 +315,13 @@
    <property name="geometry">
     <rect>
      <x>830</x>
-     <y>160</y>
+     <y>140</y>
      <width>231</width>
      <height>51</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 0);</string>
    </property>
    <property name="text">
     <string/>
@@ -344,8 +330,8 @@
   <widget class="QFrame" name="frame2">
    <property name="geometry">
     <rect>
-     <x>590</x>
-     <y>220</y>
+     <x>580</x>
+     <y>240</y>
      <width>160</width>
      <height>100</height>
     </rect>
@@ -375,11 +361,12 @@
       <x>40</x>
       <y>40</y>
       <width>81</width>
-      <height>31</height>
+      <height>41</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(125, 76, 68);
+     <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 60, 0);
 </string>
     </property>
     <property name="text">
@@ -390,8 +377,8 @@
   <widget class="QFrame" name="frame7">
    <property name="geometry">
     <rect>
-     <x>290</x>
-     <y>520</y>
+     <x>280</x>
+     <y>540</y>
      <width>160</width>
      <height>100</height>
     </rect>
@@ -421,11 +408,12 @@
       <x>40</x>
       <y>40</y>
       <width>81</width>
-      <height>31</height>
+      <height>41</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(125, 76, 68);
+     <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 60, 0);
 </string>
     </property>
     <property name="text">
@@ -436,8 +424,8 @@
   <widget class="QFrame" name="frame5">
    <property name="geometry">
     <rect>
-     <x>590</x>
-     <y>370</y>
+     <x>580</x>
+     <y>390</y>
      <width>160</width>
      <height>100</height>
     </rect>
@@ -467,11 +455,12 @@
       <x>40</x>
       <y>40</y>
       <width>81</width>
-      <height>31</height>
+      <height>41</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(125, 76, 68);
+     <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 60, 0);
 </string>
     </property>
     <property name="text">
@@ -479,32 +468,102 @@
     </property>
    </widget>
   </widget>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QWidget" name="widget" native="true">
    <property name="geometry">
     <rect>
-     <x>1020</x>
-     <y>40</y>
-     <width>151</width>
-     <height>71</height>
+     <x>-80</x>
+     <y>0</y>
+     <width>1691</width>
+     <height>101</height>
     </rect>
    </property>
-   <property name="text">
-    <string>Log out</string>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
    </property>
+   <property name="layoutDirection">
+    <enum>Qt::LayoutDirection::LeftToRight</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(85, 170, 255);</string>
+   </property>
+   <widget class="QLabel" name="logo">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>0</y>
+      <width>141</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>10</y>
+      <width>221</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font:bold;
+color: rgb(0, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>Logged in as CR</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonback">
+    <property name="geometry">
+     <rect>
+      <x>900</x>
+      <y>20</y>
+      <width>151</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(13, 110, 253);</string>
+    </property>
+    <property name="text">
+     <string>Back</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>1080</x>
+      <y>20</y>
+      <width>151</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(13, 110, 253);</string>
+    </property>
+    <property name="text">
+     <string>Log out</string>
+    </property>
+   </widget>
   </widget>
-  <widget class="QPushButton" name="pushButtonback">
-   <property name="geometry">
-    <rect>
-     <x>840</x>
-     <y>40</y>
-     <width>151</width>
-     <height>71</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Back</string>
-   </property>
-  </widget>
+  <zorder>widget</zorder>
+  <zorder>frame4</zorder>
+  <zorder>frame6</zorder>
+  <zorder>label_2</zorder>
+  <zorder>frame9</zorder>
+  <zorder>frame3</zorder>
+  <zorder>frame1</zorder>
+  <zorder>frame8</zorder>
+  <zorder>labelTime</zorder>
+  <zorder>frame2</zorder>
+  <zorder>frame7</zorder>
+  <zorder>frame5</zorder>
  </widget>
  <resources/>
  <connections/>

@@ -7,7 +7,7 @@
 #include<QPixmap>
 #include <QDateTime>
 #include <QTimer>
-#include<addedsuccessfully.h>
+
 
 bookClassroom::bookClassroom(const QString &rno,QWidget *parent)
     : QDialog(parent)
@@ -76,9 +76,8 @@ void bookClassroom::on_pushButtonAdd_clicked()
         query.bindValue(":tname", tname);
         query.bindValue(":rno", rno);
         if(query.exec()){
-            close();
-            ads = new addedsuccessfully(this);
-            ads->show();
+            QMessageBox::information(this, "Success", "Routine added successfully!");
+            this->hide();
         }
     }
 }

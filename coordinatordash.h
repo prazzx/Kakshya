@@ -9,7 +9,7 @@
 #include <QSqlDatabase>
 #include <QSqlQuery>
 #include <QSqlError>
-#include"selectcr.h"
+
 class selectcr;
 
 namespace Ui {
@@ -33,7 +33,9 @@ private slots:
 
     void on_pushButton_clicked();
 
-    void on_setpw_clicked();
+
+
+    void on_pushButtonUpload_2_clicked();
 
 private:
     Ui::coordinatordash *ui;
