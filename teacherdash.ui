@@ -11,23 +11,8 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>Teacher Dashboard</string>
   </property>
-
-  <widget class="QPushButton" name="pushButton_2">
-   <property name="geometry">
-    <rect>
-     <x>1040</x>
-     <y>40</y>
-     <width>121</width>
-     <height>51</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>logout</string>
-   </property>
-  </widget>
-
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
@@ -363,9 +348,7 @@ color: rgb(0, 0, 0);</string>
    <zorder>pushButton_2</zorder>
    <zorder>label_2</zorder>
   </widget>
-
-  <zorder>pushButton_2</zorder>
-
+  <zorder>widget</zorder>
   <zorder>label</zorder>
   <zorder>labelTime</zorder>
   <zorder>gridLayoutWidget</zorder>

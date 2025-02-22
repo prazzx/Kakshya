@@ -18,9 +18,8 @@ LoginPage::LoginPage(QWidget *parent) :
     QPixmap pic(":/resources/resources/Kakshya_trans.png");
     int h= ui->logo->height();
     int  w = ui->logo ->width();
-ui->logo->setPixmap(pic.scaled(h,w,Qt::KeepAspectRatio,Qt::SmoothTransformation));
-    this->setWindowTitle("Fuck off");
-    this->setWindowIcon(QIcon(":/r/resources/Kakshya_trans.png"));
+    ui->logo->setPixmap(pic.scaled(h,w,Qt::KeepAspectRatio,Qt::SmoothTransformation));
+
 
 
 }
@@ -32,7 +31,7 @@ LoginPage::~LoginPage()
 
 void LoginPage::on_pushButtonSignup_clicked()
 {
-    this->close();
+    this->hide();
     signupDialog = new SignupDialog(this);
     signupDialog->showMaximized();
 }

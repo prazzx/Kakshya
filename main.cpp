@@ -11,6 +11,8 @@ int main(int argc, char *argv[])
     styleSheetFile.open(QFile::ReadOnly);
     QString styleSheet = QLatin1String(styleSheetFile.readAll());
         a.setStyleSheet(styleSheet);
+        a.setWindowIcon(QIcon(":/resources/resources/Kakshya_trans.png"));
+
 
 
     // Create and display the LoginPage

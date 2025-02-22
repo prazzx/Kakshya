@@ -17,6 +17,7 @@ SignupDialog::SignupDialog(QWidget *parent) :
     int h= ui->label->height();
     int  w = ui->label ->width();
     ui->label->setPixmap(pic.scaled(h,w,Qt::KeepAspectRatio,Qt::SmoothTransformation));
+    this->setWindowIcon(QIcon(":/resources/resources/Kakshya_trans.png"));
 }
 
 
