@@ -3,13 +3,13 @@
 #include "signupdialog.h"
 #include "ui_loginpage.h"
 #include "coordinatordash.h"
-#include "crdash.h"
 #include "teacherdash.h"
 #include <QSqlDatabase>
 #include <QSqlQuery>
 #include <QSqlError>
 #include <QMessageBox>
 #include<QPixmap>
+#include<QIcon>
 LoginPage::LoginPage(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::LoginPage)
@@ -19,6 +19,15 @@ LoginPage::LoginPage(QWidget *parent) :
     int h= ui->logo->height();
     int  w = ui->logo ->width();
     ui->logo->setPixmap(pic.scaled(h,w,Qt::KeepAspectRatio,Qt::SmoothTransformation));
+    this->setWindowIcon(QIcon(":/resources/Kakshya_trans.png"));
+    QIcon appIcon(":/resources/Kakshya_trans.png");
+
+    if (appIcon.isNull()) {
+        qDebug() << "Failed to load icon!";
+    } else {
+        qDebug() << "Icon loaded successfully!";
+    }
+
 }
 
 LoginPage::~LoginPage()
