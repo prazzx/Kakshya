@@ -1,3 +1,4 @@
+
 #include "forgotpassword.h"
 #include "ui_forgotpassword.h"
 #include <QSqlDatabase>
@@ -88,7 +89,6 @@ void Forgotpassword::on_pushButtonChangepassword_clicked()
         ui->labelMessage->setText("Invalid email.");
     }
 }
-
 
 
 
