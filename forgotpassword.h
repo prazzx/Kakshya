@@ -2,7 +2,7 @@
 #define FORGOTPASSWORD_H
 
 #include <QDialog>
-#include <passwordchanged.h>
+
 
 namespace Ui {
 class Forgotpassword;
@@ -21,7 +21,7 @@ private slots:
 
 private:
     Ui::Forgotpassword *ui;
-    passwordchanged *pass;
+
      bool connectToDatabase();
 };
 

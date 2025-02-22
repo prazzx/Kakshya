@@ -16,6 +16,11 @@ studentdash::studentdash(QWidget *parent)
 {
     ui->setupUi(this);
     StatusReveal();
+
+    QPixmap pic(":/resources/resources/Kakshya_trans.png");
+    int h = ui->logo->height();
+    int w = ui->logo->width();
+    ui->logo->setPixmap(pic.scaled(h, w, Qt::KeepAspectRatio, Qt::SmoothTransformation));
 }
 
 studentdash::~studentdash()

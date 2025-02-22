@@ -23,6 +23,8 @@ private slots:
 
     void on_comboBoxSelect_activated(int index);
 
+    void on_pushButton_clicked();
+
 private:
     Ui::crloginpage *ui;
       bool connectToDatabase();

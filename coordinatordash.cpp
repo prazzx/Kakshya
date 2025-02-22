@@ -157,8 +157,7 @@ void coordinatordash::on_pushButton_clicked()
 void coordinatordash::on_pushButtonUpload_2_clicked()
 {
     selectcr *sc = new selectcr();
-    sc->showMaximized();
-    this->close();
+    sc->show();
 }
 void coordinatordash::openSelectCRDialog() {
     selectcr *dialog = new selectcr(this); // Pass 'this' as the parent

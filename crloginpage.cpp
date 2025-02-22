@@ -71,7 +71,7 @@ void crloginpage::on_pushButtonLogin_clicked()
             QMessageBox::information(this, "Login Success", "You are now logged in!");
 
             crdash *dashboard = new crdash(); // Assuming crdash is the CR's dashboard
-            dashboard->show();
+            dashboard->showMaximized();
             this->close();
         } else {
             QMessageBox::warning(this, "Login Failed", "Invalid password. Please try again.");
@@ -90,5 +90,11 @@ void crloginpage::on_comboBoxSelect_activated(int index)
 {
     QString selectedCR = ui->comboBoxSelect->itemText(index);
     qDebug() << "Selected CR: " << selectedCR; // Debugging output
+}
+
+
+void crloginpage::on_pushButton_clicked()
+{
+    this->hide();
 }
 

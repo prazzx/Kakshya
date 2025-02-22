@@ -3,5 +3,6 @@
         <file>resources/logo.jpg</file>
         <file>resources/Kakshya_trans.png</file>
         <file>resources/Perstfic.qss</file>
+        <file>resources/Kakshya_trans.ico</file>
     </qresource>
 </RCC>
