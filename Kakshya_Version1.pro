@@ -20,13 +20,11 @@ SOURCES += \
     loginpage.cpp \
     main.cpp \
     mainwindow.cpp \
-    passwordchanged.cpp \
     selectcr.cpp \
     signupdialog.cpp \
     studentcheckclass.cpp \
     studentdash.cpp \
     teacherdash.cpp \
-    teachersearch.cpp \
     uploadroutine.cpp
 
 HEADERS += \
@@ -39,13 +37,11 @@ HEADERS += \
     forgotpassword.h \
     loginpage.h \
     mainwindow.h \
-    passwordchanged.h \
     selectcr.h \
     signupdialog.h \
     studentcheckclass.h \
     studentdash.h \
     teacherdash.h \
-    teachersearch.h \
     uploadroutine.h
 
 FORMS += \
@@ -57,13 +53,11 @@ FORMS += \
     crsearchclass.ui \
     forgotpassword.ui \
     loginpage.ui \
-    passwordchanged.ui \
     selectcr.ui \
     signupdialog.ui \
     studentcheckclass.ui \
     studentdash.ui \
     teacherdash.ui \
-    teachersearch.ui \
     uploadroutine.ui
 
 # Default rules for deployment.
