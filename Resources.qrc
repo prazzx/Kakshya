@@ -1,8 +1,9 @@
 <RCC>
-    <qresource prefix="/resources">
+    <qresource prefix="/r">
         <file>resources/logo.jpg</file>
         <file>resources/Kakshya_trans.png</file>
         <file>resources/Perstfic.qss</file>
         <file>Kakshya_trans.ico</file>
+        <file>resources/logo.png</file>
     </qresource>
 </RCC>

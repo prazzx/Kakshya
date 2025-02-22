@@ -9,7 +9,7 @@
 #include <QSqlError>
 #include <QMessageBox>
 #include<QPixmap>
-#include<QIcon>
+
 LoginPage::LoginPage(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::LoginPage)
@@ -18,15 +18,10 @@ LoginPage::LoginPage(QWidget *parent) :
     QPixmap pic(":/resources/resources/Kakshya_trans.png");
     int h= ui->logo->height();
     int  w = ui->logo ->width();
-    ui->logo->setPixmap(pic.scaled(h,w,Qt::KeepAspectRatio,Qt::SmoothTransformation));
-    this->setWindowIcon(QIcon(":/resources/Kakshya_trans.png"));
-    QIcon appIcon(":/resources/Kakshya_trans.png");
+ui->logo->setPixmap(pic.scaled(h,w,Qt::KeepAspectRatio,Qt::SmoothTransformation));
+    this->setWindowTitle("Fuck off");
+    this->setWindowIcon(QIcon(":/r/resources/Kakshya_trans.png"));
 
-    if (appIcon.isNull()) {
-        qDebug() << "Failed to load icon!";
-    } else {
-        qDebug() << "Icon loaded successfully!";
-    }
 
 }
 
