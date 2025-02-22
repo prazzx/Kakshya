@@ -4,6 +4,7 @@
 #include <QMessageBox>
 #include <QSqlQuery>
 #include <QSqlError>
+#include<QApplication>
 
 crloginpage::crloginpage(QWidget *parent)
     : QDialog(parent)
@@ -69,10 +70,11 @@ void crloginpage::on_pushButtonLogin_clicked()
         // Compare input password with the stored password
         if (inputPassword == storedPassword) {
             QMessageBox::information(this, "Login Success", "You are now logged in!");
-
+QApplication::closeAllWindows();
             crdash *dashboard = new crdash(); // Assuming crdash is the CR's dashboard
             dashboard->showMaximized();
-            this->close();
+
+
         } else {
             QMessageBox::warning(this, "Login Failed", "Invalid password. Please try again.");
         }

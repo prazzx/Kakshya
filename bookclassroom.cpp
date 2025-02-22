@@ -77,6 +77,7 @@ void bookClassroom::on_pushButtonAdd_clicked()
         query.bindValue(":rno", rno);
         if(query.exec()){
             QMessageBox::information(this, "Success", "Routine added successfully!");
+            this->hide();
         }
     }
 }

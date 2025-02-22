@@ -94,7 +94,7 @@ void LoginPage::on_pushButtonLogin_clicked()
             }
             else if(tableName=="teacher"){
                 tdash = new teacherdash(email,this);
-                tdash->show();
+                tdash->showMaximized();
             }
             else if(tableName=="cr"){
                 stdash = new studentdash(this);

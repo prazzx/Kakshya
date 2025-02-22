@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>Book Classroom</string>
   </property>
   <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
@@ -25,6 +25,12 @@
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
      <widget class="QComboBox" name="comboBoxStream">
+      <property name="styleSheet">
+       <string notr="true">color: black; 
+font: 700 10pt &quot;Arial&quot;;
+
+</string>
+      </property>
       <property name="currentText">
        <string>BIT</string>
       </property>
@@ -64,10 +70,10 @@
   <widget class="QPushButton" name="pushButtonAdd">
    <property name="geometry">
     <rect>
-     <x>159</x>
-     <y>187</y>
+     <x>150</x>
+     <y>190</y>
      <width>101</width>
-     <height>31</height>
+     <height>51</height>
     </rect>
    </property>
    <property name="text">

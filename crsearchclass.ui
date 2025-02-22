@@ -16,7 +16,7 @@
   <widget class="QFrame" name="frame4">
    <property name="geometry">
     <rect>
-     <x>170</x>
+     <x>280</x>
      <y>390</y>
      <width>160</width>
      <height>100</height>
@@ -44,14 +44,15 @@
    <widget class="QPushButton" name="Add4">
     <property name="geometry">
      <rect>
-      <x>30</x>
+      <x>40</x>
       <y>40</y>
       <width>81</width>
-      <height>31</height>
+      <height>41</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(125, 76, 68);
+     <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 60, 0);
 </string>
     </property>
     <property name="text">
@@ -62,7 +63,7 @@
   <widget class="QFrame" name="frame6">
    <property name="geometry">
     <rect>
-     <x>770</x>
+     <x>880</x>
      <y>390</y>
      <width>160</width>
      <height>100</height>
@@ -93,11 +94,12 @@
       <x>40</x>
       <y>40</y>
       <width>81</width>
-      <height>31</height>
+      <height>41</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(125, 76, 68);
+     <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 60, 0);
 </string>
     </property>
     <property name="text">
@@ -124,7 +126,7 @@
   <widget class="QFrame" name="frame9">
    <property name="geometry">
     <rect>
-     <x>770</x>
+     <x>880</x>
      <y>540</y>
      <width>160</width>
      <height>100</height>
@@ -155,11 +157,12 @@
       <x>40</x>
       <y>40</y>
       <width>81</width>
-      <height>31</height>
+      <height>41</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(125, 76, 68);
+     <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 60, 0);
 </string>
     </property>
     <property name="text">
@@ -170,7 +173,7 @@
   <widget class="QFrame" name="frame3">
    <property name="geometry">
     <rect>
-     <x>770</x>
+     <x>880</x>
      <y>240</y>
      <width>160</width>
      <height>100</height>
@@ -205,7 +208,8 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(125, 76, 68);
+     <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 60, 0);
 </string>
     </property>
     <property name="text">
@@ -216,7 +220,7 @@
   <widget class="QFrame" name="frame1">
    <property name="geometry">
     <rect>
-     <x>170</x>
+     <x>280</x>
      <y>240</y>
      <width>160</width>
      <height>100</height>
@@ -252,7 +256,7 @@
     </property>
     <property name="styleSheet">
      <string notr="true">color: rgb(255, 255, 255);
-background-color: rgb(0, 85, 0);
+background-color: rgb(0, 60, 0);
 </string>
     </property>
     <property name="text">
@@ -263,7 +267,7 @@ background-color: rgb(0, 85, 0);
   <widget class="QFrame" name="frame8">
    <property name="geometry">
     <rect>
-     <x>470</x>
+     <x>580</x>
      <y>540</y>
      <width>160</width>
      <height>100</height>
@@ -294,11 +298,12 @@ background-color: rgb(0, 85, 0);
       <x>40</x>
       <y>40</y>
       <width>81</width>
-      <height>31</height>
+      <height>41</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(125, 76, 68);
+     <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 60, 0);
 </string>
     </property>
     <property name="text">
@@ -325,7 +330,7 @@ background-color: rgb(0, 85, 0);
   <widget class="QFrame" name="frame2">
    <property name="geometry">
     <rect>
-     <x>470</x>
+     <x>580</x>
      <y>240</y>
      <width>160</width>
      <height>100</height>
@@ -361,7 +366,7 @@ background-color: rgb(0, 85, 0);
     </property>
     <property name="styleSheet">
      <string notr="true">color: rgb(255, 255, 255);
-background-color: rgb(0, 85, 0);
+background-color: rgb(0, 60, 0);
 </string>
     </property>
     <property name="text">
@@ -372,7 +377,7 @@ background-color: rgb(0, 85, 0);
   <widget class="QFrame" name="frame7">
    <property name="geometry">
     <rect>
-     <x>170</x>
+     <x>280</x>
      <y>540</y>
      <width>160</width>
      <height>100</height>
@@ -403,11 +408,12 @@ background-color: rgb(0, 85, 0);
       <x>40</x>
       <y>40</y>
       <width>81</width>
-      <height>31</height>
+      <height>41</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(125, 76, 68);
+     <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 60, 0);
 </string>
     </property>
     <property name="text">
@@ -418,7 +424,7 @@ background-color: rgb(0, 85, 0);
   <widget class="QFrame" name="frame5">
    <property name="geometry">
     <rect>
-     <x>470</x>
+     <x>580</x>
      <y>390</y>
      <width>160</width>
      <height>100</height>
@@ -449,11 +455,12 @@ background-color: rgb(0, 85, 0);
       <x>40</x>
       <y>40</y>
       <width>81</width>
-      <height>31</height>
+      <height>41</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(125, 76, 68);
+     <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 60, 0);
 </string>
     </property>
     <property name="text">

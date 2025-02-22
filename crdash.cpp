@@ -94,7 +94,7 @@ void crdash::StatusReveal(){
 
     }
     else{
-        if((Time>=16 && Time<=24)){
+        if((Time>=16 && Time<=24) ||(Time>=0 && Time<=9)) {
             ui->Subject1->clear();
             ui->rno1->clear();
             ui->Status1->clear();
@@ -122,6 +122,31 @@ void crdash::StatusReveal(){
 
         }
         else{
+            ui->Subject1->clear();
+            ui->rno1->clear();
+            ui->Status1->clear();
+            ui->Subject2->clear();
+            ui->rno2->clear();
+            ui->Status2->clear();
+            ui->Subject3->clear();
+            ui->rno3->clear();
+            ui->Status3->clear();
+            ui->Subject1->setText("-");
+            ui->rno1->setText("-");
+
+            ui->Subject2->setText("-");
+            ui->rno2->setText("-");
+
+            ui->Subject3->setText("-");
+            ui->rno3->setText("-");
+
+            ui->widget1->setStyleSheet("background-color: red ;");
+            ui->Status1->setText("No class");
+            ui->widget2->setStyleSheet("background-color: red ;");
+            ui->Status2->setText("No class");
+            ui->widget3->setStyleSheet("background-color: red ;");
+            ui->Status3->setText("No class");
+
      QString selectedvalue = ui->comboBoxSelect->currentText();
      QString currentDay = QDateTime::currentDateTime().toString("dddd");
 
