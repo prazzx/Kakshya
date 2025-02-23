@@ -1,7 +1,7 @@
 # Kakshya - Classroom Management System
 
 ## Overview
-Kakshya is a **Classroom Management Application** designed to streamline classroom scheduling and resource allocation within educational institutions. It helps track real-time classroom availability and provides role-based access for Coordinators, Teachers, and Class Representatives (CRs).
+Kakshya is a **Classroom Management Application** Designed to simplify classroom scheduling a and resource allocation within our university. It helps track real-time classroom availability and provides role-based access for Coordinators, Teachers, and Class Representatives (CRs).
 
 ## Features
 - **Real-time Classroom Vacancy Tracking**: Classrooms are marked using a **color-coded system** (e.g., red for occupied, green for available).
