@@ -39,7 +39,7 @@ void crdash::on_pushButton_2_clicked()
 
     if (reply == QMessageBox::Yes) {
         LoginPage *loginPage = new LoginPage();
-        loginPage->showMaximized();
+        loginPage->show();
         this->close();
     } else {
         qDebug() << "No is clicked";
@@ -212,6 +212,6 @@ void crdash::on_pushButtonUpload_clicked()
 {
     close();
     crsearch = new CRsearchclass(this);
-    crsearch->showMaximized();
+    crsearch->show();
 }
 

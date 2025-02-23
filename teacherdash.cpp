@@ -38,7 +38,7 @@ void teacherdash::on_pushButton_2_clicked()
 
     if (reply == QMessageBox::Yes) {
         LoginPage *loginPage = new LoginPage();
-        loginPage->showMaximized();
+        loginPage->show();
         this->close();
     } else {
         qDebug() << "No is clicked";
@@ -216,7 +216,7 @@ void teacherdash::on_Cancel3_clicked()
 void teacherdash::reloadpage(){
     this->close();
     teacherdash *td = new teacherdash(email);
-    td->showMaximized();
+    td->show();
 }
 
 

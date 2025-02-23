@@ -56,7 +56,7 @@ bool coordinatordash::connectToDatabase()
 void coordinatordash::on_pushButtonUpload_clicked()
 {
     up = new UploadRoutine(this);
-    up ->showMaximized();
+    up ->show();
 }
 
 void coordinatordash::updateColorbox()
@@ -144,7 +144,7 @@ void coordinatordash::on_pushButton_clicked()
 
     if (reply == QMessageBox::Yes) {
         LoginPage *loginPage = new LoginPage();
-        loginPage->showMaximized();
+        loginPage->show();
         this->close();
     } else {
         qDebug() << "No is clicked";
@@ -157,7 +157,7 @@ void coordinatordash::on_pushButton_clicked()
 void coordinatordash::on_pushButtonUpload_2_clicked()
 {
     selectcr *sc = new selectcr();
-    sc->showMaximized();
+    sc->show();
     this->close();
 }
 void coordinatordash::openSelectCRDialog() {

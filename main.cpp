@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
 
     // Create and display the LoginPage
     LoginPage loginPage;
-    loginPage.showMaximized();
+    loginPage.show();
 
     return a.exec();
 }

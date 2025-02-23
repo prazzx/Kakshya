@@ -30,7 +30,7 @@ void LoginPage::on_pushButtonSignup_clicked()
 {
     this->close();
     signupDialog = new SignupDialog(this);
-    signupDialog->showMaximized();
+    signupDialog->show();
 }
 
 bool LoginPage::connectToDatabase()
@@ -90,7 +90,7 @@ void LoginPage::on_pushButtonLogin_clicked()
             close();
             if(tableName=="coordinator"){
                 codash = new coordinatordash(this);
-                codash->showMaximized();
+                codash->show();
             }
             else if(tableName=="teacher"){
                 tdash = new teacherdash(email,this);
@@ -98,7 +98,7 @@ void LoginPage::on_pushButtonLogin_clicked()
             }
             else if(tableName=="cr"){
                 stdash = new studentdash(this);
-                stdash->showMaximized();
+                stdash->show();
             }
 
 

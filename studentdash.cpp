@@ -41,7 +41,7 @@ void studentdash::on_pushButton_2_clicked()
 
     if (reply == QMessageBox::Yes) {
         LoginPage *loginPage = new LoginPage();
-        loginPage->showMaximized();
+        loginPage->show();
         this->close();
     } else {
         qDebug() << "No is clicked";
@@ -212,7 +212,7 @@ void studentdash::StatusReveal(){
 void studentdash::on_pushCheck_clicked()
 {
     studentcheckclass *scs = new studentcheckclass();
-    scs->showMaximized();
+    scs->show();
     this->close();
 }
 

@@ -143,7 +143,7 @@ void SignupDialog::on_pushButtonSignUp_clicked()
     {
         this->close();
         LoginPage *loginPage = new LoginPage();
-        loginPage->showMaximized();
+        loginPage->show();
 
     }
 

@@ -141,7 +141,7 @@ void studentcheckclass::on_pushButton_clicked()
     if (reply == QMessageBox::Yes) {
         this->close();
         LoginPage *crd = new LoginPage();
-        crd->showMaximized();
+        crd->show();
     } else {
         qDebug() << "No is clicked";
     }
