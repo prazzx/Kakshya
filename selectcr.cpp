@@ -39,7 +39,6 @@ bool selectcr::connectToDatabase()
 
 void selectcr::on_pushButton_clicked()
 {
-    codash->show();
     this ->hide();
 }
 void selectcr::on_pushButtonSignUp_clicked()
@@ -87,8 +86,10 @@ void selectcr::on_pushButtonSignUp_clicked()
         qDebug() << "SQL Error: " << query.lastError().text(); // Debugging
         return;
     }
-
+ if (query.exec()) {
     QMessageBox::information(this, "Success", "Password has been successfully saved!");
+    this->hide();
+ }
 
     ui->lineEditPassword->clear();
     ui->lineEditConfirmpassword->clear();

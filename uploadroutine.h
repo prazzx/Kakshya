@@ -44,6 +44,8 @@ private slots:
 
     void on_pushButton_clicked();
 
+    void on_pushButtonUpload_clicked();
+
 private:
     Ui::UploadRoutine *ui;
     Addvaluestoroutine *add;

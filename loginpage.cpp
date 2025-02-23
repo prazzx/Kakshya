@@ -3,13 +3,13 @@
 #include "signupdialog.h"
 #include "ui_loginpage.h"
 #include "coordinatordash.h"
-#include "crdash.h"
 #include "teacherdash.h"
 #include <QSqlDatabase>
 #include <QSqlQuery>
 #include <QSqlError>
 #include <QMessageBox>
 #include<QPixmap>
+
 LoginPage::LoginPage(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::LoginPage)
@@ -19,6 +19,9 @@ LoginPage::LoginPage(QWidget *parent) :
     int h= ui->logo->height();
     int  w = ui->logo ->width();
     ui->logo->setPixmap(pic.scaled(h,w,Qt::KeepAspectRatio,Qt::SmoothTransformation));
+
+
+
 }
 
 LoginPage::~LoginPage()
@@ -28,7 +31,7 @@ LoginPage::~LoginPage()
 
 void LoginPage::on_pushButtonSignup_clicked()
 {
-    this->close();
+    this->hide();
     signupDialog = new SignupDialog(this);
     signupDialog->show();
 }
@@ -94,7 +97,7 @@ void LoginPage::on_pushButtonLogin_clicked()
             }
             else if(tableName=="teacher"){
                 tdash = new teacherdash(email,this);
-                tdash->show();
+                tdash->showMaximized();
             }
             else if(tableName=="cr"){
                 stdash = new studentdash(this);

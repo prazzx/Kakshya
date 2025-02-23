@@ -227,7 +227,7 @@ void CRsearchclass::on_pushButtonback_clicked()
 {
     this->close();
     crdash *crd = new crdash();
-    crd->show();
+    crd->showMaximized();
 }
 
 

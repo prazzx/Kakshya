@@ -129,7 +129,7 @@ QListView::item:selected
 
 QListView::item:!selected
 {
-        color:white;
+        color:black;
         background-color: transparent;
         border: none;
         padding-left : 10px;

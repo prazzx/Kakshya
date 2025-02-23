@@ -11,15 +11,15 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>Add Value</string>
   </property>
   <widget class="QPushButton" name="pushButtonAdd">
    <property name="geometry">
     <rect>
-     <x>289</x>
-     <y>247</y>
-     <width>101</width>
-     <height>31</height>
+     <x>240</x>
+     <y>220</y>
+     <width>281</width>
+     <height>41</height>
     </rect>
    </property>
    <property name="text">
@@ -29,10 +29,10 @@
   <widget class="QPushButton" name="pushButtonNo">
    <property name="geometry">
     <rect>
-     <x>190</x>
-     <y>290</y>
-     <width>291</width>
-     <height>71</height>
+     <x>240</x>
+     <y>270</y>
+     <width>281</width>
+     <height>41</height>
     </rect>
    </property>
    <property name="text">
@@ -42,8 +42,8 @@
   <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
-     <x>190</x>
-     <y>130</y>
+     <x>240</x>
+     <y>100</y>
      <width>281</width>
      <height>111</height>
     </rect>

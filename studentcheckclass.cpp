@@ -152,7 +152,7 @@ void studentcheckclass::on_pushButtonback_clicked()
 {
     this->close();
     studentdash *crd = new studentdash();
-    crd->show();
+    crd->showMaximized();
 }
 
 

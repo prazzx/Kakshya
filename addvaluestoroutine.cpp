@@ -6,8 +6,6 @@
 #include <QMessageBox>
 #include<QPixmap>
 
-QVariant nullVariant;
-
 Addvaluestoroutine::Addvaluestoroutine(const QString &selectedvalue,const QString &day, const QString &timeSlot,QWidget *parent)
     : QDialog(parent)
     , ui(new Ui::Addvaluestoroutine)
@@ -62,6 +60,7 @@ void Addvaluestoroutine::on_pushButtonAdd_clicked()
     query.bindValue(":tname", tname);
     query.bindValue(":rno", rno);
     if(query.exec()){
+        this->close();
        QMessageBox::information(this, "Success", "Routine added successfully!");
     }
 }

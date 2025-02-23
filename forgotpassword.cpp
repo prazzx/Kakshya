@@ -1,3 +1,4 @@
+
 #include "forgotpassword.h"
 #include "ui_forgotpassword.h"
 #include <QSqlDatabase>
@@ -75,8 +76,8 @@ void Forgotpassword::on_pushButtonChangepassword_clicked()
             updateQuery.bindValue(":email", email);
 
             if (updateQuery.exec()) {
-                 QMessageBox::information(this, " Password changed", "Congrats! password changed sucessfully");
-                return;
+                QMessageBox::information(this, "Success", "Password changed successfully!");
+                this->hide();
             } else {
                 ui->labelMessage->setText("Failed to update password: " + updateQuery.lastError().text());
                 return;
@@ -88,7 +89,6 @@ void Forgotpassword::on_pushButtonChangepassword_clicked()
         ui->labelMessage->setText("Invalid email.");
     }
 }
-
 
 
 
