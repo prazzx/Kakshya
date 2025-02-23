@@ -49,7 +49,7 @@ Ensure the following are installed on your system:
 
 ## Usage
 - **Coordinators**: Upload and manage class schedules.
-- **CRs**: Mark classrooms as occupied when necessary.
+- **CRs**: Mark  classrooms as occupied when necessary .
 - **Teachers**: Cancel room bookings when required.
 - **Live Updates**: The system dynamically updates room availability in real time.
 
@@ -57,10 +57,9 @@ Ensure the following are installed on your system:
 - Follow best practices in **C++ and MySQL**.
 - Ensure UI updates align with **Qt principles**.
 - Keep code **clean and well-commented** for maintainability.
-
-## License
-Specify license details if applicable.
+- Submit pull requests for feature additions and bug fixes.
 
 ## Contact & Support
-For issues, improvements, or feature requests, open a GitHub issue or contact the developer.
+For issues, improvements, or feature requests:
+you can contact the contributors mentioned above.
 
